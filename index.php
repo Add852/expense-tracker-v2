@@ -7,11 +7,11 @@
     <title>Xpense Tracker</title>
 </head>
 
-<body>
+<body class="bg-gray-900">
     <?php
     include_once "components/navbar.html";
-    echo "DITO LANDING PAGE NI KIT!!!!!!!!!!!!!!!!";
     ?>
+    <p class="pt-16 text-gray-100">DITO LANDING PAGE NI KITTT</p>
 </body>
 
 </html>
