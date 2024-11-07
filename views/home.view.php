@@ -6,8 +6,8 @@
 <div class="container p-2.5" id="page">
     <div class="container p-2.5" id="content">
         <div>
-            <div>
-                <section class="justify-center">
+            <div class="justify-center">
+                <section>
                     <div>
                         <h1>Track your expenses</h1>
                     </div>
