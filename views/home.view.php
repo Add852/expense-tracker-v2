@@ -3,4 +3,4 @@
 
 <p class="pt-16 text-teal-300">DITO LANDING PAGE NI KITTT</p>
 
-<?php require('components/footer.php') ?>
+<?php require('partials/footer.php') ?>
