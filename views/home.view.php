@@ -6,7 +6,7 @@
 <div class="container p-2.5" id="page">
     <div class="container p-2.5" id="content">
         <div>
-            <div class="justify-center">
+            <div class="containter container-center justify-center">
                 <section>
                     <div>
                         <h1>Track your expenses</h1>
