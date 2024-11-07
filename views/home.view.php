@@ -7,7 +7,7 @@
     <div class="container p-2.5" id="content">
         <div>
             <div>
-                <section>
+                <section class="justify-center">
                     <div>
                         <h1>Track your expenses</h1>
                     </div>
