@@ -34,7 +34,7 @@
                 <!-- IMAGE / LOGO -->
                 <div class="h-max">
                     <a href='/'>
-                        <img class="h-10 w-auto" src="/expense-tracker-v2/assets/twitter_logo.png"
+                        <img class="h-10 w-auto" src="/assets/twitter_logo.png"
                             alt="Your Company">
                     </a>
                 </div>
