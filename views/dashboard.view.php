@@ -1,5 +1,5 @@
-<?php require('components/head.php') ?>
-<?php require('components/navbar.php') ?>
+<?php require('partials/head.php') ?>
+<?php require('partials/navbar.php') ?>
 
 <main class='test pt-16 h-screen bgGreen'>
     <!-- BALANCE CONTAINER AND DIVIDER COL -->
@@ -29,4 +29,4 @@
     </div>
 </main>
 
-<?php require('components/footer.php') ?>
+<?php require('partials/footer.php') ?>

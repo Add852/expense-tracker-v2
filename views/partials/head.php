@@ -20,11 +20,17 @@
             background-color: #1a664d;
         }
 
-        /* TAILWIND VALUES:
-        TEXT COLORS
-            - Default: text-gray-300
-            - Hyperlinks: text-teal-300
+        .textGray {
+            /* same as text-gray-300 (DEFAULT TEXT COL)*/
+            color: #d1d5db;
+        }
 
+        .textTeal {
+            /* same as text-teal-300 (FOR HYPERLINKS) */
+            color: #5eead4;
+        }
+
+        /* TAILWIND VALUES:
         MISCELLANEOUS
             - Panel/Tiles
                 - border: rounded-3xl
