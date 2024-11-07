@@ -1,7 +1,8 @@
 <?php
 
 // ITO YUNG MAIN FILE NA MAGRURUN THROUGHOUT SA SERVER, KUMBAGA ANYWHERE YOU ARE FROM THE WEBSITE DITO LAGI UNA DAAN.
-// meaning iton mga required na file sa baba is GLOBAL, lahat ng required na 'to naka-require din sa buong website
+// meaning itong mga required na file sa baba is GLOBAL, lahat ng required na 'to naka-require din sa buong website
+// meaning usable sila lahat throughout the whole website
 // I hihgly suggest reading each of these files para mas maintindihan
 
 require('functions.php'); //dito naka-lagay yung mga useful functions sa website natin
