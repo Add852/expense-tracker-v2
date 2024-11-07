@@ -3,8 +3,8 @@
 
 <p class="pt-16 text-teal-300">DITO LANDING PAGE NI KITTT</p>
 
-<div class="container">
-    <div>
+<div class="container p-2.5" id="page">
+    <div class="container p-2.5" id="content">
         <div>
             <div>
                 <section>
