@@ -4,6 +4,7 @@ $routes = [
     "/" => "controllers/home.php",
     "/dashboard" => "controllers/dashboard.php",
     "/userSettings" => "controllers/userSettings.php",
+    "/shared" => "controllers/expense-sharing-group.php",
 ];
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
