@@ -6,10 +6,10 @@
 <div class="container p-2.5" id="page">
     <div class="container p-2.5" id="content">
         <div>
-            <div class="containter container-center justify-center">
+            <div class="containter text-center">
                 <section>
                     <div>
-                        <h1>Track your expenses</h1>
+                        <h1 class="text-teal-300">Track your expenses</h1>
                     </div>
                 </section>
             </div>
