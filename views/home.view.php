@@ -9,7 +9,13 @@
             <div class="containter text-center">
                 <section>
                     <div>
-                        <h1 class="text-teal-300">Track your expenses</h1>
+                        <h1 class="text-teal-300">Lorem ipsum dolor sit amet</h1>
+                    </div>
+                    <div>
+                        <h3 class="text-white">Lorem ipsum dolor sit amet</h3>
+                    </div>
+                    <div>
+                        <button class="cursor-pointer cursor-zoom-in p-2.5 rounded-x1">Lorem ipsum dolor sit amet</button>
                     </div>
                 </section>
             </div>
