@@ -43,8 +43,7 @@
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a href='/dashboard'
-                            class="<?= isUri('/dashboard') ? 'btGreen' : '' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-green-300"
-                            aria-current="page">Dashboard</a>
+                            class="<?= isUri('/dashboard') ? 'btGreen' : '' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-green-300">Dashboard</a>
                         <a href='/expenselog'
                             class="<?= isUri('/expenselog') ? 'btGreen' : '' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-green-300">Expense
                             Log</a>
