@@ -1,3 +1,2 @@
-<div class="tlGreen textGray fixed h-screen w-12 flex flex-col justify-center items-center border-r border-one border-gray-800">
-    Sidebar
+<div class="tlGreen textGray fixed h-full w-12 mt-16 flex flex-col border-r border-one border-gray-800">
 </div>
