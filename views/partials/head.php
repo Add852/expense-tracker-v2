@@ -31,6 +31,9 @@
             color: #5eead4;
         }
 
+        .bgOrange {
+            background-color: #da801a;
+        }
         /* TAILWIND VALUES:
         MISCELLANEOUS
             - Panel/Tiles

@@ -6,7 +6,7 @@
     <?php require('partials/balance.php') ?>
 
     <!-- PANELS -->
-    <div class="textGray text-3xl px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24 xl:px-30">
+    <div class="textOrange text-3xl px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24 xl:px-30">
         <?= 'Hello, ' . $userInfo['firstName'] . '!' ?>
     </div>
     <div class='bgGreen pt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24 xl:px-30'>
