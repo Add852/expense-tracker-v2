@@ -20,6 +20,7 @@
             background-color: #1a664d;
         }
 
+
         .textGray {
             /* same as text-gray-300 (DEFAULT TEXT COL)*/
             color: #d1d5db;
@@ -42,6 +43,7 @@
                 - Remove Outline: focus:outline-none
             - Buttons
                 - Border: rounded-3xl
+                - hover:bg-emerald-700
         */
     </style>
 </head>
