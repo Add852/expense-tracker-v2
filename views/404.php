@@ -1,5 +1,4 @@
 <?php require('partials/head.php') ?>
-<?php require('partials/navbar.php') ?>
 
 <div class="flex flex-col justify-center h-screen items-center">
     <p class="textGray font-bold text-3xl">Page Not Found</p>

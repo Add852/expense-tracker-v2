@@ -47,3 +47,10 @@
 </head>
 
 <body class="bgGreen">
+    <!-- NAV BAR IS HERE -->
+    <?php require('navbar.php') ?>
+    <div class="grid grid-rows-2">
+        <!-- SIDEBAR IS HERE -->
+        <?php require('sidebar.php') ?>
+        <!-- DITO NA YUNG PINAKACONTENT NINYO -->
+        <content class="pl-12 pt-16">

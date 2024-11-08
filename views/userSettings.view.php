@@ -1,5 +1,4 @@
 <?php require('partials/head.php') ?>
-<?php require('partials/navbar.php') ?>
 
 <div class="min-h-screen flex items-center justify-center">
 
