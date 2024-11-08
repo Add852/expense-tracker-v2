@@ -17,7 +17,7 @@
                 class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-gray-400 object-cover mb-4" />
 
             <!-- Image Selection Section -->
-            <div id="imageSelection" class="hidden grid grid-cols-3 gap-4 mt-6">
+            <div id="imageSelection" class="hidden grid-cols-3 gap-4 mt-6">
                 <div class="cursor-pointer p-2 border border-white rounded-full hover:scale-110 transition duration-300" onclick="changeProfileImage('https://files.cults3d.com/uploaders/14013694/illustration-file/50f1a3a2-4979-4030-89fe-c7dfbaaa97ba/2023-05-25_22-38-38.png')">
                     <img src="https://files.cults3d.com/uploaders/14013694/illustration-file/50f1a3a2-4979-4030-89fe-c7dfbaaa97ba/2023-05-25_22-38-38.png" alt="Icon 1" class="w-16 h-16 rounded-full object-cover" />
                 </div>
