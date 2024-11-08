@@ -18,6 +18,7 @@
 
         .btGreen {
             background-color: #1a664d;
+            color: white;
         }
 
 
