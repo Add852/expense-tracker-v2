@@ -29,9 +29,9 @@
                 </button>
             </div>
             <div class="absolute z-50 right-0 mt-2 w-48 origin-top-right rounded-md py-2 tlGreen shadow-lg border border-gray-800">
-                <a href="#" class="hover:bg-emerald-700 block px-4 py-2 text-sm text-gray-300">Your Profile</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-300">Settings</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-300">Sign out</a>
+                <a href="#" class="hover:bg-emerald-900 block px-4 py-2 text-sm text-gray-300">Your Profile</a>
+                <a href="#" class="hover:bg-emerald-900 block px-4 py-2 text-sm text-gray-300">Settings</a>
+                <a href="#" class="hover:bg-emerald-900 block px-4 py-2 text-sm text-gray-300">Sign out</a>
             </div>
         </div>
     </div>
