@@ -1,4 +1,4 @@
-<div class='border-b border-one border-gray-700 bgGreen w-full h-20 py-2 px-5 md:px-10 lg:px-20 xl:'>
+<div class='bgGreen w-full h-20 py-2 px-5 md:px-10 lg:px-20 xl:'>
     <!-- BALANCE CONTAINER -->
     <div class="tlGreen rounded-3xl w-full h-full items">
         <!-- BALANCE and ADD BUTTON ROW-->

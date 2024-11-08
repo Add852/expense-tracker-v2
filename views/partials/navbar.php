@@ -1,4 +1,4 @@
-<nav class="fixed tlGreen z-40 w-full border-b border-one shadow-lg border-gray-800">
+<nav class="fixed tlGreen z-40 w-full shadow-lg">
     <!-- NAVBAR CONTENT -->
     <div class="flex px-2 sm:px-6 lg:px-8 h-16 justify-between items-center">
         <!-- NAV Left -->
