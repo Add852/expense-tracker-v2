@@ -3,7 +3,7 @@
 
 <p class="pt-16 text-teal-300">DITO LANDING PAGE NI KITTT</p>
 
-<div class="container p-2.5 bg-green-600" id="page">
+<div class="container p-2.5" id="page">
     <div class="container p-2.5" id="content">
         <div>
             <div class="containter text-center">
@@ -15,7 +15,7 @@
                         <h3 class="text-white">Lorem ipsum dolor sit amet</h3>
                     </div>
                     <div>
-                        <button class="cursor-pointer p-2.5 rounded-full border-teal-500">Lorem ipsum dolor sit amet</button>
+                        <button class="cursor-pointer p-2.5 rounded-full border-teal-600">Lorem ipsum dolor sit amet</button>
                     </div>
                 </section>
             </div>
