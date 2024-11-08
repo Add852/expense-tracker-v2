@@ -6,7 +6,7 @@ $routes = [
     "/userSettings" => "controllers/userSettings.php",
     "/shared" => "controllers/expense-sharing-group.php",
     "/goal" => "controllers/goal.php",
-    "/ExpenseLog" => "controllers/ExpenseLog.php"
+    "/expenselog" => "controllers/ExpenseLog.php"
 
 ];
 

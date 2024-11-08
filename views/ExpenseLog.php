@@ -5,8 +5,10 @@
 
     <!-- Tinanggal kona lahat ng  yung database related dito-->
 
-<?php require('partials/head.php') ?>
 
+
+
+<?php require('partials/head.php') ?>
 
 
     <div class="container mx-auto p-4">
@@ -170,4 +172,6 @@
 
 
 
-<?php require('partials/footer.php') ?>
+
+
+     <?php  require('partials/footer.php') ?>
