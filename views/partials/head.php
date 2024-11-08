@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
     </style>
 </head>
 
-<body class="bgGreen">
+<body class="bgGreen h-full">
     <!-- NAV BAR IS HERE -->
     <?php require('navbar.php') ?>
     <div class="flex">
