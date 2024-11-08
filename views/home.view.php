@@ -15,7 +15,7 @@
                         <h3 class="text-white">Lorem ipsum dolor sit amet</h3>
                     </div>
                     <div>
-                        <button class="cursor-pointer cursor-zoom-in p-2.5 rounded-x1">Lorem ipsum dolor sit amet</button>
+                        <button class="cursor-pointer p-2.5 rounded-x1">Lorem ipsum dolor sit amet</button>
                     </div>
                 </section>
             </div>
