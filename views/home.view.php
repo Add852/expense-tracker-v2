@@ -2,6 +2,7 @@
 <?php require('partials/navbar.php') ?>
 
 <p class="pt-16 text-teal-300">DITO LANDING PAGE NI KITTT</p>
+<?php require('partials/balance.php') ?>
 
 <div class="container p-2.5" id="page">
     <div class="container p-2.5" id="content">
