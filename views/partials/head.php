@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full" lang="en">
+<html class="h-full overflow-hidden" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -108,7 +108,7 @@
     </style>
 </head>
 
-<body class="bgGreen h-full">
+<body class="bgGreen overflow-auto h-full">
     <!-- NAV BAR IS HERE -->
     <?php require('navbar.php') ?>
     <?php require('addexpense.php') ?>
