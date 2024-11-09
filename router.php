@@ -7,7 +7,8 @@ $routes = [
     "/shared" => "controllers/expense-sharing-group.php",
     "/goal" => "controllers/goal.php",
     "/expenselog" => "controllers/ExpenseLog.php",
-    "/add" => "controllers/add.php"
+    "/add" => "controllers/add.php",
+    "/SignUp" => "controllers/SignUp.php"
 ];
 
 
