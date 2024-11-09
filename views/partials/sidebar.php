@@ -1,4 +1,4 @@
-<div class="tlGreen textGray fixed h-full w-12 mt-16 flex flex-col border-r border-one border-gray-800">
+<div class="tlGreen textGray fixed h-full w-12 flex flex-col border-r border-one border-gray-800">
 
     <!-- HAMBURGER -->
     <a href="/dashboard" title="Dashboard" class="p-3 hover:bg-emerald-900">

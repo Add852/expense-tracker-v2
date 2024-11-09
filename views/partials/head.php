@@ -8,7 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        /* background colors */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+           overflow: hidden;
+        }
+
         .bgGreen {
             background-color: #03352c;
         }
