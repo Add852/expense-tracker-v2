@@ -57,6 +57,7 @@
 <body class="bgGreen h-full">
     <!-- NAV BAR IS HERE -->
     <?php require('navbar.php') ?>
+    <?php require('addexpense.php') ?>
     <div class="flex">
         <!-- SIDEBAR IS HERE -->
         <?php require('sidebar.php') ?>
