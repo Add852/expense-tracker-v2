@@ -3,12 +3,12 @@
 $routes = [
     "/" => "controllers/home.php",
     "/dashboard" => "controllers/dashboard.php",
-    "/userSettings" => "controllers/userSettings.php",
+    "/usersettings" => "controllers/userSettings.php",
     "/shared" => "controllers/expense-sharing-group.php",
     "/goal" => "controllers/goal.php",
     "/expenselog" => "controllers/ExpenseLog.php",
     "/add" => "controllers/add.php",
-    "/SignUp" => "controllers/SignUp.php"
+    "/signup" => "controllers/SignUp.php"
 ];
 
 
