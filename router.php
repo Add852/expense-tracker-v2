@@ -7,8 +7,9 @@ $routes = [
     "/shared" => "controllers/expense-sharing-group.php",
     "/goal" => "controllers/goal.php",
     "/expenselog" => "controllers/ExpenseLog.php",
-    // "/add" => "controllers/add.php"
+    "/add" => "controllers/add.php"
 ];
+
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
