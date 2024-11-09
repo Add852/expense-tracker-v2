@@ -58,6 +58,7 @@
         .btnSubmit {
             justify-self: center;
             background-color: greenyellow;
+            padding: 3px 6px;
         }
 
         .btnSubmit:hover {
