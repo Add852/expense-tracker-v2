@@ -12,7 +12,8 @@
         html {
             margin: 0;
             padding: 0;
-           overflow: hidden;
+            height: 100%;
+            overflow: hidden;
         }
 
         .bgGreen {
@@ -53,6 +54,64 @@
                 - Border: rounded-3xl
                 - hover:bg-emerald-700
         */
+        /* Temporary Styles */
+        .btnSubmit {
+            justify-self: center;
+            background-color: greenyellow;
+        }
+
+        .btnSubmit:hover {
+            background-color: violet;
+        }
+
+        .form-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .activeForm {
+            display: grid;
+        }
+
+
+        .btn {
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .activeBtn {
+            background-color: hotpink;
+        }
+
+        .form-buttons {
+            margin-bottom: 5px;
+        }
+
+        #panel {
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: teal;
+            display: grid;
+        }
+
+        #view {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -64,4 +123,4 @@
         <!-- SIDEBAR IS HERE -->
         <?php require('sidebar.php') ?>
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
-        <content class="ml-12 mt-16 flex-grow">
+        <content class="ml-12 flex-grow">
