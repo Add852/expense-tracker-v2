@@ -33,8 +33,12 @@
             color: #5eead4;
         }
 
-        .bgOrange {
-            background-color: #da801a;
+        #btn404 {
+            background-color: #ea902a;
+        }
+
+        #btn404:hover {
+            background-color: #faa03a;
         }
 
         /* TAILWIND VALUES:
