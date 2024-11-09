@@ -29,21 +29,6 @@
             <p class="text-lg">This is where the main content goes. Add any content or components here as needed.</p>
         </div>
     </div>
-
-    <style>
-        /* background colors */
-        .bgGreen {
-            background-color: #03352c;
-        }
-
-        .tlGreen {
-            background-color: #072822;
-        }
-
-        .btGreen {
-            background-color: #1a664d;
-        }
-    </style>
 </main>
 
 <?php require('partials/footer.php') ?>
