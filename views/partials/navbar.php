@@ -5,7 +5,7 @@
         <div>
             <!-- Image Logo -->
             <a href='/'>
-                <img class="h-10 w-auto" src="https://th.bing.com/th/id/OIP.wvOQEvpiAyv7s2_c_2yG-QHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                <img class="h-10 w-auto" src="/assets/twitter-logo.jpg"
                     alt="Your Company">
             </a>
         </div>
