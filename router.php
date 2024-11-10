@@ -8,7 +8,8 @@ $routes = [
     "/goal" => "controllers/goal.php",
     "/expenselog" => "controllers/ExpenseLog.php",
     "/add" => "controllers/add.php",
-    "/signup" => "controllers/SignUp.php"
+    "/signup" => "controllers/SignUp.php",
+    "/audit" => "controllers/audit.php"
 ];
 
 
