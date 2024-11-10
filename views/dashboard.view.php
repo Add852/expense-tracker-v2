@@ -2,8 +2,8 @@
 
 <main class='test h-screen bgGreen'>
 
-    <!-- BALANCE CONTAINER -->
-    <?php require('partials/balance.php') ?>
+
+   
 
     <!-- PANELS -->
     <div class="textGray textOrange text-3xl px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24 xl:px-30">
