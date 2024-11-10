@@ -22,22 +22,22 @@
             </div>
         </div>
 
-        <!-- Paayos nito bagu i-uncomment, sinasakop kasi to ung sidebar, also unsuble toh -->
+        <!-- Paayos nito bagu i-uncomment, sinasakop kasi to ung sidebar, also unsuble toh :) -->
         <!-- Main Content Area --> 
-        <!-- <div class="tlGreen rounded-lg">
-            <?php
-            echo "
-                <button class='px-4 py-4 my-4 btGreen text-xl w-full font-semibold text-gray-300 border-gray-400 rounded-3xl transition duration-150 hover:bg-gray-700 text-center'>
-                    Add Goal Button
-                </button>";
-            for ($i = 1; $i <= 3; $i++) {
-                echo "
-                <button class='px-4 py-4 my-4 btGreen text-xl w-full font-semibold text-gray-300 border-gray-400 rounded-3xl transition duration-150 hover:bg-gray-700 text-center'>
-                    Goal Listed Goated Fanum Tax KEKW Sigma Ohio Rizz Ligma Balls Madge Sadge 
-                </button>";
-            }
-            ?>
-        </div> -->
+        <div class="tlGreen rounded-lg">
+            <!-- <?php
+            // echo "
+            //     <button class='px-4 py-4 my-4 btGreen text-xl w-full font-semibold text-gray-300 border-gray-400 rounded-3xl transition duration-150 hover:bg-gray-700 text-center'>
+            //         Add Goal Button
+            //     </button>";
+            // for ($i = 1; $i <= 3; $i++) {
+            //     echo "
+            //     <button class='px-4 py-4 my-4 btGreen text-xl w-full font-semibold text-gray-300 border-gray-400 rounded-3xl transition duration-150 hover:bg-gray-700 text-center'>
+            //         Goal Listed Goated Fanum Tax KEKW Sigma Ohio Rizz Ligma Balls Madge Sadge 
+            //     </button>";
+            // }
+            ?> --> 
+        </div>
     </div>
 </main>
 
