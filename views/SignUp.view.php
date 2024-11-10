@@ -20,16 +20,14 @@
                         name="first_name"
                         placeholder="First Name"
                         class="w-1/2 p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                        required
-                    />
+                        required />
 
                     <input
                         type="text"
                         name="last_name"
                         placeholder="Last Name"
                         class="w-1/2 p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                        required
-                    />
+                        required />
                 </div>
 
                 <input
@@ -37,45 +35,40 @@
                     name="username"
                     placeholder="Username"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                    required
-                />
+                    required />
 
                 <input
                     type="email"
                     name="email"
                     placeholder="Email Address"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                    required
-                />
+                    required />
 
                 <input
                     type="password"
                     name="password"
                     placeholder="Password"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                    required
-                />
+                    required />
 
                 <input
                     type="password"
                     name="confirm_password"
                     placeholder="Confirm Password"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                    required
-                />
+                    required />
 
                 <div>
                     <button
                         type="submit"
-                        class="w-full py-3 mt-4 text-xl font-semibold textGray btGreen rounded-3xl hover:bgGreen"
-                    >Next</button>
+                        class="w-full py-3 mt-4 text-xl font-semibold textGray btGreen rounded-3xl hover:bgGreen">Next</button>
                 </div>
 
             </form>
 
             <p class="mt-4 text-center textGray">
-                Already have an account? 
-                <a href="#" class="textTeal hover:underline">Sign In</a>
+                Already have an account?
+                <a href="/login" class="textTeal hover:underline">Sign In</a>
             </p>
 
         </div>
