@@ -1,9 +1,6 @@
 <?php require('partials/head.php') ?>
 
 <main class='test h-screen bgGreen'>
-    <!--  -->
-    <?php require('partials/balance.php') ?>
-
     <!-- Username -->
     <h2 class="px-2 py-0 sm:text-3xl lg:text-4xl font-bold text-gray-300 flex justify-center items-center my-2 lg:px-2">USERNAME'S GOALS</h2>
     <!-- Sidebar -->

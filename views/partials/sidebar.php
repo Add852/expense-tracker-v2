@@ -118,5 +118,14 @@
                 btn.classList.toggle('hidden');
             });
         });
+
+        function autoCollapseSidebar() {
+            if (window.innerWidth < 640) {
+                menu_btn.click(); // Trigger the click event on menu_btn to collapse
+            }
+        }
+
+        // Call the function on page load
+        window.addEventListener('load', autoCollapseSidebar);
     </script>
 </div>
