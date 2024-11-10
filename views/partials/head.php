@@ -117,4 +117,4 @@
         <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
-        <content class="flex-grow">
+        <content class="ml-12 sm:ml-0 flex-grow">
