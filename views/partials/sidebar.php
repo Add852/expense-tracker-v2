@@ -26,7 +26,7 @@
     /* Media query for larger screens */
     @media (min-width: 640px) {
         .dsl {
-            display: block;  
+            display: block;
         }
 
         .csl {

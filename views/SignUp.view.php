@@ -1,8 +1,8 @@
 <?php require('partials/head.php') ?>
 
-<div class="bgGreen min-h-screen">
+<div class="bgGreen">
 
-    <div class="flex items-center justify-center min-h-screen">
+    <div class="flex items-center justify-center">
 
         <div class="w-full max-w-md p-8 tlGreen rounded-3xl shadow-lg">
 
