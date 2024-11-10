@@ -23,7 +23,6 @@
         width: 12rem;
     }
 
-    /* Media query for larger screens */
     @media (min-width: 640px) {
         .dsl {
             display: block;
