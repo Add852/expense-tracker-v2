@@ -1,7 +1,7 @@
 <?php require('partials/head.php') ?>
 
 <div class="bgGreen flex items-center justify-center">
-    <div class="w-full max-w-md p-8 tlGreen rounded-3xl shadow-lg mb-20">
+    <div class="w-full max-w-md p-8 tlGreen rounded-3xl shadow-lg">
         <h2 class="text-4xl font-semibold text-center textGray">Create an account</h2>
         <br />
 
