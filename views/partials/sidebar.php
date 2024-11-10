@@ -1,4 +1,4 @@
-<div id="menu" class="tlGreen textGray fixed h-full flex flex-col border-r border-one border-gray-800">
+<div id="menu" class="sticky h-full tlGreen textGray flex-none flex-col border-r border-one border-gray-800">
 
     <!-- HAMBURGER -->
     <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end">
@@ -9,7 +9,6 @@
     </button>
 
     <hr class="my-2 mx-2 border-gray-600">
-
 
     <!-- HOME ICON -->
     <a href="/dashboard" title="Dashboard" class="hover:bg-emerald-900 flex flex-row items-center">
@@ -110,6 +109,7 @@
 
     <script>
         const menu_btn = document.getElementById('menu_btn');
+        const menu = document.getElementById('menu');
         const btn_labels = document.querySelectorAll('.btn_label');
         menu_btn.addEventListener('click', () => {
             menu.classList.toggle('w-48');

@@ -111,9 +111,10 @@
 <body class="bgGreen overflow-auto h-full">
     <!-- NAV BAR IS HERE -->
     <?php require('navbar.php') ?>
+    <!-- SIDEBAR IS HERE -->
     <?php require('addexpense.php') ?>
-    <div class="flex">
-        <!-- SIDEBAR IS HERE -->
+    <div class="flex h-full">
+        <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
-        <content class="ml-12 flex-grow">
+        <content class="flex-grow">
