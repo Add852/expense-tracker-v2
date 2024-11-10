@@ -113,7 +113,7 @@
     <?php require('navbar.php') ?>
     <!-- SIDEBAR IS HERE -->
     <?php require('addexpense.php') ?>
-    <div class=" flex h-full">
+    <div class="flex h-full">
         <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->

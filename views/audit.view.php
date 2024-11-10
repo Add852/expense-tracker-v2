@@ -1,7 +1,8 @@
 <?php require('partials/head.php') ?>
 
 <!-- <div>Audit Log Here</div> -->
-<div class="p-5">
+ 
+<div class="w p-5">
     <table class="textGray border border-one border-gray-50">
         <thead class="font-bold text-center">
             <tr>

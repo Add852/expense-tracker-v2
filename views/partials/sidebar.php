@@ -41,7 +41,7 @@
         }
     }
 </style>
-<div id="menu" class="fixed sm:relative dsm z-40 h-full tlGreen textGray flex-col border-r border-one border-gray-800 transition-all ease-out duration-500">
+<div id="menu" class="fixed sm:relative dsm z-40 h-full flex-shrink-0 tlGreen textGray flex-col border-r border-one border-gray-800 transition-all ease-out duration-500">
 
     <!-- HAMBURGER -->
     <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end">
