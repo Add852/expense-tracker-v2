@@ -115,4 +115,4 @@
     <?php require('addexpense.php') ?>
     <div class="flex h-full">
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
-        <content class="ml-12 sm:m-0 overflow-auto flex-grow">
+        <content class="overflow-auto flex-grow">
