@@ -1,4 +1,4 @@
-<?php require('partials/head.php') ?>
+<?php require('partials/headNoSide.php') ?>
 
 <div class="bgGreen flex items-center justify-center">
     <div class="w-full max-w-md p-8 tlGreen rounded-3xl shadow-lg ">
