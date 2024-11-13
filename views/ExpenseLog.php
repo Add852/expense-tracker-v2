@@ -11,10 +11,15 @@
 <?php require('partials/head.php') ?>
 
 
-    <div class="container mx-auto p-4">
+
+
+<div class="container mx-auto p-4">
+
+
         <div>
-            <div id="simplifiedView-1" class="block max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden" onclick="toggleView(1)">
-                
+            
+            <div id="simplifiedView-1" class="block max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden " onclick="toggleView(1)">
+               
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Date Log:</span>
                     <span class="text-gray-600">2023-06-01</span>
@@ -27,14 +32,15 @@
 
             </div>
 
+            <!-- Full View sa details ng simplified view -->
 
-
-            <!-- Full View for smaller devices, hidden in larger devices -->
-            <div id="fullView-1" class="hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden">
+            <div id="fullView-1" class="hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
+               
                 <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
                     <span class="font-semibold text-gray-400">Date Log:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2023-06-01" />
                 </div>
+
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">User ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
@@ -44,26 +50,26 @@
                     <span class="font-semibold text-gray-400">Expense ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
+
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Amount:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="12:30 PM" />
                 </div>
+
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Category:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="dont know yet" />
                 </div>
+
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Description:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="ako langto" />
                 </div>
 
-
-
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Type:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" />
                 </div>
-
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Goal ID:</span>
@@ -74,8 +80,6 @@
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Subscription ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="SB0011" />
                 </div>
-
-
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Group ID:</span>
@@ -94,62 +98,11 @@
                 </div>
             </div>
         </div>
-
-
-
-        <!-- Table of Expenses for Larger Devices -->
-        <table class="hidden md:table w-full border border-gray-300 shadow-lg rounded-lg overflow-hidden">
-            <thead class="bg-gradient-to-r from-gray-100 to-gray-200">
-                <tr>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Date Log</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">User ID</th>
-
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense ID</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Amount</th>
-
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Category</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Description</th>
-
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Type</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Time</th>
-
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Goal ID</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Subsciption ID</th>
-
-
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-white transition-colors duration-200">
-
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'datelog', 1)">        2023-06-01  </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'user_id', 1)">         1           </td>
-
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'expense_id', 1)">      12:30 PM    </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Amount', 1)">         Food        </td>
-
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Category', 1)">       50.00       </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Description', 1)">    2023-06-01  </td>
-
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'ExpenseType', 1)">   1           </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'ExpenseTime', 1)">   12:30 PM    </td>
-
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Goal_id', 1)">        Food        </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Subscription_id', 1)">   12:30 PM    </td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'expenseStatus', 1)">        Food        </td>
-                    
-                    
-                    <td class="border px-4 py-2">
-                        <button onclick="deleteExpense(1)" class="text-red-600 hover:text-red-800 text-xl font-bold">Delete</button>
-                    </td>
-                </tr>
-               
-            </tbody>
-        </table>
     </div>
 
+
     <script>
+
         function toggleView(expenseId) {
             const fullView = document.getElementById('fullView-' + expenseId);
             const simplifiedView = document.getElementById('simplifiedView-' + expenseId);
@@ -170,65 +123,63 @@
             const inputs = fullView.querySelectorAll('input');
 
             const updatedData = {
-
                 update_id: expenseId,
-                user_id: inputs[0].value,
-                amount: inputs[1].value,
-                category: inputs[3].value,
-                description: inputs[4].value,
-                ExpenseType: inputs[5].value
+                user_id: inputs[1].value,
 
-                ExpenseTime: inputs[6].value,
-                goal_id: inputs[7].value,
-                subscription_id: inputs[8].value,
-                group_id: inputs[9].value,
-                ExpenseStatus: inputs[10].value
+                amount: inputs[3].value,
+                category: inputs[4].value,
+
+                description: inputs[5].value,
+                ExpenseType: inputs[6].value,
+
+                ExpenseTime: inputs[7].value,
+                goal_id: inputs[8].value,
+
+                subscription_id: inputs[9].value,
+                group_id: inputs[10].value,
+
+                ExpenseStatus: inputs[11].value
+
+
+
+                /* pwede na ilagay dito yung php code abang sa fetch ng update data
+                
+                    sample: 
+
+                    $expenseid  = $expenseid;
+                    $userid     = $user_id;
+
+                    $amount =  $amount;
+                    $category =  $category;
+
+                    $description = $description;
+                    $expensetype = $expensetype;
+
+                    $expensetime = $expensetime;
+                    $goal_id = $goal_id;
+
+                    $subscription = $subscription;
+                    $group_id = $group_id;
+                
+                    $expenseStatus = $expenseStatus;
+                */
+
 
             };
 
-            // Simulate updating and providing feedback
-            alert("Simulated update: " + JSON.stringify(updatedData));
+        
+            alert("Updated data: " + JSON.stringify(updatedData));
         }
 
-        function makeEditable(cell, field, expenseId) {
-            const originalText = cell.textContent;
-            const input = document.createElement('input');
-            input.value = originalText;
-            input.className = 'border border-gray-300 text-gray-600'; 
-            cell.innerHTML = ''; // Clear cell
-            cell.appendChild(input);
+        // idedelete neto yung data sa cell 
 
-            // Focus on the input to edit
-            input.focus();
-
-            // Handle blur event to update cell
-            input.addEventListener('blur', () => {
-                const newValue = input.value.trim(); // Get the new value
-                cell.textContent = newValue; // Update cell text
-
-                // Preparing data for simulated AJAX request
-                const updatedData = {
-                    update_id: expenseId, 
-                    [field]: newValue   
-                };
-
-                // Simulate AJAX call
-                alert("Simulated AJAX update: " + JSON.stringify(updatedData));
-            });
-            
-            // Handle pressing Enter to also submit changes
-            input.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
-                    input.blur(); // Trigger blur to save
-                }
-            });
-        }
+        // pwede nadin i abang dito yung php code naten- delete by expenseid 
 
         function deleteExpense(id) {
+
             if (confirm("Are you sure you want to delete this expense?")) {
-                
-                // Simulate deletion
-                alert("Simulated deletion for ID: " + id);
+
+               
                 const simplifiedView = document.getElementById('simplifiedView-' + id);
                 const fullView = document.getElementById('fullView-' + id);
                 if (simplifiedView) {
@@ -245,5 +196,4 @@
 
 
 
-
-     <?php  require('partials/footer.php') ?>
+<?php  require('partials/footer.php') ?>
