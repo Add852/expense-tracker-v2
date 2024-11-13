@@ -36,6 +36,11 @@
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2023-06-01" />
                 </div>
                 <div class="flex justify-between border-b pb-3 pt-3">
+                    <span class="font-semibold text-gray-400">User ID:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
+                </div>
+
+                <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Expense ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
@@ -64,9 +69,6 @@
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Goal ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="0011" />
                 </div>
-
-
-
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Subscription ID:</span>
@@ -101,19 +103,43 @@
                 <tr>
                     <th class="border px-4 py-2 text-left font-semibold text-gray-400">Date Log</th>
                     <th class="border px-4 py-2 text-left font-semibold text-gray-400">User ID</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Time of Payment</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Type of Expense</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Paid Amount</th>
-                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Actions</th>
+
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense ID</th>
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Amount</th>
+
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Category</th>
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Description</th>
+
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Type</th>
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Time</th>
+
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Goal ID</th>
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Subsciption ID</th>
+
+
+                    <th class="border px-4 py-2 text-left font-semibold text-gray-400">Expense Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="bg-white transition-colors duration-200">
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'date_log', 1)">2023-06-01</td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'user_id', 1)">1</td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'time_of_payment', 1)">12:30 PM</td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'expense_type', 1)">Food</td>
-                    <td class="border px-4 py-2" onclick="makeEditable(this, 'amount', 1)">50.00</td>
+
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'datelog', 1)">        2023-06-01  </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'user_id', 1)">         1           </td>
+
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'expense_id', 1)">      12:30 PM    </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Amount', 1)">         Food        </td>
+
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Category', 1)">       50.00       </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Description', 1)">    2023-06-01  </td>
+
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'ExpenseType', 1)">   1           </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'ExpenseTime', 1)">   12:30 PM    </td>
+
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Goal_id', 1)">        Food        </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'Subscription_id', 1)">   12:30 PM    </td>
+                    <td class="border px-4 py-2" onclick="makeEditable(this, 'expenseStatus', 1)">        Food        </td>
+                    
+                    
                     <td class="border px-4 py-2">
                         <button onclick="deleteExpense(1)" class="text-red-600 hover:text-red-800 text-xl font-bold">Delete</button>
                     </td>
@@ -144,12 +170,20 @@
             const inputs = fullView.querySelectorAll('input');
 
             const updatedData = {
+
                 update_id: expenseId,
-                date_log: inputs[0].value,
-                user_id: inputs[1].value,
-                time_of_payment: inputs[2].value,
-                expense_type: inputs[3].value,
-                amount: inputs[4].value
+                user_id: inputs[0].value,
+                amount: inputs[1].value,
+                category: inputs[3].value,
+                description: inputs[4].value,
+                ExpenseType: inputs[5].value
+
+                ExpenseTime: inputs[6].value,
+                goal_id: inputs[7].value,
+                subscription_id: inputs[8].value,
+                group_id: inputs[9].value,
+                ExpenseStatus: inputs[10].value
+
             };
 
             // Simulate updating and providing feedback
