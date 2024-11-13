@@ -1,7 +1,6 @@
 <?php
 
-//create database instance
-$db = new Database();
+
 //current user
 $userID = '1';
 //stores information about current user

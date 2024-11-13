@@ -37,3 +37,6 @@ class Database
         }
     }
 }
+
+//create database instance
+$db = new Database();
