@@ -47,7 +47,6 @@
                 - Border: rounded-3xl
                 - hover:bg-emerald-700
         */
-        /* Temporary Styles */
     </style>
 </head>
 
