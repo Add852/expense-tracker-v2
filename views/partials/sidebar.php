@@ -24,27 +24,22 @@
     }
 
     @media (min-width: 640px) {
+
+        .csl,
         .dsl {
             display: block;
         }
 
-        .csl {
-            display: none;
-        }
-
-        .dsm {
-            width: 12rem;
-        }
-
+        .dsm,
         .csm {
-            width: auto;
+            width: 12rem;
         }
     }
 </style>
 <div id="menu" class="fixed sm:relative dsm z-40 h-full flex-shrink-0 tlGreen textGray flex-col border-r border-one border-gray-800 transition-all ease-out duration-500">
 
     <!-- HAMBURGER -->
-    <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end">
+    <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end block sm:hidden">
         <svg class="textGray" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -158,20 +153,9 @@
             menu.classList.toggle('dsm');
             menu.classList.toggle('csm');
 
-            // btn_labels.classList.toggle('hidden');
             btn_labels.forEach(btn => {
                 btn.classList.toggle('dsl');
                 btn.classList.toggle('csl');
-            });
-        });
-
-        window.addEventListener('resize', () => {
-            // Add `dsm` and `dsl`, then remove `csm` and `csl`
-            menu.classList.add('dsm');
-            menu.classList.remove('csm');
-            btn_labels.forEach(btn => {
-                btn.classList.add('dsl');
-                btn.classList.remove('csl');
             });
         });
     </script>
