@@ -1,12 +1,9 @@
 
 
 
-  <!--sample front end  -->
+        <!--sample front end  -->
 
-    <!-- Tinanggal kona lahat ng  yung database related dito-->
-
-
-
+        <!-- Tinanggal kona lahat ng  yung database related dito-->
 
 <?php require('partials/head.php') ?>
 
@@ -99,6 +96,9 @@
             </div>
         </div>
     </div>
+
+
+
 
 
     <script>
