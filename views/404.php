@@ -1,6 +1,6 @@
 <?php require('partials/head.php') ?>
 
-<main class="grid min-h-full place-items-center bgGreen px-6 py-24 sm:py-32 lg:px-8">
+<main class="grid place-items-center bgGreen px-6 py-24 sm:py-32 lg:px-8">
     <div class="text-center py-6 px-8 sm:py-10 sm:px-16 tlGreen rounded-xl">
         <p class="text-xs sm:text-lg font-semibold textGray">404</p>
         <h1 class="mt-4 sm:mt-6 text-balance text-4xl sm:text-5xl font-semibold tracking-tight textGray">Page not found</h1>
