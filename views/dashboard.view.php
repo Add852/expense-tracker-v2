@@ -1,5 +1,12 @@
 <?php require('partials/head.php') ?>
 
+<form action="/signup" method="POST">
+    <input type="text" name="test" required>
+    <button type="submit">Submit Button</button>
+</form>
+
+</form>
+
 <main class='test h-screen bgGreen'>
     <!-- HELLO, USER -->
     <div class="textGray textOrange text-3xl flex justify-between pb-4">
