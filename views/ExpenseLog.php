@@ -14,18 +14,20 @@
     <div class="container mx-auto p-4">
         <div>
             <div id="simplifiedView-1" class="block max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden" onclick="toggleView(1)">
+                
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Date Log:</span>
                     <span class="text-gray-600">2023-06-01</span>
                 </div>
+
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
                     <span class="text-gray-400">Food</span>
                 </div>
 
-
-
             </div>
+
+
 
             <!-- Full View for smaller devices, hidden in larger devices -->
             <div id="fullView-1" class="hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden">
@@ -34,21 +36,56 @@
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2023-06-01" />
                 </div>
                 <div class="flex justify-between border-b pb-3 pt-3">
-                    <span class="font-semibold text-gray-400">User ID:</span>
+                    <span class="font-semibold text-gray-400">Expense ID:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
                 <div class="flex justify-between border-b pb-3 pt-3">
-                    <span class="font-semibold text-gray-400">Time of Payment:</span>
+                    <span class="font-semibold text-gray-400">Amount:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="12:30 PM" />
                 </div>
                 <div class="flex justify-between border-b pb-3 pt-3">
-                    <span class="font-semibold text-gray-400">Expense Type:</span>
+                    <span class="font-semibold text-gray-400">Category:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Food" />
                 </div>
                 <div class="flex justify-between">
-                    <span class="font-semibold text-gray-400 pb-3 pt-3">Amount:</span>
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Description:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
                 </div>
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Description:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Type:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Goal ID:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Subscription ID:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
+
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Group ID:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
+                <div class="flex justify-between">
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Status:</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="50.00" />
+                </div>
+
                 <div class="flex justify-start space-x-4 mt-4">
                     <button onclick="toggleView(1)" class="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600 edit-button">Edit</button>
                     <button onclick="saveChanges(1)" class="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600 save-changes-button hidden text-xl font-bold">Save Changes</button>
@@ -56,6 +93,8 @@
                 </div>
             </div>
         </div>
+
+        
 
         <!-- Table of Expenses for Larger Devices -->
         <table class="hidden md:table w-full border border-gray-300 shadow-lg rounded-lg overflow-hidden">
@@ -76,7 +115,6 @@
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'time_of_payment', 1)">12:30 PM</td>
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'expense_type', 1)">Food</td>
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'amount', 1)">50.00</td>
-                    
                     <td class="border px-4 py-2">
                         <button onclick="deleteExpense(1)" class="text-red-600 hover:text-red-800 text-xl font-bold">Delete</button>
                     </td>
