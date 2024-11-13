@@ -60,7 +60,7 @@
                 </div>
                 <button
                     type="submit"
-                    class="w-full py-3 mt-4 text-xl font-semibold textGray btGreen rounded-3xl hover:bgGreen">Next</button>
+                    class="w-full py-3 mt-4 text-xl font-semibold textGray btGreen rounded-3xl">Next</button>
             </div>
 
         </form>

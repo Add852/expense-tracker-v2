@@ -1,11 +1,11 @@
 <?php require('partials/head.php') ?>
 
-<main class="flex justify-center sm:justify-start text-gray-200">
+<main class="flex justify-center sm:justify-start text-base sm:text-lg text-gray-200">
     <div>
-        <div class="form-buttons space-x-1 text-lg sm:text-xl font-semibold my-4">
+        <div class="form-buttons space-x-1 text-lg sm:text-xl font-semibold my-3">
             <button
                 id="btn1"
-                class="btn px-4 py-1 rounded-3xl btGreen bg-gray-200 text-gray-700"
+                class="btn py-1 px-4 rounded-3xl btActive"
                 type="button"
                 onclick="showForm('1')"
                 disabled>
@@ -13,14 +13,14 @@
             </button>
             <button
                 id="btn2"
-                class="btn px-4 py-1 rounded-3xl btGreen hover:bg-emerald-700 hover:text-white active:scale-95"
+                class="btn py-1 px-4 rounded-3xl btGreen2"
                 type="button"
                 onclick="showForm('2')">
                 Subscription
             </button>
             <button
                 id="btn3"
-                class="btn px-4 py-1 rounded-3xl btGreen hover:bg-emerald-700 hover:text-white active:scale-95"
+                class="btn py-1 px-4 rounded-3xl btGreen2"
                 type="button"
                 onclick="showForm('3')">
                 Group
@@ -84,7 +84,7 @@
                 name="type"
                 value="basic">
             <button
-                class="px-4 py-1 text-lg sm:text-xl font-semibold btGreen rounded-3xl hover:bg-emerald-700 active:scale-95"
+                class="py-1 text-lg sm:text-xl font-semibold btGreen2 rounded-3xl"
                 type="submit">
                 Add Expense
             </button>
@@ -94,13 +94,13 @@
 <script>
     function showForm(id) {
         document.querySelectorAll('.btn').forEach(btn => {
-            btn.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-emerald-700', 'hover:text-white', 'active:scale-95');
-            btn.classList.add('hover:bg-emerald-700', 'hover:text-white', 'active:scale-95');
+            btn.classList.remove('btActive');
+            btn.classList.add('btGreen2');
             btn.disabled = false;
         });
 
-        document.getElementById('btn' + id).classList.add('bg-gray-200', 'text-gray-700');
-        document.getElementById('btn' + id).classList.remove('hover:bg-emerald-700', 'hover:text-white', 'active:scale-95');
+        document.getElementById('btn' + id).classList.add('btActive');
+        document.getElementById('btn' + id).classList.remove('btGreen2');
         document.getElementById('btn' + id).disabled = true;
 
         document.getElementById('form2').classList.add('hidden');
