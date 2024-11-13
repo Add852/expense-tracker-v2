@@ -47,7 +47,6 @@
                 - Border: rounded-3xl
                 - hover:bg-emerald-700
         */
-        /* Temporary Styles */
     </style>
 </head>
 
@@ -60,4 +59,4 @@
         <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
-        <content class="ml-12 sm:m-0 overflow-auto flex-grow">
+        <content class=" overflow-auto flex-grow pl-16 pr-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">

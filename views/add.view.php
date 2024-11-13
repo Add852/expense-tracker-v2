@@ -2,19 +2,19 @@
 
 <main>
     <div class=" form-buttons">
-        <button id="btn1" class="btn  bg-emerald-700  " type="button" onclick="showForm('2')">
+        <button id="btn1" class="btn bg-emerald-700  " type="button" onclick="showForm('1')">
             Basic
         </button>
-        <button id="btn2" class="btn btGreen" type="button" onclick="showForm('3')">
+        <button id="btn2" class="btn btGreen" type="button" onclick="showForm('2')">
             Subscription
         </button>
-        <button id="btn3" class="btn btGreen" type="button" onclick="showForm('1')">
+        <button id="btn3" class="btn btGreen" type="button" onclick="showForm('3')">
             Group
         </button>
     </div>
 
     <form id="form1">
-        <div class="grid">
+        <div class="grid max-w-16">
             <label for="amountB">Amount</label>
             <input type="number" id="amountB" name="amountB">
             <label for="categoryB">Choose a Category</label>
@@ -58,6 +58,8 @@
     </form>
     <form id="form3" class="hidden">
         <div class="grid">
+            <label for="amountG">Amount</label>
+            <input type="number" id="amountG" name="amountG">
             <label for="groups">Choose a Group</label>
             <select id="groups" name="groups">
                 <option value="" disabled selected>Select here</option>
@@ -65,8 +67,6 @@
                 <option value="option2">Group 2</option>
                 <option value="option3">Group 3</option>
             </select>
-            <label for="amountG">Amount</label>
-            <input type="number" id="amountG" name="amountG">
             <label for="categoryG">Choose a Category</label>
             <select id="categoryG" name="categoryG">
                 <option value="" disabled selected>Select here</option>
@@ -89,9 +89,10 @@
         document.querySelectorAll('.btn').forEach(button => {
             button.classList.remove('bg-emerald-700');
         });
-        document.getElementById('form1').classList.add('grid');
-        document.getElementById('form1').classList.add('grid');
-        document.getElementById('form' + id).classList.add('grid');
+        document.getElementById('form1').classList.add('hidden');
+        document.getElementById('form2').classList.add('hidden');
+        document.getElementById('form3').classList.add('hidden');
+        document.getElementById('form' + id).classList.remove('hidden');
         document.getElementById('btn' + id).classList.add('bg-emerald-700');
     }
 

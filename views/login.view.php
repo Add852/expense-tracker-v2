@@ -12,7 +12,7 @@
 
         <div class="bg-green-950 rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100">
 
-        <!-- <div class="tlGreen rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100"> -->
+            <!-- <div class="tlGreen rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100"> -->
 
             <h2 class="text-4xl font-semibold text-center textGray">Account Login</h2>
             <br>
@@ -52,7 +52,7 @@
 
             <br>
 
-            <a href="/ForgetPass.html" class="textTeal hover:underline">Forgot password</a>
+            <a href="/forgot" class="textTeal hover:underline">Forgot password</a>
 
             <br>
             <hr class="border-gray-300 my-4">

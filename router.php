@@ -10,7 +10,8 @@ $routes = [
     "/add" => "controllers/add.php",
     "/signup" => "controllers/SignUp.php",
     "/audit" => "controllers/audit.php",
-    "/login" => "controllers/login.php"
+    "/login" => "controllers/login.php",
+    "/forgot" => "controllers/forgot.php"
 ];
 
 
