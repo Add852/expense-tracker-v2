@@ -1,5 +1,6 @@
 <?php
 
+$title = 'Audit Log';
 //create database instance
 $db = new Database();
 //current user

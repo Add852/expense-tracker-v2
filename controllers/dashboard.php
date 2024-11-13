@@ -9,4 +9,6 @@ $userInfo = $db->query('select * from users where userid = ?;', [$userID])->fetc
 $expenses = $db->query('select expenses.amount, expenses.description from users join expenses on users.userID=expenses.userID where users.userID=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
 // dd($expenseLog);
 
+$title = "Hello, {$userInfo['username']}!";
+
 require('views/dashboard.view.php');

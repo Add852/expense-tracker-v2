@@ -1,8 +1,4 @@
 <?php require('partials/head.php') ?>
-<div class=" textOrange text-3xl flex justify-between pb-4">
-    <?= 'Hello, ' . $userInfo['firstName'] . '!' ?>
-    <?php require('partials/balance.php') ?>
-</div>
 <main class="flex justify-center items-center sm:justify-start">
     <div class=" text-gray-200">
         <div class="form-buttons space-x-1 text-md sm:text-xl font-semibold my-4">

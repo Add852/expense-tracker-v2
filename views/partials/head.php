@@ -58,5 +58,8 @@
     <div class="flex h-full">
         <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
+
         <!-- DITO NA YUNG PINAKACONTENT NINYO -->
         <content class=" overflow-auto flex-grow pl-16 pr-4 py-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+            <!-- Header and Balance -->
+            <?php require('header.php') ?>

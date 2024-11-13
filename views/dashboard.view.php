@@ -1,12 +1,6 @@
 <?php require('partials/head.php') ?>
 
 <main class='test h-screen bgGreen'>
-    <!-- HELLO, USER -->
-    <div class="textGray textOrange text-3xl flex justify-between pb-4">
-        <?= 'Hello, ' . $userInfo['firstName'] . '!' ?>
-        <?php require('partials/balance.php') ?>
-    </div>
-
     <!-- PANELS -->
     <div class="flex flex-col sm:flex-row gap-5">
         <!-- LEFT PANEL PANELS sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 -->
