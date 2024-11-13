@@ -1,5 +1,8 @@
 <?php
 
+
+$title = 'Sign up';
+
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $fN = $_POST['firstName'];
     $lN = $_POST['lastName'];
