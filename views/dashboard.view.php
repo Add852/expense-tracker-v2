@@ -4,7 +4,7 @@
     <!-- HELLO, USER -->
     <div class="textGray textOrange text-3xl flex justify-between pb-4">
         <?= 'Hello, ' . $userInfo['firstName'] . '!' ?>
-        <p>Balance Here</p>
+        <?php require('partials/balance.php') ?>
     </div>
 
     <!-- PANELS -->
