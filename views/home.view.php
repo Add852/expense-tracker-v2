@@ -1,4 +1,7 @@
+
+
 <?php require('partials/head.php') ?>
+
 
 <p class="text-teal-300">DITO LANDING PAGE NI KITTT</p>
 
@@ -19,7 +22,7 @@
                 <section>
                 	<div class="bg-[#1a664d] rotate-180 fill-[#03352c]" style="transform: scaleY(-1);">
                 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 99" preserveAspectRatio="none">
-	<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+	    <path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
 </svg>
                 	</div>
                 	<div class="container columns-2 inline-block bg-[#1a664d]">

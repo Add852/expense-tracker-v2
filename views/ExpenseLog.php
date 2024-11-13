@@ -22,6 +22,9 @@
                     <span class="font-semibold text-gray-400">Expense Type:</span>
                     <span class="text-gray-400">Food</span>
                 </div>
+
+
+
             </div>
 
             <!-- Full View for smaller devices, hidden in larger devices -->
@@ -73,6 +76,7 @@
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'time_of_payment', 1)">12:30 PM</td>
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'expense_type', 1)">Food</td>
                     <td class="border px-4 py-2" onclick="makeEditable(this, 'amount', 1)">50.00</td>
+                    
                     <td class="border px-4 py-2">
                         <button onclick="deleteExpense(1)" class="text-red-600 hover:text-red-800 text-xl font-bold">Delete</button>
                     </td>
