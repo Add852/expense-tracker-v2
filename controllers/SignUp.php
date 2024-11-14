@@ -1,7 +1,5 @@
 <?php
 
-// alert("test");
-
 //If nag-submit yung user sa form:
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $fN = $_POST['firstName'];

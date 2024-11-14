@@ -28,3 +28,18 @@ function alertRedirect($message, $url)
         </script>";
     exit(); //recommended every after header execution
 }
+
+function redirect($url)
+{
+    header("Location: $url");
+    exit(); //recommended every after header execution
+}
+
+//protects page from being accessed when no user is logged in
+function protectPage()
+{
+    session_start();
+    if (!isset($_SESSION['userid'])) {
+        alertRedirect("You must be logged in first!", '/login');
+    }
+}

@@ -4,13 +4,15 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $findUser = $db->query("select * from users where username = ?", [$username])->fetch(PDO::FETCH_ASSOC);
-    if (!isset($findUser['userid'])) {
+    $user = $db->query("select * from users where username = ?", [$username])->fetch(PDO::FETCH_ASSOC);
+    if (!isset($user['userid'])) {
         $errorMessage = "Username not found!";
-    } else if (!password_verify($password, $findUser['password'])) {
+    } else if (!password_verify($password, $user['password'])) {
         $errorMessage = "Incorrect password!";
     } else {
-        dd("Logged in successfully!");
+
+        $_SESSION['userid'] = $user['userid'];
+        redirect('/dashboard');
     }
 }
 

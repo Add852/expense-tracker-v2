@@ -6,6 +6,7 @@ $routes = [
     "/signup" => "controllers/SignUp.php",
     "/forgot" => "controllers/forgot.php",
     "/login" => "controllers/login.php",
+    "/logout" => "controllers/logout.php",
 
     //mga page na accessible lang kapag may nakalog-in
     "/dashboard" => "controllers/dashboard.php",

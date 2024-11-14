@@ -57,7 +57,7 @@
             <hr class="border-gray-300 my-4">
 
             <p class="text-xl text-gray-300">No account yet?
-                <a href="/SignUp.php" class="textTeal hover:underline">Sign Up</a>
+                <a href="/signup" class="textTeal hover:underline">Sign Up</a>
             </p>
 
         </div>
