@@ -9,6 +9,12 @@
 
 
 
+<?php 
+
+    //require('htdocs/Database.php');
+    // require('htdocs/functions.php');
+    // abang lang ng data
+?>
 
 <div class="container mx-auto p-4">
 
@@ -37,56 +43,57 @@
                
                 <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
                     <span class="font-semibold text-gray-400">Date Log:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/04/04" />  <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="<?php $  ?>" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">User ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Expense ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Amount:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="12:30 PM" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="12:30 PM" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Category:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="dont know yet" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="dont know yet" />
                 </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Description:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="ako langto" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="ako langto" />
                 </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Type:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" />
+                </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Goal ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="0011" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="0011" />
                 </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Subscription ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="SB0011" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="SB0011" />
                 </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Group ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="GD0011" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="GD0011" />
                 </div>
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Status:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" />        <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" />
                 </div>
 
                 <div class="flex justify-start space-x-4 mt-4">
