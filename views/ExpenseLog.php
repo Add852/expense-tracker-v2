@@ -9,6 +9,12 @@
 
 
 
+<?php 
+
+    require('htdocs/Database.php');
+    require('htdocs/functions.php');
+    // abang lang ng data
+?>
 
 <div class="container mx-auto p-4">
 
@@ -29,13 +35,15 @@
 
             </div>
 
+
+
             <!-- Full View sa details ng simplified view -->
 
             <div id="fullView-1" class="hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
                
                 <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
                     <span class="font-semibold text-gray-400">Date Log:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2023-06-01" />
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="<?php $  ?>" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
@@ -123,6 +131,10 @@
             const inputs = fullView.querySelectorAll('input');
 
             const updatedData = {
+
+                //  yung mga fields dito sa data dito eto yung mga 
+                //  updated output nagaling sa input ng user kapag nag update sila ng value ng corresponding fields
+                
                 update_id: expenseId,
                 user_id: inputs[1].value,
 
@@ -141,27 +153,28 @@
                 ExpenseStatus: inputs[11].value
 
 
+                // sa table expense fetching ng data mula sa taas
+                /* sa database tong nasa baba. pwede na ilagay dito yung php code abang sa fetch ng update data
 
-                /* pwede na ilagay dito yung php code abang sa fetch ng update data
-                
+                    // eto namang mga to sa baba ifefetch lang nila yung value nung variable sa taas.  pasahan lang sila ng data
                     sample: 
 
-                    $expenseid  = $expenseid;
-                    $userid     = $user_id;
+                    $expenseid  = expenseid;
+                    $userid     = user_id;
 
-                    $amount =  $amount;
-                    $category =  $category;
+                    $amount =  amount;
+                    $category =  category;
 
-                    $description = $description;
-                    $expensetype = $expensetype;
+                    $description = description;
+                    $expensetype = expensetype;
 
-                    $expensetime = $expensetime;
-                    $goal_id = $goal_id;
+                    $expensetime = expensetime;
+                    $goal_id = goal_id;
 
-                    $subscription = $subscription;
-                    $group_id = $group_id;
+                    $subscription = subscription;
+                    $group_id = group_id;
                 
-                    $expenseStatus = $expenseStatus;
+                    $expenseStatus = expenseStatus;
                 */
 
 
