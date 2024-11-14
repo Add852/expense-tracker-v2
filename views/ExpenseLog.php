@@ -81,11 +81,6 @@
                 </div>
 
                 <div class="flex justify-between">
-                    <span class="font-semibold text-gray-400 pb-3 pt-3">Group ID:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="GD0011" />
-                </div>
-
-                <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Status:</span>
                     <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" />
                 </div>
@@ -142,9 +137,9 @@
                 goal_id: inputs[8].value,
 
                 subscription_id: inputs[9].value,
-                group_id: inputs[10].value,
+              
 
-                ExpenseStatus: inputs[11].value
+                ExpenseStatus: inputs[10].value
 
 
                 // sa table expense fetching ng data mula sa taas
@@ -164,9 +159,6 @@
 
                     $expensetime = expensetime;
                     $goal_id = goal_id;
-
-                    $subscription = subscription;
-                    $group_id = group_id;
                 
                     $expenseStatus = expenseStatus;
                 */
