@@ -11,8 +11,8 @@
 
 <?php 
 
-    require('htdocs/Database.php');
-    require('htdocs/functions.php');
+    // require('htdocs/Database.php');
+    // require('htdocs/functions.php');
     // abang lang ng data
 ?>
 
