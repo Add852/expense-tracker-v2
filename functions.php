@@ -21,11 +21,17 @@ function isUri($value)
 
 // kumbaga directed na yung mga updates if ever man.
 
-public static function load_expensedata()
-{
+
+public class functions_inDB{
+
+    public static function load_expensedata()
+    {
 
     // get data from expense table
 
 
 
+    }
+
 }
+
