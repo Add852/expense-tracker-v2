@@ -1,5 +1,7 @@
 <?php
 
+// alert("test");
+
 //If nag-submit yung user sa form:
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $fN = $_POST['firstName'];
@@ -26,9 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     } else {
         $passwordEncrypted = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $db->query('INSERT INTO `users` (`username`, `password`, `firstName`, `lastName`, `email`, `userIcon`) VALUES (?, ?, ?, ?, ?, ?);', [$username, $passwordEncrypted, $fN, $lN, $email, $userIcon]);
-        alert("The user $username has been created. You can now log in!");
-        header("Location: /login");  //redirects to login page
-        exit(); //recommended every after header execution
+        alertRedirect("The user $username has been created. You can now log in!", '/login');
     }
 }
 

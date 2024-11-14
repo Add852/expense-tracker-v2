@@ -17,8 +17,12 @@ function isUri($value)
 }
 
 // Alert pop up dialog
-function alert($message)
+function alertRedirect($message, $url)
 {
-    echo "<script type='text/javascript'>alert('$message');</script>";
+    echo "
+        <script type='text/javascript'>
+            alert('$message');
+            window.location.href = '$url';
+        </script>";
+    exit(); //recommended every after header execution
 }
-
