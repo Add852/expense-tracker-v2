@@ -122,13 +122,19 @@
             const inputs = fullView.querySelectorAll('input');
 
             // yung inputs dito, nakabase yan sa lahat ng existing inputs 
-           // pwede sya gamitin na parang array.
+            // pwede sya gamitin na parang array.
+
+            // yung mga set id sa taas para sa inputs, gagamitin lang yun para sa printing ng outputs.
+            // since may simplified view saka full view.
+
+            // may parehas na dapat tugma sa dalawang fields yung date_log and expense_type
             
             const updatedData = {
 
                 //  yung mga fields dito sa data dito eto yung mga 
                 //  updated output nagaling sa input ng user kapag nag update sila ng value ng corresponding fields
                 
+                // yung sa left side  dito, yan yung mga value holder
                 update_id: expenseId,
                 user_id: inputs[1].value,
 
