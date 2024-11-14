@@ -7,7 +7,7 @@
 
     <!-- Ayaw opacity kapag ginamit yung tlGreen -->
 
-    <div class="tlBgGreen rounded-3xl p-8 sm:mx-4">
+    <div class="tlBgGreen rounded-3xl mt-4 p-8 sm:mx-4">
 
         <!-- <div class="tlGreen rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100"> -->
 
