@@ -58,7 +58,7 @@
 
     // Progress Bar Fill
     const progressBar = document.createElement('div');
-    progressBar.className = 'bg-blue-500 h-8 rounded-full text-center text-white';
+    progressBar.className = 'bg-[#18936E] h-8 rounded-full text-center text-white';
     progressBar.style.width = '5%';
 
     // Percentage Label
