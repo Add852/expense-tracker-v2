@@ -9,12 +9,6 @@
 
 
 
-<?php 
-
-    require '/../Database.php';
-
-    // abang lang ng data
-?>
 
 <div class="container mx-auto p-4">
 
