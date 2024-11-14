@@ -16,4 +16,9 @@ function isUri($value)
     return false;
 }
 
+// Alert pop up dialog
+function alert($message)
+{
+    echo "<script type='text/javascript'>alert('$message');</script>";
+}
 
