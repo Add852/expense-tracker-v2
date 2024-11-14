@@ -40,7 +40,12 @@
                     placeholder="Password"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
                     required>
-                <br> <br>
+                <br><br>
+
+                <!-- ERROR MESSAGE TO NAKAHIDE KAPAG WALANG ERROR -->
+                <div class="<?= isset($errorMessage) ? '' : 'hidden' ?> bg-red-400 rounded-lg text-center py-2">
+                    <?= $errorMessage ?>
+                </div>
 
                 <button
                     type="submit"

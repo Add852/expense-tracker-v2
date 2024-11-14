@@ -29,6 +29,7 @@ function alertRedirect($message, $url)
     exit(); //recommended every after header execution
 }
 
+// Redirect to desired url
 function redirect($url)
 {
     header("Location: $url");
@@ -39,6 +40,7 @@ function redirect($url)
 function protectPage()
 {
     session_start();
+    // dd($_SESSION['userid'] . " | isset? " . isset($_SESSION['userid']));
     if (!isset($_SESSION['userid'])) {
         alertRedirect("You must be logged in first!", '/login');
     }

@@ -2,7 +2,9 @@
 
 //protects the page from being accessed when no user is logged in. 
 protectPage();
-//Use $_SESSION['userid']; to get logged in user's userid
+// Use $_SESSION['userid']; to get logged in user's userid
+
+// dd($_SESSION['userid'] . " | isset? " . isset($_SESSION['userid']));
 
 //current user
 $userID = $_SESSION['userid'];

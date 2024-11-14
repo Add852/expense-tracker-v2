@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     } else if (!password_verify($password, $user['password'])) {
         $errorMessage = "Incorrect password!";
     } else {
-
+        session_start();
         $_SESSION['userid'] = $user['userid'];
         redirect('/dashboard');
     }
