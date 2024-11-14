@@ -43,7 +43,7 @@
                
                 <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
                     <span class="font-semibold text-gray-400">Date Log:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="<?php $  ?>" />
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/05/04" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
