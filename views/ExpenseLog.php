@@ -11,7 +11,7 @@
 
 <?php 
 
-    require('htdocs/Database.php');
+    require('../Database.php');
 
     // abang lang ng data
 ?>
