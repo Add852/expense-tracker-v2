@@ -16,7 +16,7 @@
     </div>
 
     <script>
-function addGoal() {
+    function addGoal() {
     // Main container div
     const mainDiv = document.createElement('div');
     mainDiv.className = 'p-6 rounded-3xl border-gray border-2 space-y-4 mx-12 my-4';
@@ -90,6 +90,5 @@ function addGoal() {
 }
     </script>
 </main>
-
 
 <?php require('partials/footer.php') ?>
