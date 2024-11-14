@@ -36,7 +36,37 @@ class Database
             echo "Error: " . $e->getMessage();
         }
     }
+
+
+
+
+// gumamit ako ng static function para dina need irenew 
+//yung function sa twing iko call mo.
+
+// kumbaga directed na yung mga updates if ever man.
+
+/*
+    public class functions_inDB{
+        
+        public static function load_expensedata()
+        {
+            // get data from expense table
+        }
+
+    }
+
+
+*/
+
+
+
+
+
+
 }
 
 //create database instance
 $db = new Database();
+
+
+
