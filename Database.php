@@ -45,7 +45,7 @@ class Database
 
 // kumbaga directed na yung mga updates if ever man.
 
-
+/*
     public class functions_inDB{
         
         public static function load_expensedata()
@@ -56,7 +56,7 @@ class Database
     }
 
 
-
+*/
 
 
 
