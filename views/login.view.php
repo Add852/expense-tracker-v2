@@ -1,7 +1,6 @@
 <?php require('partials/headNoSide.php') ?>
 
-<div class="bgGreen min-h-screen">
-
+<div class="min-h-screen">
     <div class="grid sm:grid-cols-1 md:grid-cols-2 h-screen text-center items-center">
 
         <div class="hidden md:inline">
@@ -19,14 +18,14 @@
 
             <hr class="border-gray-300 my-4">
 
-            <form method="post" action="" class="space-y-1">
+            <form method="POST" action="/login" class="space-y-1">
 
                 <label for="user"></label>
                 <br>
 
                 <input
                     type="username"
-                    id="loginusername"
+                    name="username"
                     placeholder="Username"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
                     required>
@@ -37,7 +36,7 @@
 
                 <input
                     type="password"
-                    id="loginpassword"
+                    name="password"
                     placeholder="Password"
                     class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
                     required>
@@ -64,7 +63,6 @@
         </div>
 
     </div>
-
 </div>
 
 <?php require('partials/footer.php') ?>
