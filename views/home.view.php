@@ -1,7 +1,7 @@
 <?php require('partials/headNoSide.php') ?>
 
 
-<p class="text-teal-300">DITO LANDING PAGE NI KITTT</p>
+<a href="/dashboard" class="text-teal-300 hover:underline">TEMPORARY DASHBOARD HYPERLINK HERE</a>
 
 <body style="background-color: #03352c;">
     <center>
