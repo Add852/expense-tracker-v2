@@ -19,12 +19,12 @@
                
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Date Log:</span>
-                    <span class="text-gray-600">2023-06-01</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/05/04" />
                 </div>
 
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
-                    <span class="text-gray-400">Food</span>
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" />
                 </div>
 
             </div>
@@ -33,7 +33,7 @@
 
             <!-- Full View sa details ng simplified view -->
 
-            <div id="fullView-1" class="hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
+            <div id="fullView-1" class= " md:hidden lg:hidden xl:hidden hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
                
                 <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
                     <span class="font-semibold text-gray-400">Date Log:</span>
