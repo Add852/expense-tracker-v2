@@ -152,6 +152,23 @@
 
                 ExpenseStatus: inputs[10].value
 
+                // to be edited, update ko bukas tulog nako.
+
+                document.getelementbyid("date_log").value = inputs[1].value;
+                document.getelementbyid("date_log").value = inputs[1].value;
+
+                document.getelementbyid("date_log").value = inputs[1].value;
+                document.getelementbyid("date_log").value = inputs[1].value;     
+
+                document.getelementbyid("date_log").value = inputs[1].value;
+                document.getelementbyid("date_log").value = inputs[1].value;
+
+                document.getelementbyid("date_log").value = inputs[1].value;
+                document.getelementbyid("date_log").value = inputs[1].value;   
+                
+                document.getelementbyid("date_log").value = inputs[1].value;
+
+                document.getelementbyid("date_log").value = inputs[1].value;   
 
                 // sa table expense fetching ng data mula sa taas
                 /* sa database tong nasa baba. pwede na ilagay dito yung php code abang sa fetch ng update data
