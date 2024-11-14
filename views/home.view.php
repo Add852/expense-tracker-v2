@@ -1,13 +1,12 @@
-
-
-<?php require('partials/head.php') ?>
+<?php require('partials/headNoSide.php') ?>
 
 
 <p class="text-teal-300">DITO LANDING PAGE NI KITTT</p>
 
-<body style="background-color: #03352c;"><center>
-<div class="container mx-auto p-2.5" id="page">
-    <div class="container p-2.5" id="content">
+<body style="background-color: #03352c;">
+    <center>
+        <div class="container mx-auto p-2.5" id="page">
+            <div class="container p-2.5" id="content">
                 <section class="text-center">
                     <div class="text-4xl">
                         <h1 class="text-gray-300 p-5 font-bold">Lorem ipsum dolor sit amet</h1>
@@ -20,24 +19,25 @@
                     </div>
                 </section>
                 <section>
-                	<div class="bg-[#1a664d] rotate-180 fill-[#03352c]" style="transform: scaleY(-1);">
-                		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 99" preserveAspectRatio="none">
-	    <path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
-</svg>
-                	</div>
-                	<div class="container columns-2 inline-block bg-[#1a664d]">
-                		<div>
-                			<h1>Hello</h1>
-                		</div>
-                	</div>
-                	<div class="bg-[#1a664d] fill-[#03352c]" style="transform: scaleX(-1);">
-                		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 99" preserveAspectRatio="none">
-	<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
-</svg>
-                	</div>
+                    <div class="bg-[#1a664d] rotate-180 fill-[#03352c]" style="transform: scaleY(-1);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 99" preserveAspectRatio="none">
+                            <path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+                        </svg>
+                    </div>
+                    <div class="container columns-2 inline-block bg-[#1a664d]">
+                        <div>
+                            <h1>Hello</h1>
+                        </div>
+                    </div>
+                    <div class="bg-[#1a664d] fill-[#03352c]" style="transform: scaleX(-1);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 99" preserveAspectRatio="none">
+                            <path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+                        </svg>
+                    </div>
                 </section>
-    </div>
-</div></center>
+            </div>
+        </div>
+    </center>
 
 </body>
 

@@ -20,6 +20,16 @@ MISCELLANEOUS
     background-color: #072822;
 }
 
+.tlBgGreen {
+    background-color: #03352c;
+}
+
+@media (min-width: 640px) {
+    .tlBgGreen {
+        background-color: #072822;
+    }
+}
+
 /* for buttons in tlGreen */
 .btGreen {
     background-color: #1a664d;
@@ -51,7 +61,7 @@ MISCELLANEOUS
 }
 
 .btActive {
-    background-color: #e5e7eb;
+    background-color: #d1d5db;
     color: #374151;
 }
 

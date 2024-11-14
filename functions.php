@@ -1,5 +1,6 @@
 <?php
 
+//for testing purposes
 function dd($value)
 {
     echo "<pre>";
@@ -8,6 +9,7 @@ function dd($value)
     die();
 }
 
+//checks if current url is same as $value
 function isUri($value)
 {
     if ($_SERVER['REQUEST_URI'] === $value) {
@@ -16,9 +18,30 @@ function isUri($value)
     return false;
 }
 
-// Alert pop up dialog
-function alert($message)
+// Alert pop up dialog then redirect to desired url
+function alertRedirect($message, $url)
 {
-    echo "<script type='text/javascript'>alert('$message');</script>";
+    echo "
+        <script type='text/javascript'>
+            alert('$message');
+            window.location.href = '$url';
+        </script>";
+    exit(); //recommended every after header execution
 }
 
+// Redirect to desired url
+function redirect($url)
+{
+    header("Location: $url");
+    exit(); //recommended every after header execution
+}
+
+//protects page from being accessed when no user is logged in
+function protectPage()
+{
+    session_start();
+    // dd($_SESSION['userid'] . " | isset? " . isset($_SESSION['userid']));
+    if (!isset($_SESSION['userid'])) {
+        alertRedirect("You must be logged in first!", '/login');
+    }
+}
