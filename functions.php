@@ -1,5 +1,6 @@
 <?php
 
+//for testing purposes
 function dd($value)
 {
     echo "<pre>";
@@ -8,6 +9,7 @@ function dd($value)
     die();
 }
 
+//checks if current url is same as $value
 function isUri($value)
 {
     if ($_SERVER['REQUEST_URI'] === $value) {
@@ -16,7 +18,7 @@ function isUri($value)
     return false;
 }
 
-// Alert pop up dialog
+// Alert pop up dialog then redirect to desired url
 function alertRedirect($message, $url)
 {
     echo "
