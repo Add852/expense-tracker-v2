@@ -86,7 +86,7 @@
 
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Status:</span>
-                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" /> <!-- abang php variables sa values-->
+                    <input type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" />        <!-- abang php variables sa values-->
                 </div>
 
                 <div class="flex justify-start space-x-4 mt-4">
