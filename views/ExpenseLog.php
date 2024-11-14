@@ -11,7 +11,7 @@
 
 <?php 
 
-    require '../Database.php';
+    require '/../Database.php';
 
     // abang lang ng data
 ?>
