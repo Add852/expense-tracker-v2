@@ -148,8 +148,8 @@
                 group_id: inputs[9].value       
 
                 
-                document.getelementbyId("smexpense_time").innerText  = updatedData.ExpenseTime ;
-                document.getelementbyId("smexpense_type").innerText  = updatedData.ExpenseType ;
+                document.getelementbyId("smexpense_time").innerText  = ExpenseTime ;
+                document.getelementbyId("smexpense_type").innerText  = ExpenseType ;
             
             };
 
