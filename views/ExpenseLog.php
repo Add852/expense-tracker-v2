@@ -17,12 +17,12 @@
                
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Expense Time:</span>
-                    <span id= "expense_time" class="font-semibold text-gray-400">Date Log:</span>
+                    <span id= "smexpense_time" class="font-semibold text-gray-400"></span>
                 </div>
 
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
-                    <span id= "expense_type" class="font-semibold text-gray-400">Subscription</span>
+                    <span id= "smexpense_type" class="font-semibold text-gray-400">Subscription</span>
                 </div>
 
             </div>
@@ -142,9 +142,9 @@
                 group_id: inputs[9].value       
             };
 
-            
-            document.getelementbyId("expense_type").value = "inputs[5].value";
-            document.getelementbyId("expense_time").value = "inputs[6].value";
+
+            document.getelementbyId("smexpense_type").value = document.getelementbyId("expense_type").value;
+            document.getelementbyId("smexpense_time").value =  document.getelementbyId("expense_time").value;
             
 
             alert("Updated data: " + JSON.stringify(updatedData));
