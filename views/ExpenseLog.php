@@ -17,12 +17,12 @@
                
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Expense Time:</span>
-                    <span id= "smexpense_time" class="font-semibold text-gray-400"></span>
+                    <label id= "smexpense_time" class="font-semibold text-gray-400"></label>
                 </div>
 
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
-                    <span id= "smexpense_type" class="font-semibold text-gray-400">Subscription</span>
+                    <label id= "smexpense_type" class="font-semibold text-gray-400">Subscription</label>
                 </div>
 
             </div>
@@ -141,7 +141,6 @@
                 subscription_id: inputs[8].value,
                 group_id: inputs[9].value       
             };
-
 
 
             document.getelementbyId("smexpense_time").innerHTML  = updatedData.ExpenseTime ;
