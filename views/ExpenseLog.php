@@ -16,13 +16,13 @@
             <div id="simplifiedView-1" class="block max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden " onclick="toggleView(1)">
                
                 <div class="flex justify-between border-b pb-3">
-                    <span class="font-semibold text-gray-400">Date Log:</span>
-                    <input id="date_log" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/05/04" />
+                    <span class="font-semibold text-gray-400">Expense Time:</span>
+                    <span id= "expense_time" class="font-semibold text-gray-400">Date Log:</span>
                 </div>
 
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
-                    <input id="expense_type"  type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" />
+                    <span id= "expense_type" class="font-semibold text-gray-400">Subscription</span>
                 </div>
 
             </div>
@@ -35,9 +35,11 @@
 
             <div id="fullView-1" class= " md:hidden lg:hidden xl:hidden hidden max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
                
-                <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
-                    <span class="font-semibold text-gray-400">Date Log:</span>
-                    <input id="date_log" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/05/04" />
+
+                
+                <div class="flex justify-between border-b pb-3 pt-3">
+                    <span class="font-semibold text-gray-400">Expense ID:</span>
+                    <input id="expense_id" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
@@ -45,10 +47,6 @@
                     <input id="user_id" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
                 </div>
 
-                <div class="flex justify-between border-b pb-3 pt-3">
-                    <span class="font-semibold text-gray-400">Expense ID:</span>
-                    <input id="expense_id" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="1" />
-                </div>
 
                 <div class="flex justify-between border-b pb-3 pt-3">
                     <span class="font-semibold text-gray-400">Amount:</span>
@@ -60,14 +58,22 @@
                     <input id="category" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="dont know yet" />
                 </div>
 
+
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Description:</span>
                     <input id="description" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="ako langto" />
                 </div>
 
+
                 <div class="flex justify-between">
                     <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Type:</span>
                     <input id="expense_type" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Subscription" />
+                </div>
+
+
+                <div class="flex justify-between border-b pb-3 pt-3 date-log-area">
+                    <span class="font-semibold text-gray-400">Expense Time</span>
+                    <input id="expense_time" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="2022/05/04" />
                 </div>
 
                 <div class="flex justify-between">
@@ -81,9 +87,11 @@
                 </div>
 
                 <div class="flex justify-between">
-                    <span class="font-semibold text-gray-400 pb-3 pt-3">Expense Status:</span>
-                    <input id="expense_status" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="Magastos" />
+                    <span class="font-semibold text-gray-400 pb-3 pt-3">Group ID:</span>
+                    <input id="group_id" type="text" class="text-gray-400 bg-transparent border-b border-gray-300" value="0011" />
                 </div>
+
+
 
                 <div class="flex justify-start space-x-4 mt-4">
                     <button onclick="toggleView(1)" class="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600 edit-button">Edit</button>
@@ -95,6 +103,8 @@
     </div>
 
 
+
+    
 
 
 
@@ -118,84 +128,29 @@
         function saveChanges(expenseId) {
             const fullView = document.getElementById('fullView-' + expenseId);
             const inputs = fullView.querySelectorAll('input');
-
-            // yung inputs dito, nakabase yan sa lahat ng existing inputs 
-            // pwede sya gamitin na parang array.
-
-            // yung mga set id sa taas para sa inputs, gagamitin lang yun para sa printing ng outputs.
-            // since may simplified view saka full view.
-
-            // may parehas na dapat tugma sa dalawang fields yung date_log and expense_type
             
             const updatedData = {
-
-                //  yung mga fields dito sa data dito eto yung mga 
-                //  updated output nagaling sa input ng user kapag nag update sila ng value ng corresponding fields
-                
-                // yung sa left side  dito, yan yung mga value holder
-                update_id: expenseId,
-                user_id: inputs[1].value,
-
-                amount: inputs[3].value,
-                category: inputs[4].value,
-
-                description: inputs[5].value,
-                ExpenseType: inputs[6].value,
-
-                ExpenseTime: inputs[7].value,
-                goal_id: inputs[8].value,
-
-                subscription_id: inputs[9].value,
-              
-
-                ExpenseStatus: inputs[10].value
-
-                // to be edited, update ko bukas tulog nako.
-
-                document.getelementbyid("date_log").value = inputs[1].value;
-                document.getelementbyid("date_log").value = inputs[1].value;
-
-                document.getelementbyid("date_log").value = inputs[1].value;
-                document.getelementbyid("date_log").value = inputs[1].value;     
-
-                document.getelementbyid("date_log").value = inputs[1].value;
-                document.getelementbyid("date_log").value = inputs[1].value;
-
-                document.getelementbyid("date_log").value = inputs[1].value;
-                document.getelementbyid("date_log").value = inputs[1].value;   
-                
-                document.getelementbyid("date_log").value = inputs[1].value;
-
-                document.getelementbyid("date_log").value = inputs[1].value;   
-
-                // sa table expense fetching ng data mula sa taas
-                /* sa database tong nasa baba. pwede na ilagay dito yung php code abang sa fetch ng update data
-
-                    // eto namang mga to sa baba ifefetch lang nila yung value nung variable sa taas.  pasahan lang sila ng data
-                    sample: 
-
-                    $expense_id  = expenseid;
-                    $user_id     = user_id;
-
-                    $amount =  amount;
-                    $category =  category;
-
-                    $description = description;
-                    $expense_type = expensetype;
-
-                    $expense_time = expensetime;
-                    $goal_id = goal_id;
-                
-                    $expenseStatus = expenseStatus;
-                */
-
-
+                update_id: expenseId,          
+                user_id: inputs[1].value,       
+                amount: inputs[2].value,        
+                category: inputs[3].value,      
+                description: inputs[4].value,   
+                ExpenseType: inputs[5].value,   
+                ExpenseTime: inputs[6].value,   
+                goal_id: inputs[7].value,       
+                subscription_id: inputs[8].value,
+                group_id: inputs[9].value       
             };
 
-        
+            
+            document.getelementbyId("expense_type").value = "inputs[5].value";
+            document.getelementbyId("expense_time").value = "inputs[6].value";
+            
+
             alert("Updated data: " + JSON.stringify(updatedData));
         }
 
+        
         // idedelete neto yung data sa cell 
 
         // pwede nadin i abang dito yung php code naten- delete by expenseid 
