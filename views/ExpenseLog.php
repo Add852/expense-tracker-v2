@@ -17,12 +17,12 @@
                
                 <div class="flex justify-between border-b pb-3">
                     <span class="font-semibold text-gray-400">Expense Time:</span>
-                    <label id= "smexpense_time" class="font-semibold text-gray-400"></label>
+                    <span id= "smexpense_time" class="font-semibold text-gray-400"></span>
                 </div>
 
                 <div class="flex justify-between pt-3">
                     <span class="font-semibold text-gray-400">Expense Type:</span>
-                    <label id= "smexpense_type" class="font-semibold text-gray-400">Subscription</label>
+                    <span id= "smexpense_type" class="font-semibold text-gray-400">Subscription</span>
                 </div>
 
             </div>
