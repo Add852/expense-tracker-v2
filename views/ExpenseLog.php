@@ -145,8 +145,8 @@
 
             alert(document.getelementbyId("expense_type").value);
 
-            document.getelementbyId("smexpense_type").value = document.getelementbyId("expense_type").value;
-            document.getelementbyId("smexpense_time").value =  document.getelementbyId("expense_time").value;
+            document.getelementbyId("smexpense_type").innerText  = inputs[5].value ;
+            document.getelementbyId("smexpense_time").innerText  = inputs[6].value ;
             
 
             alert("Updated data: " + JSON.stringify(updatedData));
