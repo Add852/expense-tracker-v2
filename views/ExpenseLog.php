@@ -155,7 +155,9 @@
                 expType = updatedData.ExpenseType;
                 
 
-
+                // this supposedly ifefetch nito yung data sa object
+                // para kapag bumalik sa simplified view 
+                // kung ano yung changes sa full view ganun din dapat sa simplified view/
 
                 document.getelementbyId("smexpense_time").innerText  = expTime ;
                 document.getelementbyId("smexpense_type").innerText  = expType ;
