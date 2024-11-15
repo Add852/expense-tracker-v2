@@ -143,10 +143,9 @@
             };
 
 
-            alert(document.getelementbyId("expense_type").value);
 
-            document.getelementbyId("smexpense_time").innerText  = inputs[5].value ;
-            document.getelementbyId("smexpense_type").innerText  = inputs[6].value ;
+            document.getelementbyId("smexpense_time").innerText  = "aasdasd";
+            document.getelementbyId("smexpense_type").innerText  = "aasdasd" ;
             
 
             alert("Updated data: " + JSON.stringify(updatedData));
