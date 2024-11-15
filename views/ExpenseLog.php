@@ -134,8 +134,6 @@
             
             const updatedData = {
 
-
-
                 update_id: expenseId,          
                 user_id: inputs[1].value,       
                 amount: inputs[2].value,        
@@ -147,11 +145,23 @@
                 subscription_id: inputs[8].value,
                 group_id: inputs[9].value       
 
-                
-                document.getelementbyId("smexpense_time").innerText  = ExpenseTime ;
-                document.getelementbyId("smexpense_type").innerText  = ExpenseType ;
-            
             };
+
+                var expTime, expType;
+
+            
+
+                expTime = updatedData.ExpenseTime;
+                expType = updatedData.ExpenseType;
+                
+
+
+
+                document.getelementbyId("smexpense_time").innerText  = expTime ;
+                document.getelementbyId("smexpense_type").innerText  = expType ;
+            
+
+
 
 
 
