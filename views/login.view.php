@@ -7,7 +7,7 @@
 
     <!-- Ayaw opacity kapag ginamit yung tlGreen -->
 
-    <div class="tlBgGreen rounded-3xl mt-4 p-8 sm:mx-4">
+    <div class="tlBgGreen rounded-3xl mt-8 p-8 sm:mx-4">
 
         <!-- <div class="tlGreen rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100"> -->
 
@@ -25,7 +25,7 @@
                 type="username"
                 name="username"
                 placeholder="Username"
-                class="tlGreen w-full p-3 border border-gray-400 textGray rounded-lg focus:outline-none"
+                class="bg-transparent w-full p-3 border border-gray-400 textGray rounded-lg focus:outline-none"
                 required>
             <br>
 
@@ -36,7 +36,7 @@
                 type="password"
                 name="password"
                 placeholder="Password"
-                class="w-full p-3 border border-gray-400 textGray rounded-lg focus:outline-none"
+                class="bg-transparent w-full p-3 border border-gray-400 textGray rounded-lg focus:outline-none"
                 required>
             <br><br>
 

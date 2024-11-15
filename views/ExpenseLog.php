@@ -11,8 +11,6 @@
 
 
 <div class="container mx-auto p-4">
-
-
         <div>
             
             <div id="simplifiedView-1" class="block max-w-md mx-auto bg-white shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden " onclick="toggleView(1)">

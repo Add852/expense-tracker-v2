@@ -7,6 +7,7 @@
     <title>Expense Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.4.0/dist/forms.min.js"></script>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
