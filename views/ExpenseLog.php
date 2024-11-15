@@ -144,8 +144,8 @@
 
 
 
-            document.getelementbyId("smexpense_time").innerText  = updatedData.ExpenseTime ;
-            document.getelementbyId("smexpense_type").innerText  = updatedData.ExpenseType ;
+            document.getelementbyId("smexpense_time").innerHTML  = updatedData.ExpenseTime ;
+            document.getelementbyId("smexpense_type").innerHTML  = updatedData.ExpenseType ;
             
 
             alert("Updated data: " + JSON.stringify(updatedData));
