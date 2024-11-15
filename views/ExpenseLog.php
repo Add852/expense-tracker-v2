@@ -97,6 +97,9 @@
                     <button onclick="toggleView(1)" class="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600 edit-button">Edit</button>
                     <button onclick="saveChanges(1)" class="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600 save-changes-button hidden text-xl font-bold">Save Changes</button>
                     <button onclick="deleteExpense(1)" class="bg-red-500 text-white px-4 py-1 rounded-lg hover:bg-red-600 text-xl font-bold">Delete</button>
+                    
+                    <!--yung value na nakain-dicate dito is yung sample expenseid since wala panaman 1 muna nilagay -->
+                    <!--minatch komuna sa value ng expenseid naten  -->
                 </div>
             </div>
         </div>
@@ -130,6 +133,9 @@
             const inputs = fullView.querySelectorAll('input');
             
             const updatedData = {
+
+
+
                 update_id: expenseId,          
                 user_id: inputs[1].value,       
                 amount: inputs[2].value,        
@@ -140,12 +146,15 @@
                 goal_id: inputs[7].value,       
                 subscription_id: inputs[8].value,
                 group_id: inputs[9].value       
+
+                
+                document.getelementbyId("smexpense_time").innerText  = updatedData.ExpenseTime ;
+                document.getelementbyId("smexpense_type").innerText  = updatedData.ExpenseType ;
+            
             };
 
 
-            document.getelementbyId("smexpense_time").innerText  = updatedData.ExpenseTime ;
-            document.getelementbyId("smexpense_type").innerText  = updatedData.ExpenseType ;
-            
+
 
             alert("Updated data: " + JSON.stringify(updatedData));
         }
