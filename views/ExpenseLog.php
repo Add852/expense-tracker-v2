@@ -143,6 +143,8 @@
             };
 
 
+            alert(document.getelementbyId("expense_type").value);
+
             document.getelementbyId("smexpense_type").value = document.getelementbyId("expense_type").value;
             document.getelementbyId("smexpense_time").value =  document.getelementbyId("expense_time").value;
             
