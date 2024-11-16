@@ -26,7 +26,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
 
         header("Location: {$_SERVER['REQUEST_URI']}");
         exit;
-
     }
+    
+    else if ($_POST['type'] === 'sub') {
+        
+        $userID = $_SESSION['userid'];
+        $paymentDateTime = $_POST['datetime'];
+        $period = $_POST['period'];
+        $amount = $_POST['amount'];
+        $category = $_POST['category'];
+        $description = $_POST['desc'];
+
+        $sql = "INSERT INTO subscriptions (userID, paymentDateTime, period, amount, category, description)
+        VALUES (:userID, :paymentDateTime, :period, :amount, :category, :description)";
+
+        $params = [
+            ':userID' => $userID,
+            ':paymentDateTime' => $paymentDateTime,
+            ':period' => $period,
+            ':amount' => $amount,
+            ':category' => $category,
+            ':description' => $description,
+        ];
+
+        $db->query($sql, $params);
+
+        header("Location: {$_SERVER['REQUEST_URI']}");
+        exit;
+    }
+
 }
+
+
 require('views/add.view.php');
