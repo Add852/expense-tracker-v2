@@ -111,7 +111,7 @@
 
 
     <!-- Full View sa Large Devices -->
-    <div id="fullViewLarge-1" class="hidden md:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
+    <div id="fullViewLarge-1" class="hidden sm:hidden  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
 
         <div class="flex justify-between border-b pb-3 pt-3">
             <span class="font-semibold text-gray-300">Expense ID:</span>
