@@ -42,10 +42,10 @@
                         name="period"
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none hidden">
                         <option value="" disabled selected>Subscription Plan</option>
-                        <option value="day">Daily</option>
-                        <option value="week">Weekly</option>
-                        <option value="month">Monthly</option>
-                        <option value="year">Yearly</option>
+                        <option value="1">Daily</option>
+                        <option value="7">Weekly</option>
+                        <option value="30">Monthly</option>
+                        <option value="365">Yearly</option>
                     </select>
                     <select
                         id="form3"

@@ -5,3 +5,7 @@ add closing tags in php
 insert all tailwind classess in tailwind.css
 
 recent transactions displays the oldest to newest transaction. must change?
+
+subscription.php for adding subscription expense
+
+pwede na lagyan ng list of subscriptions ung dashboard view
