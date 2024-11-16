@@ -70,7 +70,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Amount:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="amount" value="12:30 PM" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="amount" value="$20" />
             </div>
 
 
