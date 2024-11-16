@@ -3,35 +3,33 @@
         <div class="flex justify-center text-base sm:text-lg text-gray-300 tlGreen p-8 rounded-3xl">
             <div>
                 <h2 class="text-4xl font-semibold text-center textGray">Add Expense</h2>
-
                 <hr class="my-4 border-gray-300" />
-
                 <div class="form-buttons space-x-1 text-lg sm:text-xl font-semibold my-8">
                     <button
                         id="btn1"
                         class="btn py-1 px-4 rounded-3xl btActive"
                         type="button"
-                        onclick="showForm('1')"
+                        onclick="showForm('1', 'basic')"
                         disabled>
                         Basic
                     </button>
                     <button
                         id="btn2"
-                        class="btn py-1 px-4 rounded-3xl btGreen2"
+                        class="btn py-1 px-4 rounded-3xl btGreen"
                         type="button"
-                        onclick="showForm('2')">
+                        onclick="showForm('2', 'sub')">
                         Subscription
                     </button>
                     <button
                         id="btn3"
-                        class="btn py-1 px-4 rounded-3xl btGreen2"
+                        class="btn py-1 px-4 rounded-3xl btGreen"
                         type="button"
-                        onclick="showForm('3')">
+                        onclick="showForm('3', 'group')">
                         Group
                     </button>
                 </div>
 
-                <form class="flex flex-col text-base gap-5">
+                <form method="POST" class="flex flex-col text-base gap-5">
                     <input
                         type="number"
                         id="amount"
@@ -42,22 +40,21 @@
                     <select
                         id="form2"
                         name="period"
-                        required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none hidden">
                         <option value="" disabled selected>Subscription Plan</option>
-                        <option value="option1">Weekly</option>
-                        <option value="option2">Monthly</option>
-                        <option value="option3">Yearly</option>
+                        <option value="day">Daily</option>
+                        <option value="week">Weekly</option>
+                        <option value="month">Monthly</option>
+                        <option value="year">Yearly</option>
                     </select>
                     <select
                         id="form3"
                         name="group"
-                        required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none hidden">
-                        <option value="" disabled selected>Group</option>
-                        <option value="option1">Group 1</option>
+                        <option value="" disabled selected>No Groups Yet</option>
+                        <!-- <option value="option1">Group 1</option>
                         <option value="option2">Group 2</option>
-                        <option value="option3">Group 3</option>
+                        <option value="option3">Group 3</option> -->
                     </select>
                     <select
                         id="category"
@@ -65,15 +62,22 @@
                         required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none">
                         <option value="" selected disabled>Category</option>
-                        <option value="option1">Slavery</option>
-                        <option value="option2">Food</option>
-                        <option value="option3">Travel</option>
+                        <option value="Food">Food</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Personal Care">Personal Care</option>
+                        <option value="Health & Wellness">Health & Wellness</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
                     </select>
                     <input
                         type="text"
                         id="desc"
                         name="desc"
                         placeholder="Description"
+                        minlength="1"
+                        maxlength="50"
                         required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none">
                     <input
@@ -89,7 +93,8 @@
                         value="basic">
                     <button
                         class="py-1 text-lg sm:text-xl font-semibold btGreen2 rounded-3xl"
-                        type="submit">
+                        type="submit"
+                        name="addExpense">
                         Add Expense
                     </button>
                 </form>
@@ -118,19 +123,26 @@
         }
     });
 
-    function showForm(id) {
+    function showForm(id, type) {
         document.querySelectorAll('.btn').forEach(btn => {
             btn.classList.remove('btActive');
-            btn.classList.add('btGreen2');
+            btn.classList.add('btGreen');
             btn.disabled = false;
         });
 
         document.getElementById('btn' + id).classList.add('btActive');
-        document.getElementById('btn' + id).classList.remove('btGreen2');
+        document.getElementById('btn' + id).classList.remove('btGreen');
         document.getElementById('btn' + id).disabled = true;
+
 
         document.getElementById('form2').classList.add('hidden');
         document.getElementById('form3').classList.add('hidden');
         document.getElementById('form' + id)?.classList.remove('hidden');
+
+        document.getElementById('form2').removeAttribute('required');
+        document.getElementById('form3').removeAttribute('required');
+        document.getElementById('form' + id)?.setAttribute('required', 'true');
+
+        document.getElementById('type').value = type;
     }
 </script>

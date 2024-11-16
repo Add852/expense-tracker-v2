@@ -1,0 +1,7 @@
+add __DIR__ in routers
+
+add closing tags in php
+
+insert all tailwind classess in tailwind.css
+
+recent transactions displays the oldest to newest transaction. must change?

@@ -1,0 +1,14 @@
+// use two conditions  if add expense is in your page
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense']))
+
+// use another name if add expense is in your page
+used form names in add expense {
+    amount
+    period
+    group
+    category
+    desc
+    datetime
+    type
+    addExpense
+}
