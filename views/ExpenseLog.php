@@ -83,27 +83,39 @@
 
     <!-- Simplified View sa Larger Devices -->
 
-    <div id="largeSimplifiedView" class="hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer" onclick="toggleLargeView(1)">
+        <div id="largeSimplifiedView" class="hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer" onclick="toggleLargeView(1)">
+           
+    
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Expense ID</span>
                 <span id="large_expense_id" class="font-semibold text-gray-300">1</span>
             </div>
+
+
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Description</span>
                 <span id="large_description" class="font-semibold text-gray-300">Sample description</span>
             </div>
+
+
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Expense Time</span>
                 <span id="large_expense_time" class="font-semibold text-gray-300">2022/05/04</span>
             </div>
+
+
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Expense Type</span>
                 <span id="large_expense_type" class="font-semibold text-gray-300">Subscription</span>
             </div>
+
+
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Amount</span>
                 <span id="large_amount" class="font-semibold text-gray-300">00.00</span>
             </div>
+
+
         </div>
 
 
@@ -111,7 +123,7 @@
 
 
     <!-- Full View sa Large Devices -->
-    <div id="fullViewLarge" class="hidden sm:hidden  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
+    <div id="fullViewLarge-1" class="hidden sm:hidden  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
 
         <div class="flex justify-between border-b pb-3 pt-3">
             <span class="font-semibold text-gray-300">Expense ID:</span>
@@ -164,9 +176,12 @@
         </div>
 
         <div class="flex justify-start space-x-4 mt-4">
+
             <button onclick="saveChangesLarge(1)" class="bg-blue-500 text-gray-300 px-4 py-1 rounded-lg hover:bg-blue-600">Save Changes</button>
             <button onclick="deleteExpense(1)" class="bg-red-500 text-gray-300 px-4 py-1 rounded-lg hover:bg-red-600">Delete</button>
+        
         </div>
+
     </div>
 
 </div>
@@ -193,12 +208,16 @@
     }
 
     function toggleLargeView(expenseId) {
-        const fullViewLarge = document.getElementById('fullViewLarge');
-        const largeSimplifiedView = document.getElementById('largeSimplifiedView');
-        
+        const fullViewLarge = document.getElementById('fullViewLarge-' + expenseId);
+        const largeSimplifiedView = document.getElementById('largeSimplifiedView-' + expenseId);
 
-        largeSimplifiedView.classList.add('hidden'); 
-        fullViewLarge.classList.remove('hidden'); 
+        largeSimplifiedView.classList.add('hidden');
+
+        
+        if (window.innerWidth >= 768) // kapag greater than this size you reso then dun palang lilitaw.
+        { 
+            fullViewLarge.classList.remove('hidden'); 
+        }
     }
 
     function saveChanges(expenseId) {
@@ -226,7 +245,7 @@
     }
 
     function saveChangesLarge(expenseId) {
-        const fullViewLarge = document.getElementById('fullViewLarge');
+        const fullViewLarge = document.getElementById('fullViewLarge-' + expenseId);
         const inputs = fullViewLarge.querySelectorAll('input');
         const updatedData = {
             update_id: expenseId,
@@ -254,9 +273,9 @@
             // Remove the elements as before
             const simplifiedView = document.getElementById('simplifiedView-' + id);
             const fullView = document.getElementById('fullView-' + id);
-            
-            const largeSimplifiedView = document.getElementById('largeSimplifiedView');
-            const fullViewLarge = document.getElementById('fullViewLarge');
+
+            const largeSimplifiedView = document.getElementById('largeSimplifiedView-' + expenseId);
+            const fullViewLarge = document.getElementById('fullViewLarge-' + expenseId);
 
             if (simplifiedView) simplifiedView.remove();
             if (fullView) fullView.remove();
