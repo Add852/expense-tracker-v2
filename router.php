@@ -14,7 +14,6 @@ $routes = [
     "/shared" => "controllers/expense-sharing-group.php",
     "/goal" => "controllers/goal.php",
     "/expenselog" => "controllers/ExpenseLog.php",
-    "/add" => "controllers/add.php",
     "/audit" => "controllers/audit.php",
     "/settings" => "controllers/settings.php",
 ];

@@ -16,6 +16,7 @@
     <?php require('navbar.php') ?>
     <!-- SIDEBAR IS HERE -->
     <?php require('addexpense.php') ?>
+    <?php require('controllers/add.php') ?>
     <div class="flex h-full">
         <!-- FLOATING ADD EXPENSE BUTTON HERE -->
         <?php require('sidebar.php') ?>
