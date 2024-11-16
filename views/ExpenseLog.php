@@ -83,7 +83,7 @@
 
     <!-- Simplified View sa Larger Devices -->
 
-    <div id="largeSimplifiedView-1" class="hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer" onclick="toggleLargeView(1)">
+    <div id="largeSimplifiedView" class="hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer" onclick="toggleLargeView(1)">
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Expense ID</span>
                 <span id="large_expense_id" class="font-semibold text-gray-300">1</span>
@@ -111,7 +111,7 @@
 
 
     <!-- Full View sa Large Devices -->
-    <div id="fullViewLarge-1" class="hidden sm:hidden  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
+    <div id="fullViewLarge" class="hidden sm:hidden  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer">
 
         <div class="flex justify-between border-b pb-3 pt-3">
             <span class="font-semibold text-gray-300">Expense ID:</span>
@@ -189,16 +189,16 @@
         const fullView = document.getElementById('fullView-' + expenseId);
         const simplifiedView = document.getElementById('simplifiedView-' + expenseId);
         simplifiedView.classList.add('hidden');
-        fullView.classList.remove('hidden'); // Show the full view for small devices
+        fullView.classList.remove('hidden'); 
     }
 
     function toggleLargeView(expenseId) {
-        const fullViewLarge = document.getElementById('fullViewLarge-' + expenseId);
-        const largeSimplifiedView = document.getElementById('largeSimplifiedView-' + expenseId);
+        const fullViewLarge = document.getElementById('fullViewLarge');
+        const largeSimplifiedView = document.getElementById('largeSimplifiedView');
         
-        // Check if we are currently showing the large simplified view
-        largeSimplifiedView.classList.add('hidden'); // Hide the large simplified view
-        fullViewLarge.classList.remove('hidden'); // Show the full view for large devices
+
+        largeSimplifiedView.classList.add('hidden'); 
+        fullViewLarge.classList.remove('hidden'); 
     }
 
     function saveChanges(expenseId) {
@@ -226,7 +226,7 @@
     }
 
     function saveChangesLarge(expenseId) {
-        const fullViewLarge = document.getElementById('fullViewLarge-' + expenseId);
+        const fullViewLarge = document.getElementById('fullViewLarge');
         const inputs = fullViewLarge.querySelectorAll('input');
         const updatedData = {
             update_id: expenseId,
@@ -241,12 +241,12 @@
             group_id: inputs[9].value
         };
 
-        // Update large simplified view
+        
         document.getElementById("large_expense_time").innerText = updatedData.ExpenseTime;
         document.getElementById("large_expense_type").innerText = updatedData.ExpenseType;
 
-        fullViewLarge.classList.add('hidden'); // Hide the full view for large
-        document.getElementById('largeSimplifiedView-' + expenseId).classList.remove('hidden'); // Show simplified view
+        fullViewLarge.classList.add('hidden'); 
+        document.getElementById('largeSimplifiedView-' + expenseId).classList.remove('hidden'); 
     }
 
     function deleteExpense(id) {
@@ -254,8 +254,9 @@
             // Remove the elements as before
             const simplifiedView = document.getElementById('simplifiedView-' + id);
             const fullView = document.getElementById('fullView-' + id);
-            const largeSimplifiedView = document.getElementById('largeSimplifiedView-' + id);
-            const fullViewLarge = document.getElementById('fullViewLarge-' + id);
+            
+            const largeSimplifiedView = document.getElementById('largeSimplifiedView');
+            const fullViewLarge = document.getElementById('fullViewLarge');
 
             if (simplifiedView) simplifiedView.remove();
             if (fullView) fullView.remove();
