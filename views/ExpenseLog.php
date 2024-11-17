@@ -198,37 +198,12 @@
 
                 function saveChanges()
                 {
-                    Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
-
-                    if(Resolution <= 768)                           // if mobile yung reso
-                    {
-                        alert("save mobile");
-                         fullView.classList.add("hidden");
-                    }
-                    else                                             // if desktop/tablet/laptop view
-                    {
-                        alert("save desktop");
-                        fullView.classList.add("hidden");
-                    }
+                    fullView.classList.add("hidden");
                 }
 
 
-
-
-
-
-
-               
-
                 document.addEventListener('DOMContentLoaded', checkResolution); 
                 window.addEventListener('resize', checkResolution);
-
-
-
-
-                
-
-  
 
 
 
