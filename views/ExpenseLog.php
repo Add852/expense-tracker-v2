@@ -167,11 +167,7 @@
 
 
             // dito yung part na kapag ki-click nani user yung simplified view.
-            document.addEventListener('DOMContentLoaded', toggleView()
-            {
-            
-            });
-                
+
 
 
         </script>
