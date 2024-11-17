@@ -196,6 +196,19 @@
                 }
 
 
+                function saveChanges()
+                {
+                    Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
+
+                    if(Resolution <= 768)                           // if mobile yung reso
+                    {
+                         fullView.classList.add("hidden");
+                    }
+                    else                                             // if desktop/tablet/laptop view
+                    {
+                        fullView.classList.add("hidden");
+                    }
+                }
 
 
 
@@ -203,7 +216,7 @@
 
 
 
-                // dito automatic dedetect yung reso then update yung classname
+               
 
                 document.addEventListener('DOMContentLoaded', checkResolution); 
                 window.addEventListener('resize', checkResolution);
