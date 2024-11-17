@@ -147,7 +147,7 @@
             
             function checkResolution()
             {
-                if(Resolution < 768)  //ibig sabihin for mobile
+                if(Resolution <= 768)  //ibig sabihin for mobile
                 {
 
                     alert("condition for mobiles");
