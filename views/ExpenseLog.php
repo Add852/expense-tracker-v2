@@ -142,51 +142,72 @@
             const largeView  = document.getElementById("large_view");
             const fullView   = document.getElementById("fullView");
 
+
+            boolval
             let Resolution;
       
             
             function checkResolution()
             {
-
-                Resolution = window.innerWidth;  // che-check neto yung resolution ng device
+                Resolution = window.innerWidth;  // che-check neto yung current resolution ng device
 
                 if(Resolution <= 768)  //ibig sabihin for mobile
                 {
 
-                    //alert("condition for mobiles ");
-
                     largeView.classList.add("hidden");
                     
                     mobileView.classList.remove("hidden");
-                    mobileView.className ="block max-w-md mx-auto bg-gray shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
+                    mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
                    
                     fullView.classList.add("hidden");
 
                 }
                 else
-                {
-                    //alert("condition for desktop/tablet/laptop");
-
+                {        
                     mobileView.classList.add("hidden");
 
                     largeView.classList.remove("hidden");
-                    largeView.className = "sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-gray shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                    largeView.className = "sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                     
                     fullView.classList.add("hidden");
-
                 }
             }
 
 
 
-            // dito automatic dedetect yung reso then update yung classname
+                // dito automatic dedetect yung reso then update yung classname
 
-            document.addEventListener('DOMContentLoaded', checkResolution); 
-            window.addEventListener('resize', checkResolution);
+                document.addEventListener('DOMContentLoaded', checkResolution); 
+                window.addEventListener('resize', checkResolution);
 
 
 
-            // dito yung part na kapag ki-click nani user yung simplified view.
+                // dito yung part na kapag ki-click nani user yung simplified view.
+
+
+
+
+                function toggleView()
+                {
+                    Resolution = window.innerWidth;         // che-check neto yung current resolution ng device
+
+                    if(Resolution <= 768)  // if mobile yung reso
+                    {
+                        fullView.className = "hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                        fullView.classList.remove("hidden");
+                    }
+                    else   // if desktop/tablet/laptop view
+                    {
+                        fullView.className ="hidden sm:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                        fullView.classList.remove("hidden");
+                    }
+                }
+
+
+                
+
+                document.addEventListener('DOMContentLoaded', toggleView());  // execution ito
+  
 
 
 
