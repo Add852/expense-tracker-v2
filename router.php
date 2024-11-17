@@ -16,6 +16,7 @@ $routes = [
     "/expenselog" => "controllers/ExpenseLog.php",
     "/audit" => "controllers/audit.php",
     "/settings" => "controllers/settings.php",
+    "/reset" => "controllers/reset.php",
 ];
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
