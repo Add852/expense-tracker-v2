@@ -12,7 +12,7 @@
 
         <!-- mobile View -->
           
-        <div id="mobile_view-1" class="hidden" onclick="toggleView(1)">
+        <div id="mobile_view" class="hidden" onclick="toggleView()">
 
             <div class="flex justify-between border-b pb-3">
                 <span class="font-semibold text-gray-300">Expense Time:</span>
@@ -28,7 +28,7 @@
 
         <!-- desktop/tablet/laptop View -->
 
-        <div id="large_view" class="hidden" onclick="toggleView(1)">
+        <div id="large_view" class="hidden" onclick="toggleView()">
            
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Expense ID</span>
@@ -132,6 +132,48 @@
             
         </div>
 
+        <script>
+
+            // yung mobileview/largeview/fullview is hidden by default.
+
+            //global declaration to get Id's
+
+            const mobileView = document.getElementById("mobile_view");
+            const largeView  = document.getElementById("large_view");
+            const fullView   = document.getElementById("fullView");
+
+            const Resolution = window.innerWidth;  // che-check neto yung resolution ng device
+      
+            
+            function checkResolution()
+            {
+                if(Resolution <= 768)  //ibig sabihin for mobile
+                {
+                    largeView.classList.add("hidden");
+                    mobileView.classList.remove("hidden");
+                    mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden xl:hidden lg:hidden";
+                    fullView.className ="hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                }
+
+            }
+
+
+
+            // dito automatic dedetect yung reso then update yung classname
+            document.addEventListener('DOMContentLoaded'checkResolution()); 
+
+
+
+
+            // dito yung part na kapag ki-click nani user yung simplified view.
+            document.addEventListener('DOMContentLoaded', toggleView()
+            {
+            
+            });
+                
+
+
+        </script>
 
         
     </div>
