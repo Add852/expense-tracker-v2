@@ -150,7 +150,7 @@
                 if(Resolution <= 768)  //ibig sabihin for mobile
                 {
 
-                    alert("condition for mobiles ");
+                    //alert("condition for mobiles ");
 
                     largeView.classList.add("hidden");
                     
@@ -162,7 +162,7 @@
                 }
                 else
                 {
-                    alert("condition for desktop/tablet/laptop");
+                    //alert("condition for desktop/tablet/laptop");
 
                     mobileView.classList.add("hidden");
 
