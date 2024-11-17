@@ -8,7 +8,10 @@
 <div class="container mx-auto p-4">
 
     <div>
+
+
         <!-- mobile View -->
+          
         <div id="mobile_view-1" class="hidden" onclick="toggleView(1)">
 
             <div class="flex justify-between border-b pb-3">
@@ -24,6 +27,7 @@
         </div>
 
         <!-- desktop/tablet/laptop View -->
+
         <div id="large_view" class="hidden" onclick="toggleView(1)">
            
             <div class="flex flex-col items-center">
@@ -53,7 +57,11 @@
 
         </div>
 
+
+
         <!-- Full View -->
+
+
         <div id="fullView" class="hidden">
 
             <div class="flex justify-between border-b pb-3 pt-3">
@@ -94,7 +102,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Expense Time:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="expense_time" value="2022/05/04" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="expense_time" value="2022/05/04 : 8:45 PM" />
             </div>
 
 
@@ -150,22 +158,22 @@
                 const fullView = document.getElementById('fullView');
 
                 const updatedData = {  // pansamantala lang to since dipa tapos
-                                       // pero if ok na yung update ang ilalagay dito tas loop retrieve ng records.
+                                       // pero if ok na, yung update ang ilalagay dito tas loop retrieve ng records.
                     
-                    expense_id:         document.getElementById("expense_id").value,
-                    user_id:            document.getElementById("user_id").value,
+                    expense_id:             document.getElementById("expense_id").value,
+                    user_id:                document.getElementById("user_id").value,
 
-                    amount:             document.getElementById("amount").value,
-                    category:           document.getElementById("category").value,
+                    amount:                 document.getElementById("amount").value,
+                    category:               document.getElementById("category").value,
 
-                    description:        document.getElementById("description").value,
-                    expense_type:       document.getElementById("expense_type").value,
+                    description:            document.getElementById("description").value,
+                    expense_type:           document.getElementById("expense_type").value,
 
-                    expense_time:       document.getElementById("expense_time").value,                   
-                    goal_id:            document.getElementById("goal_id").value,
+                    expense_time:           document.getElementById("expense_time").value,                   
+                    goal_id:                document.getElementById("goal_id").value,
 
-                    subscription_id:    document.getElementById("subscription_id").value,
-                    group_id:           document.getElementById("group_id").value
+                    subscription_id:        document.getElementById("subscription_id").value,
+                    group_id:               document.getElementById("group_id").value
 
                 };
 
@@ -176,25 +184,26 @@
                     document.getElementById("label_expense_id").innerText = updatedData.expense_id; 
                     document.getElementById("label_amount").innerText = updatedData.amount; 
 
-                    document.getElementById("label_description").innerText = updatedData.description;
                     document.getElementById("label_expense_time").innerText = updatedData.expense_time; 
-                    
                     document.getElementById("label_expense_type").innerText = updatedData.expense_type; 
+
                     document.getElementById("goal_id").innerText = updatedData.goal_id; 
 
 
-                    fullView.classList.add('hidden');  //eto hide fullview  if kinlick yung save changes.
+                    fullView.classList.add('hidden');  //  eto hide fullview  if kinlick yung save changes.
                                                        // and kaso, nagwowork sya sa smaller device pero sa higher reso hindi.
 
-                    // if mobile size 
-                    if (window.innerWidth < 768) // resolution sizes yung condition dito.
+                    
+                    if (window.innerWidth < 768)  // if mobile size yung reso
                     {
-                        document.getElementById('mobile_view-1').classList.remove('hidden'); // Mobile version
+                        document.getElementById('mobile_view-1').classList.remove('hidden'); // balik sa simplified view
+                        alert("sa small reso to ");
                     } 
-                    // if desktop/tablet/laptop view                   
-                    else 
+     
+                    else  // if  Desktop/Tablet/Laptop  yung reso
                     {
-                        document.getElementById('large_view').classList.remove('hidden'); // Desktop/Tablet/Laptop
+                        document.getElementById('large_view').classList.remove('hidden'); // balik sa simplified view
+                        alert("sa large reso to ");
                     }
             }
 
