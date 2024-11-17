@@ -167,7 +167,7 @@
                     mobileView.classList.add("hidden");
 
                     largeView.classList.remove("hidden");
-                    largeView.className = "hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                    largeView.className = "hidden  lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                     
                     fullView.classList.add("hidden");
 
