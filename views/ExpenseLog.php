@@ -154,7 +154,7 @@
                 if(Resolution <= 768)  //ibig sabihin for mobile
                 {
 
-                    largeView.classList.add("hidden");
+                    largeView.classList.add("hidden"); 
                     
                     mobileView.classList.remove("hidden");
                     mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
