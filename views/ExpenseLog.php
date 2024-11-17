@@ -125,7 +125,7 @@
 
 
             <div class="flex justify-start space-x-4 mt-4">
-                <button onclick="saveChanges()" class="bg-blue-500 text-gray-300 px-4 py-1 rounded-lg hover:bg-blue-600">Save Changes</button>
+                <button onclick="saveChanges()" class="bg-blue-500  text-gray-300 px-4 py-1 rounded-lg hover:bg-blue-600">Save Changes</button>
                 <button onclick="deleteExpense()" class="bg-red-500 text-gray-300 px-4 py-1 rounded-lg hover:bg-red-600">Delete</button>
             </div>
 
@@ -200,7 +200,7 @@
                         alert("sa small reso to ");
                     } 
      
-                    else  // if  Desktop/Tablet/Laptop  yung reso
+                    if (window.innerWidth > 640 ) // if  Desktop/Tablet/Laptop  yung reso
                     {
                         document.getElementById('large_view').classList.remove('hidden'); // balik sa simplified view
                         alert("sa large reso to ");
