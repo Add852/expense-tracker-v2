@@ -200,9 +200,10 @@
                         alert("sa small reso to ");
                     } 
      
-                    if (window.innerWidth > 640 ) // if  Desktop/Tablet/Laptop  yung reso
+                    else   // if  Desktop/Tablet/Laptop  yung reso
                     {
                         document.getElementById('large_view').classList.remove('hidden'); // balik sa simplified view
+                        document.getElementById('fullView').classList.add('hidden'); 
                         alert("sa large reso to ");
                     }
             }
