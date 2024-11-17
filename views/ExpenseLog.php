@@ -185,12 +185,12 @@
 
                     if(Resolution <= 768)                           // if mobile yung reso
                     {
-                        fullView.className = " md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                        fullView.className = "hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                         fullView.classList.remove("hidden");
                     }
                     else                                            // if desktop/tablet/laptop view
                     {
-                        fullView.className =" sm:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                        fullView.className ="hidden sm:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                         fullView.classList.remove("hidden");
                     }
                 }
