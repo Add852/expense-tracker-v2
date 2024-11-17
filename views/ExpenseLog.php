@@ -12,6 +12,8 @@
 
         <!-- mobile View -->
           
+        <!-- yung magiging default css netong mga to nasa javascrtipt. sundan nalng per ID -->
+
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
             <div class="flex justify-between border-b pb-3">
@@ -26,7 +28,20 @@
 
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
         <!-- desktop/tablet/laptop View -->
+
+        <!-- yung magiging default css netong mga to nasa javascrtipt. sundan nalng per ID -->
 
         <div id="large_view" class="hidden" onclick="toggleView()">
            
@@ -58,6 +73,14 @@
         </div>
 
 
+
+
+
+
+
+
+
+        
 
         <!-- Full View -->
 
@@ -157,8 +180,8 @@
 
             // eto ung default design class nila. - dineclare ko since - naka-
 
-            mobileView.className = " block max-w-md mx-auto bg-stone-600 shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-stone-600  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
+            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c]  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.

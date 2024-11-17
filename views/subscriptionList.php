@@ -132,8 +132,8 @@
 
             // eto ung default design class nila. - dineclare ko since - naka-
 
-            mobileView.className = " block max-w-md mx-auto bg-stone-600 shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-stone-600  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
+            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c]  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
@@ -199,14 +199,15 @@
                 // if unique yung expenseID yun ung gagawin kong reference - geget ko value nya lage
 
                 // after madelete base sa id then loop record ulit
-              
 
                 // pero pansamantala - ha-hide mona yung fullview satwing nagde-delete
+          
                 fullView.className = 'hidden';                  // hahide neto fullview after iclick save changes
 
             }
 
             document.addEventListener('DOMContentLoaded', checkResolution);         // eto yung initial load state ng checking ng reso
+            
             window.addEventListener('resize', checkResolution);                     // eto naman yung continous checking satwing may changes sa size ng window or webpage
 
 

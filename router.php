@@ -21,6 +21,7 @@ $routes = [
 ];
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+
 //tatanggalin lang yung extra string sa url e.g., if "localhost/dashboard?sex=3" nilagay sa url, yung /dashboard lang
 //maii-store sa $uri
 
