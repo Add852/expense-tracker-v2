@@ -142,7 +142,7 @@
             const largeView  = document.getElementById("large_view");
             const fullView   = document.getElementById("fullView");
 
-            const Resolution;
+            let Resolution;
       
             
             function checkResolution()
