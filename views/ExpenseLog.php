@@ -194,18 +194,17 @@
                                                        // and kaso, nagwowork sya sa smaller device pero sa higher reso hindi.
 
                                                     
-                    if (window.innerWidth < 768)  // if mobile size yung reso
+                    if (window.innerWidth < 768)     //         if mobile size yung reso
                     {
                         document.getElementById('mobile_view-1').classList.remove('hidden'); // balik sa simplified view
-                        fullView.classList.add('hidden'); 
+                        
                         alert("sa small reso to ");
                     } 
      
-                    else   // if  Desktop/Tablet/Laptop  yung reso
+                    else                             //         if  Desktop/Tablet/Laptop  yung reso
                     {
                         document.getElementById('large_view').classList.remove('hidden'); // balik sa simplified view
                         
-                        fullView.classList.add('hidden'); 
                         alert("sa large reso to ");
                     }
             }
