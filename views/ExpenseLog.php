@@ -150,7 +150,7 @@
                 if(Resolution <= 768)  //ibig sabihin for mobile
                 {
 
-                    alert("condition for mobiles");
+                    alert("condition for mobiles ");
 
                     largeView.classList.add("hidden");
                     
@@ -177,8 +177,9 @@
 
 
             // dito automatic dedetect yung reso then update yung classname
-            document.addEventListener('DOMContentLoaded', checkResolution()); 
-            window.addEventListener('resize', checkResolution());
+
+            document.addEventListener('DOMContentLoaded', checkResolution); 
+            window.addEventListener('resize', checkResolution);
 
 
 
