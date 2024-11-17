@@ -161,8 +161,6 @@
             largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
            
 
-
-
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
 
             let fullView_class = {              
@@ -200,7 +198,7 @@
             function toggleView()
             {
                 Resolution = window.innerWidth;                             // kukunin neto yung current resolution    
-                alert(Resolution);
+                
                 if(Resolution < 768)                                       
                 {              
                     fullView.className = fullView_class.mobile;                                                                      
@@ -211,7 +209,6 @@
                     fullView.className = fullView_class.NotMobile;          
                 }         
             }
-
 
             function saveChanges()
             {             
