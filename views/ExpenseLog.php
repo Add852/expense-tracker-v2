@@ -174,14 +174,6 @@
             }
 
 
-
-                // dito automatic dedetect yung reso then update yung classname
-
-                document.addEventListener('DOMContentLoaded', checkResolution); 
-                window.addEventListener('resize', checkResolution);
-
-
-
                 // dito yung part na kapag ki-click nani user yung simplified view.
 
 
@@ -202,6 +194,21 @@
                         fullView.classList.remove("hidden");
                     }
                 }
+
+
+
+
+
+
+
+
+
+                // dito automatic dedetect yung reso then update yung classname
+
+                document.addEventListener('DOMContentLoaded', checkResolution); 
+                window.addEventListener('resize', checkResolution);
+
+
 
 
                 
