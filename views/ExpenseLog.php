@@ -143,7 +143,7 @@
             const fullView   = document.getElementById("fullView");
 
 
-            boolval
+      
             let Resolution;
       
             
