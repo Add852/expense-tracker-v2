@@ -62,7 +62,7 @@
         <!-- Full View -->
 
 
-        <div id="fullView" class="hidden">
+        <form id="fullView" method="POST"  action=""  class="hidden">
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Expense ID:</span>
@@ -119,7 +119,7 @@
 
 
             <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Group ID:</span>
+                <span class=" font-semibold text-gray-300">Group ID:</span>
                 <input  type="text" class="text-gray-300 bg-[#03352c]"  id="group_id"  value="0011" />
             </div>
 
@@ -130,92 +130,118 @@
             </div>
 
             
-        </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script>
-
-            // yung mobileview/largeview/fullview is hidden by default.
-
-            //global declaration to get Id's
+          
+            //global declaration para kunin yung id's nung simplified and fullview
 
             const mobileView = document.getElementById("mobile_view");
             const largeView  = document.getElementById("large_view");
-            const fullView   = document.getElementById("fullView");
-
-
-      
-            let Resolution;
-      
+            let fullView   = document.getElementById("fullView");
             
-            function checkResolution()
+            let Resolution;
+
+
+            // eto ung default design class nila. - dineclare ko since - naka-
+
+            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
+            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+           
+
+
+
+            // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
+
+            let fullView_class = {              
+
+                mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer',
+                NotMobile:      '  sm:hidden md:block max-w-4xl mx-auto bg-[#03352c]   lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
+
+            };
+
+    
+
+            function checkResolution()                                      
             {
-                Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
 
-                if(Resolution <= 768)                           //ibig sabihin for mobile
+                Resolution = window.innerWidth;                            // kukunin neto yung current resolution
+
+                if(Resolution < 768)                                       // if mobile yung resolution
                 {
-
-                    largeView.classList.add("hidden"); 
-                    
-                    mobileView.classList.remove("hidden");
-                    mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-                   
-                    fullView.classList.add("hidden");
-
-                }
-                else
+                    mobileView.classList.remove("hidden");               
+                    largeView.classList.add("hidden");             
+                }                                                                         
+                else                                                      
                 {        
-                    mobileView.classList.add("hidden");
-
-                    largeView.classList.remove("hidden");
-                    largeView.className = "sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
-                    
-                    fullView.classList.add("hidden");
+                    largeView.classList.remove("hidden");                 
+                    mobileView.classList.add("hidden");                  
                 }
+
+                                                                            // yung classList.add(""); bali eto yung nagda-dagdag ng value 
+                                                                            // sa loob ng isang className
+                fullView.className = 'hidden';                              // hahide neto yung fullview by default
+            }
+
+                
+
+            function toggleView()
+            {
+                Resolution = window.innerWidth;                             // kukunin neto yung current resolution    
+                alert(Resolution);
+                if(Resolution < 768)                                       
+                {              
+                    fullView.className = fullView_class.mobile;                                                                      
+                }
+
+                if(Resolution > 767)                                                         
+                {                                                           
+                    fullView.className = fullView_class.NotMobile;          
+                }         
             }
 
 
-                // dito yung part na kapag ki-click nani user yung simplified view.
+            function saveChanges()
+            {             
+                // pwede na iabang dito yung back-end.
+                // update and retrieved dito.
 
+                fullView.className = 'hidden';                  // hahide neto fullview after iclick save changes
+            }
 
+            function deleteExpense()
+            {
 
+                // if unique yung expenseID yun ung gagawin kong reference - geget ko value nya lage
 
-                function toggleView()
-                {
-                    Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
+                // after madelete base sa id then loop record ulit
+              
 
-                    if(Resolution <= 768)                           // if mobile yung reso
-                    {
-                        fullView.className = "hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
-                        fullView.classList.remove("hidden");
-                    }
-                    else                                            // if desktop/tablet/laptop view
-                    {
-                        fullView.className ="hidden sm:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
-                        fullView.classList.remove("hidden");
-                    }
-                }
+                // pero pansamantala - ha-hide mona yung fullview satwing nagde-delete
+                fullView.className = 'hidden';                  // hahide neto fullview after iclick save changes
 
+            }
 
-                function saveChanges()
-                {
-                    fullView.classList.add("hidden");
-                }
-
-
-                document.addEventListener('DOMContentLoaded', checkResolution); 
-                window.addEventListener('resize', checkResolution);
-
+            document.addEventListener('DOMContentLoaded', checkResolution);         // eto yung initial load state ng checking ng reso
+            window.addEventListener('resize', checkResolution);                     // eto naman yung continous checking satwing may changes sa size ng window or webpage
 
 
         </script>
 
         
-    </div>
-
-
-
-
-
+</div>
     
 
     
