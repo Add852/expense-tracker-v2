@@ -142,11 +142,13 @@
             const largeView  = document.getElementById("large_view");
             const fullView   = document.getElementById("fullView");
 
-            const Resolution = window.innerWidth;  // che-check neto yung resolution ng device
+            const Resolution;
       
             
             function checkResolution()
             {
+
+                Resolution = window.innerWidth;  // che-check neto yung resolution ng device
 
                 if(Resolution <= 768)  //ibig sabihin for mobile
                 {
