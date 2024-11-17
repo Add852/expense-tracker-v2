@@ -149,9 +149,9 @@
             
             function checkResolution()
             {
-                Resolution = window.innerWidth;  // che-check neto yung current resolution ng device
+                Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
 
-                if(Resolution <= 768)  //ibig sabihin for mobile
+                if(Resolution <= 768)                           //ibig sabihin for mobile
                 {
 
                     largeView.classList.add("hidden"); 
@@ -181,14 +181,14 @@
 
                 function toggleView()
                 {
-                    Resolution = window.innerWidth;         // che-check neto yung current resolution ng device
+                    Resolution = window.innerWidth;                 // che-check neto yung current resolution ng device
 
-                    if(Resolution <= 768)  // if mobile yung reso
+                    if(Resolution <= 768)                           // if mobile yung reso
                     {
                         fullView.className = "hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                         fullView.classList.remove("hidden");
                     }
-                    else   // if desktop/tablet/laptop view
+                    else                                            // if desktop/tablet/laptop view
                     {
                         fullView.className ="hidden sm:hidden lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
                         fullView.classList.remove("hidden");
@@ -202,10 +202,12 @@
 
                     if(Resolution <= 768)                           // if mobile yung reso
                     {
+                        alert("save mobile");
                          fullView.classList.add("hidden");
                     }
                     else                                             // if desktop/tablet/laptop view
                     {
+                        alert("save desktop");
                         fullView.classList.add("hidden");
                     }
                 }
