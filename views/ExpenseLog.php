@@ -155,7 +155,7 @@
                     largeView.classList.add("hidden");
                     
                     mobileView.classList.remove("hidden");
-                    mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden xl:hidden lg:hidden";
+                    mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden lg:hidden";
                    
                     fullView.classList.add("hidden");
 
@@ -178,7 +178,6 @@
 
             // dito automatic dedetect yung reso then update yung classname
             document.addEventListener('DOMContentLoaded', checkResolution()); 
-            
             window.addEventListener('resize', checkResolution());
 
 
