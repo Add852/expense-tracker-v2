@@ -149,13 +149,26 @@
             {
                 if(Resolution < 768)  //ibig sabihin for mobile
                 {
-                    alert("naread yung condition");
+
+                    alert("condition for mobiles");
+
                     largeView.classList.add("hidden");
                     mobileView.classList.remove("hidden");
                     mobileView.className ="block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer md:hidden xl:hidden lg:hidden";
-                    fullView.className ="hidden md:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                    fullView.className.add("hidden");
                 }
+                else
+                {
+                    alert("condition for desktop/tablet/laptop");
 
+                    mobileView.classList.add("hidden");
+
+                    largeView.classList.remove("hidden");
+                    largeView.className = "hidden sm:hidden lg:flex lg:justify-between lg:max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+                    
+                    fullView.className.add("hidden");
+
+                }
             }
 
 
