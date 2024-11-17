@@ -178,7 +178,8 @@
 
             // dito automatic dedetect yung reso then update yung classname
             document.addEventListener('DOMContentLoaded', checkResolution()); 
-
+            
+            window.addEventListener('resize', checkResolution());
 
 
 
