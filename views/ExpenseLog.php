@@ -206,7 +206,6 @@
 
                 
 
-                document.addEventListener('DOMContentLoaded', toggleView());  // execution ito
   
 
 
