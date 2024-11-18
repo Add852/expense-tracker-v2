@@ -3,7 +3,7 @@
 
 <a href="/dashboard" class="text-teal-300 hover:underline">TEMPORARY DASHBOARD HYPERLINK HERE</a>
 
-<body class="bg-[#03352c] text-gray-300">
+<div class="bg-[#03352c] text-gray-300">
   <div class="xl:container mx-auto text-center relative ">
     <section>
       <h1 class="text-4xl font-bold p-5">Lorem ipsum dolor sit amet</h1>
@@ -48,6 +48,6 @@
       </div>
     </section>
   </div>
-</body>
+</div>
 
 <?php require('partials/footer.php') ?>
