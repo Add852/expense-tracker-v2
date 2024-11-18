@@ -23,7 +23,7 @@ what if kulang balance, pwede paba mag add expense -lagyan ng backend
 
 icons need to be uploaded by user  (goal, profile, group)
 
-
+lagyan ng contach support page, parang chat.
 
 ===
 
@@ -80,11 +80,10 @@ url hosting: meron na ata to
 
 finalize mysql
 - finalize columns to put
+- need ng group_token_hash column para makagawa ng link sa groups
 - clean triggers for audit log
 
 pwa manifest file??
-
-
 
 === MGA IF MAY TIME PA ===
 - Custom sharing expense (individually set for each)
