@@ -1,6 +1,6 @@
 <?php require('partials/head.php') ?>
 
-<main class='test h-screen bgGreen'>
+<main>
     <!-- PANELS -->
     <div class="flex flex-col sm:flex-row gap-5">
         <!-- LEFT PANEL PANELS sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 -->
@@ -27,10 +27,10 @@
 
 
 
-            <div  class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray' onclick="window.location.href='/subscriptionList' " >
-                
-                 Subscription List
-                
+            <div class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray' onclick="window.location.href='/subscriptionList' ">
+
+                Subscription List
+
             </div>
 
 

@@ -1,6 +1,6 @@
 <?php require('partials/head.php') ?>
 
-<main class="h-screen bg-[#03352c] mt-4 overflow-y-auto flex flex-col"> <!-- Main container with flex layout -->
+<main class="h-screen bg-[#03352c] mt-4 flex flex-col"> <!-- Main container with flex layout -->
 
     <!-- Account Settings Section -->
     <div class="text-gray-300 text-3xl px-5 sm:px-10 md:px-16 lg:px-20 xl:px-24 xl:px-30 mt-0">
@@ -102,8 +102,8 @@
 
     </div>
 
-       <!-- Footer Section to scroll when viewed into very small screen sizes -->
-       <footer class="bg-[#03352c] text-gray-300 py-4 mt-auto">
+    <!-- Footer Section to scroll when viewed into very small screen sizes -->
+    <footer class="bg-[#03352c] text-gray-300 py-4 mt-auto">
         <div class="text-center">
             <p>&copy; </p>
         </div>
