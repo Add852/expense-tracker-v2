@@ -8,6 +8,23 @@ class Database
     //create database (Will only be executed initially when a Database instance is created)
     public function __construct()
     {
+        // try {
+        //     $host = 'sql205.infinityfree.com';
+        //     $dbname = 'if0_37713275_defaultdb';
+        //     $username = 'if0_37713275';
+        //     $password = 'XCcWorOsjRnyZ';
+        //     $port = 3306;
+
+        //     $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
+
+        //     $this->connection = new PDO($dsn, $username, $password);
+        //     $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // } catch (PDOException $e) {
+
+        //     error_log("Database connection failed: " . $e->getMessage(), 3, "/tmp/db_error.log");
+        //     die("Database connection failed. Please try again later.");
+        // }
+        
         try {
             // the remote mysql server we will be using
             $uri = "mysql://avnadmin:AVNS_f8o7HWTkd-96oSm9STx@mysql-6ef4ff5-xadd852x-362b.j.aivencloud.com:16921/defaultdb?ssl-mode=REQUIRED";
