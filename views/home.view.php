@@ -24,7 +24,7 @@
 
       <div class="absolute top-[200px] left-0 right-0 mx-auto w-full  py-10">
         <div class="flex justify-around items-center gap-5">
-          <img src="htdocs\assets\iphone-175x300.png" alt="iPhone image" class="h-24 md:h-48 lg:h-64">
+          <img src="assets\iphone-175x300.png" alt="iPhone image" class="h-24 md:h-48 lg:h-64">
           <img src="assets\main-grocery-store-1-300x208.png" alt="Grocery store image" class="h-24 md:h-48 lg:h-52">
         </div>
       </div>
