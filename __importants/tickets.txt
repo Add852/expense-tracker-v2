@@ -14,3 +14,66 @@ make a validator for strong passwords
 perform testings in reset passwords 
 
 login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior
+
+
+
+===
+
+convert amount/balance to float instead of int para pwede decimal
+
+expense log???
+- db connection
+- updating shiz
+
+mga icons:
+- profile icons
+- goal icons
+
+nav bar mechanism if a user is logged in or not
+- link ng user profile and nav bar profile sa database and icons
+- more info sa profile pic icon nav bar (e.g., usernamem, firstName, lastName)
+
+edit/set balance functionality??
+
+proper case first and last name input
+
+account setting functionality
+- mysql query to perform to update for data?
+- checks for duplicate username & email
+- password re-type validation
+
+Audit Log
+- audit log accessible only to admin user system
+- ayusin itsura ng audit log
+
+fix head and no head system
+- use nohead in head or just individually add each component
+
+Sharing
+- expense sharing mechanism
+- link sa database
+- reusable member list (for dashboard)
+
+
+Goal setting
+- link sa database
+
+Statistics page
+- mechanism?
+- link sa database e.g., how to search expenses that are within 7 days ago
+
+
+
+=== Other concerns ===
+
+url hosting: meron na ata to
+
+finalize mysql
+- finalize columns to put
+- clean triggers for audit log
+
+pwa manifest file??
+
+
+
+=== MGA IF MAY TIME PA ===
