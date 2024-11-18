@@ -43,7 +43,7 @@ account setting functionality
 - password re-type validation
 
 Audit Log
-- audit log accessible only to admin user system
+- Admin User: audit log accessible only to admin user system
 - ayusin itsura ng audit log
 
 fix head and no head system
@@ -77,3 +77,10 @@ pwa manifest file??
 
 
 === MGA IF MAY TIME PA ===
+- Custom sharing expense (individually set for each)
+- Not pre-defined user icon
+- Income (automatic add ng time and transaction sa bank)
+- OCR / Receipt Scanner
+- Multiple Wallet
+- Messaging (for sharing)
+- Timezones
