@@ -24,11 +24,16 @@
             <div class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray'>
                 Groups
             </div>
-            <div  class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray'>
+
+
+
+            <div  class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray' onclick="window.location.href='/subscriptionList'  >
                 
-                <a href="/subscriptionList" > Subscriptions </a>
                 
             </div>
+
+
+
             <div class='shadow-lg tlGreen hover:bg-emerald-900 duration-150 rounded-3xl w-48 h-48 textGray'>
                 Overspending Alarm
             </div>
