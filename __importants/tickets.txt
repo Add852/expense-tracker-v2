@@ -9,11 +9,19 @@ pwede na lagyan ng list of subscriptions ung dashboard view
 
 alisin ung change password sa user settings
 
-make a validator for strong passwords
-
-perform testings in reset passwords 
-
 login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior
+
+add activeBtn in sidebar
+
+headNoSide becomes headNoSideNoNavbar
+
+sideBar need hamburger in larger device by default na collapse 
+
+namiminus ung balance bawat add expense
+
+what if kulang balance, pwede paba mag add expense -lagyan ng backend
+
+icons need to be uploaded by user  (goal, profile, group)
 
 
 
@@ -35,7 +43,9 @@ nav bar mechanism if a user is logged in or not
 
 edit/set balance functionality??
 
-proper case first and last name input
+Input Validators
+- proper case first and last name input
+- strong passwords
 
 account setting functionality
 - mysql query to perform to update for data?
