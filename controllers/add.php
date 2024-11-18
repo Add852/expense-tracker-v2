@@ -57,5 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
 
 }
 
-
 require('views/add.view.php');
+
+?>

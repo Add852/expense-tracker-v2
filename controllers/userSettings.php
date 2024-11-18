@@ -6,3 +6,5 @@ protectPage();
 
 $title = 'User Settings';
 require('views/userSettings.view.php');
+
+?>

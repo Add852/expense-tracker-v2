@@ -15,3 +15,5 @@ $expenses = $db->query('select expenses.amount, expenses.description from users 
 $title = "Hello, {$userInfo['username']}!";
 
 require('views/dashboard.view.php');
+
+?>

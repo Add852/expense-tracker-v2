@@ -15,3 +15,5 @@ alisin ung change password sa user settings
 make a validator for strong passwords
 
 perform testings in reset passwords 
+
+login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior

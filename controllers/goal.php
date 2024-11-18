@@ -11,3 +11,5 @@ $userInfo = $db->query('select * from users where userid = ?;', [$userID])->fetc
 $title = "{$userInfo['username']}'s Goals";
 
 require('views/goal.view.php');
+
+?>

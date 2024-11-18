@@ -7,3 +7,5 @@ protectPage();
 $title = 'Subscription List';
 
 require('views/subscriptionList.php');
+
+?>

@@ -15,7 +15,7 @@ class Database
             // build the DSN including SSL settings
             $conn = "mysql:";
             $conn .= "host=" . $fields["host"];
-            $conn .= ";port=" . $fields["port"];;
+            $conn .= ";port=" . $fields["port"];
             $conn .= ";dbname=defaultdb";
             $conn .= ";sslmode=verify-ca;sslrootcert=ca.pem";
             //passes the pdo connection to this database's $connection so it can be used outside this function
@@ -36,16 +36,6 @@ class Database
             echo "Error: " . $e->getMessage();
         }
     }
-
-
-
-
-
-
-
-
-
-
 }
 
 //create database instance

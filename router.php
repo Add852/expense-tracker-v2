@@ -2,22 +2,22 @@
 
 $routes = [
     //mga page na di required ng user login
-    "/" => "controllers/home.php",
-    "/signup" => "controllers/SignUp.php",
-    "/forgot" => "controllers/forgot.php",
-    "/login" => "controllers/login.php",
-    "/logout" => "controllers/logout.php",
+    "/" => __DIR__ . "/controllers/home.php",
+    "/signup" => __DIR__ . "/controllers/SignUp.php",
+    "/forgot" => __DIR__ . "/controllers/forgot.php",
+    "/login" => __DIR__ . "/controllers/login.php",
+    "/logout" => __DIR__ . "/controllers/logout.php",
 
     //mga page na accessible lang kapag may nakalog-in
-    "/dashboard" => "controllers/dashboard.php",
-    "/usersettings" => "controllers/userSettings.php",
-    "/shared" => "controllers/expense-sharing-group.php",
-    "/goal" => "controllers/goal.php",
-    "/expenselog" => "controllers/ExpenseLog.php",
-    "/subscriptionList" => "controllers/subscriptionList.php",
-    "/audit" => "controllers/audit.php",
-    "/settings" => "controllers/settings.php",
-    "/reset" => "controllers/reset.php",
+    "/dashboard" => __DIR__ . "/controllers/dashboard.php",
+    "/usersettings" => __DIR__ . "/controllers/userSettings.php",
+    "/shared" => __DIR__ ."/controllers/expense-sharing-group.php",
+    "/goal" => __DIR__ ."/controllers/goal.php",
+    "/expenselog" => __DIR__ ."/controllers/ExpenseLog.php",
+    "/subscriptionList" => __DIR__ ."/controllers/subscriptionList.php",
+    "/audit" => __DIR__ ."/controllers/audit.php",
+    "/settings" => __DIR__ ."/controllers/settings.php",
+    "/reset" => __DIR__ ."/controllers/reset.php",
 ];
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
