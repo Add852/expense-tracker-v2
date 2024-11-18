@@ -88,6 +88,7 @@ pwa manifest file??
 
 === MGA IF MAY TIME PA ===
 - Custom sharing expense (individually set for each)
+  + subscription on groups
 - Not pre-defined user icon
 - Income (automatic add ng time and transaction sa bank)
 - OCR / Receipt Scanner
