@@ -20,7 +20,7 @@
 
             <div class="flex justify-between pt-3">
                 <span class="font-semibold text-gray-300">Amount:</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">Amount</span>
+                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
             </div>
 
         </div>
@@ -46,7 +46,7 @@
 
             <div class="flex flex-col items-center">
                 <span class="font-semibold text-gray-300">Amount</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">$20</span>
+                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
             </div>
 
             <div class="flex flex-col items-center">
@@ -77,7 +77,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Time of Payment:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="$20" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="2022/05/04 : 8:45pm" />
             </div>
 
 
@@ -89,7 +89,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Amount:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="ako langto" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="$20.00" />
             </div>
 
             <div class="flex justify-between border-b pb-3 pt-3">
