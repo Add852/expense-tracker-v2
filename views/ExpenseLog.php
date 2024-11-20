@@ -43,11 +43,11 @@
 
             </div>
       
-            <div class="flex justify-between items-start px-4 py-3">
+            <div class="flex justify-between items-start px-4 py-3 bg-[#03352c] ">
           
                 <div>
                     <p class="text-sm font-bold  text-gray-300" id="category"     >     Category: Transportation         </p>
-                    <p class="text-sm font-bold text-gray-300"  id="expense_type" >     Type: Basic                      </p>
+                    <p class="text-sm font-bold  text-gray-300"  id="expense_type" >     Type: Basic                      </p>
                 </div>    
 
                 <p class="text-lg font-bold"  id="amount">                                ₱ 35                             </p>

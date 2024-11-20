@@ -30,18 +30,18 @@
         <div id="large_view" class="hidden" onclick="toggleView()">
 
             <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
-                   <h2 class="text-lg font-bold" id="description">              New York Flight                </h2>
-                   <p class="text-sm" id="expense_time">                        11 Sep 2001                    </p>
+                <h2 class="text-lg font-bold" id="description">                 New York Flight                </h2>
+                <p class="text-sm" id="expense_time">                           11 Sep 2001                    </p>
             </div>
 
-            <div class="flex justify-between items-start px-4 py-3">
+            <div class="flex justify-between items-start px-4 py-3 bg-[#03352c] ">
 
                <div>
                    <p class="text-sm text-gray-300" id="category">            Category: Transportation         </p>
                    <p class="text-sm text-gray-300" id="expense_type">        Type: Basic                      </p>
                </div>    
 
-               <p class="text-lg font-bold"       id="amount">                  ₱ 35                             </p>
+               <p class="text-lg font-bold"       id="amount">                   ₱ 35                             </p>
 
             </div>
 
@@ -120,7 +120,7 @@
 
             let fullView_class = {              
 
-                mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer',
+                mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c]   shadow-lg rounded-lg p-5 mt-5 cursor-pointer',
                 NotMobile:      '  sm:hidden md:block max-w-4xl mx-auto bg-[#03352c]   lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
 
             };
