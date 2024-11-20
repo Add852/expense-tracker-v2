@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
-    if ($_POST['type'] === 'basic') {
+   if ($_POST['type'] === 'basic') {
         $userID = $_SESSION['userid'];
         $amount = $_POST['amount']; 
         $category = $_POST['category']; 
@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
         $sql = "INSERT INTO expenses (userID, amount, category, description, expenseType, expenseTime)
         VALUES (:userID, :amount, :category, :description, :expenseType, :expenseTime)";
 
-       
         $params = [
             ':userID' => $userID,
             ':amount' => $amount,
@@ -23,6 +22,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
         ];
 
         $db->query($sql, $params);
+
+        $updateSql = "UPDATE users SET amount = amount - :deductAmount WHERE userID = :userID";
+
+        $updateParams = [
+            ':deductAmount' => $amount,
+            ':userID' => $userID
+        ];
+
+        $db->query($updateSql, $updateParams);
 
         header("Location: {$_SERVER['REQUEST_URI']}");
         exit;

@@ -7,15 +7,9 @@ subscription.php for adding subscription expense
 
 pwede na lagyan ng list of subscriptions ung dashboard view
 
-alisin ung change password sa user settings
-
 login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior
 
-add activeBtn in sidebar
-
 headNoSide becomes headNoSideNoNavbar
-
-namiminus ung balance bawat add expense
 
 what if kulang balance, pwede paba mag add expense -lagyan ng backend
 

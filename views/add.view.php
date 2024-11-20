@@ -29,12 +29,13 @@
                     </button>
                 </div>
 
-                <form method="POST" class="flex flex-col text-base gap-5">
+                <form id="addForm" method="POST" class="flex flex-col text-base gap-5">
                     <input
                         type="number"
                         id="amount"
                         name="amount"
                         placeholder="Amount"
+                        min="0"
                         required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none">
                     <select
@@ -91,18 +92,40 @@
                         id="type"
                         name="type"
                         value="basic">
+                    <input
+                        class="hidden"
+                        type="text"
+                        id="allow"
+                        name="allow"
+                        required>
                     <button
+                        id="submitBtn"
                         class="py-1 text-lg sm:text-xl font-semibold btGreen2 rounded-3xl"
                         type="submit"
                         name="addExpense">
                         Add Expense
                     </button>
                 </form>
+                <p id="message" class="hidden text-gray-300 mt-4 text-center">Insufficient Balance</p>
             </div>
         </div>
     </div>
 </main>
 <script>
+    document.getElementById('submitBtn').addEventListener('click', () => {
+        let balance = <?php echo json_encode($_SESSION['balance']); ?>;
+        let amount = document.getElementById('amount').value;
+        document.getElementById('allow')?.setAttribute('required', 'true');
+
+        if (amount !== "") {
+            if (balance < amount) {
+                document.getElementById('message').classList.remove('hidden');
+            } else {
+                document.getElementById('allow').removeAttribute('required');
+            }
+        }
+    });
+
     function showPanelAdd() {
         document.getElementById('addPanel').classList.remove('hidden');
 

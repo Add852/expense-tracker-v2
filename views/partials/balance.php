@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['amountToAdd'])) {
     $db->query("UPDATE users SET amount = amount + ? WHERE userid = ?;", [$amountToAdd, $userID]);
 }
 $balance = $db->query('select amount from users where userid = ?;', [$userID])->fetchColumn();
+$_SESSION['balance'] = $balance;
 ?>
 
 <!-- BALANCE ICON -->
