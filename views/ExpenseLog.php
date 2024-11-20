@@ -5,8 +5,9 @@
 
 
 
-<div class="container mx-auto p-4">
 
+<div class="container mx-auto p-4">
+    
     <div>
 
 
@@ -27,17 +28,7 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
+        
 
         <!-- desktop/tablet/laptop View -->
 
@@ -45,29 +36,22 @@
 
         <div id="large_view" class="hidden" onclick="toggleView()">
            
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Expense ID</span>
-                <span id="label_expense_id" class="font-semibold text-gray-300">1</span>
-            </div>
+            <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Description</span>
-                <span id="label_description" class="font-semibold text-gray-300">Sample description</span>
-            </div>
+                <h2 class="text-lg font-bold" id="description">                           New York Flight                 </h2>
+                <p class="text-sm  font-bold" id="expense_time">                          11 Sep 2001                     </p>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Expense Time</span>
-                <span id="label_expense_time" class="font-semibold text-gray-300">2022/05/04</span>
             </div>
+      
+            <div class="flex justify-between items-start px-4 py-3">
+          
+                <div>
+                    <p class="text-sm font-bold  text-gray-300" id="category"     >     Category: Transportation         </p>
+                    <p class="text-sm font-bold text-gray-300"  id="expense_type" >     Type: Basic                      </p>
+                </div>    
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Expense Type</span>
-                <span id="label_expense_type" class="font-semibold text-gray-300">Subscription</span>
-            </div>
+                <p class="text-lg font-bold"  id="amount">                                ₱ 35                             </p>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Amount</span>
-                <span id="label_amount" class="font-semibold text-gray-300">00.00</span>
             </div>
 
         </div>
@@ -75,28 +59,11 @@
 
 
 
-
-
-
-
-
-        
-
         <!-- Full View -->
-
 
         <form id="fullView" method="POST"  action=""  class="hidden">
 
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Expense ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="expense_id" value="1" />
-            </div>
 
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">User ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="user_id" value="1" />
-            </div>
 
 
             <div class="flex justify-between border-b pb-3 pt-3">
@@ -128,23 +95,6 @@
                 <input  type="text" class="text-gray-300 bg-[#03352c]" id="expense_time" value="2022/05/04 : 8:45 PM" />
             </div>
 
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Goal ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]" id="goal_id"  value="0011" />
-            </div>
-
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Subscription ID:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="subscription_id" value="SB0011" />
-            </div>
-
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class=" font-semibold text-gray-300">Group ID:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]"  id="group_id"  value="0011" />
-            </div>
 
 
             <div class="flex justify-start space-x-4 mt-4">
@@ -178,10 +128,10 @@
             let Resolution;
 
 
-            // eto ung default design class nila. - dineclare ko since - naka-
+            // eto ung default design class nila. - dineclare ko since - naka- 
 
             mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c]  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+            largeView.className  = " max-w-4xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
@@ -224,12 +174,12 @@
                 
                 if(Resolution < 768)                                       
                 {              
-                    fullView.className = fullView_class.mobile;                                                                      
+                    fullView.className = fullView_class.mobile;             // if yung reso pang mobile - then mobile pang mobile yung design                                                         
                 }
 
                 if(Resolution > 767)                                                         
                 {                                                           
-                    fullView.className = fullView_class.NotMobile;          
+                    fullView.className = fullView_class.NotMobile;         // desktop/tablet/laptop view
                 }         
             }
 
@@ -238,7 +188,7 @@
                 // pwede na iabang dito yung back-end.
                 // update and retrieved dito.
 
-                fullView.className = 'hidden';                  // hahide neto fullview after iclick save changes
+                fullView.className = 'hidden';                              // hahide neto fullview after iclick save changes
             }
 
             function deleteExpense()

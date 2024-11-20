@@ -28,30 +28,21 @@
         <!-- desktop/tablet/laptop View -->
 
         <div id="large_view" class="hidden" onclick="toggleView()">
-           
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Subscription ID</span>
-                <span id="label_subscriptionID" class="font-semibold text-gray-300">1</span>
+
+            <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
+                   <h2 class="text-lg font-bold" id="description">              New York Flight                </h2>
+                   <p class="text-sm" id="expense_time">                        11 Sep 2001                    </p>
             </div>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">User ID</span>
-                <span id="label_userID" class="font-semibold text-gray-300">1</span>
-            </div>
+            <div class="flex justify-between items-start px-4 py-3">
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Time of Payment</span>
-                <span id="label_paymentDateTime" class="font-semibold text-gray-300">2022/05/04 : 8:45pm</span>
-            </div>
+               <div>
+                   <p class="text-sm text-gray-300" id="category">            Category: Transportation         </p>
+                   <p class="text-sm text-gray-300" id="expense_type">        Type: Basic                      </p>
+               </div>    
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Amount</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
-            </div>
+               <p class="text-lg font-bold"       id="amount">                  ₱ 35                             </p>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Category</span>
-                <span id="label_category" class="font-semibold text-gray-300">Food</span>
             </div>
 
         </div>
@@ -62,17 +53,6 @@
 
 
         <form id="fullView" method="POST"  action=""  class="hidden">
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Subscription ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="subscriptionID" value="1" />
-            </div>
-
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">User ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="userID" value="1" />
-            </div>
 
 
             <div class="flex justify-between border-b pb-3 pt-3">
@@ -133,7 +113,7 @@
             // eto ung default design class nila. - dineclare ko since - naka-
 
             mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c]  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+            largeView.className  = " max-w-4xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
