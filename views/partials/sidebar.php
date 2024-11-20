@@ -22,24 +22,11 @@
     .csm {
         width: 12rem;
     }
-
-    @media (min-width: 640px) {
-
-        .csl,
-        .dsl {
-            display: block;
-        }
-
-        .dsm,
-        .csm {
-            width: 12rem;
-        }
-    }
 </style>
-<div id="menu" class="fixed sm:relative dsm z-40 h-full flex-shrink-0 tlGreen textGray flex-col border-r border-one border-gray-800 transition-all ease-out duration-500">
+<div id="menu" class="fixed sm:relative dsm z-40 h-full flex-shrink-0 tlGreen textGray flex-col border-r border-one border-gray-800">
 
     <!-- HAMBURGER -->
-    <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end block sm:hidden">
+    <button id="menu_btn" title="Menu" class="w-12 p-3 hover:bg-emerald-900 self-end">
         <svg class="textGray" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
