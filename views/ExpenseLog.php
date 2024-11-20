@@ -45,7 +45,7 @@
             <div class="flex justify-between items-start px-4 py-3 bg-[#03352c] ">
           
                 <div>                                                                     <!--Concatenate nalang dito ung Title saka yung value -->
-                    <p class="text-sm text-gray-300"  id="category"      >              Category: Transportation         </p>
+                    <p class="text-sm text-gray-300 pb-2"  id="category"      >              Category: Transportation         </p>
                     <p class="text-sm text-gray-300"  id="expense_type"  >              Type: Basic                      </p>
                 </div>                                                                    <!--Concatenate nalang dito ung Title saka yung value -->
 
