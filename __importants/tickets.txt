@@ -15,8 +15,6 @@ add activeBtn in sidebar
 
 headNoSide becomes headNoSideNoNavbar
 
-sideBar need hamburger in larger device by default na collapse 
-
 namiminus ung balance bawat add expense
 
 what if kulang balance, pwede paba mag add expense -lagyan ng backend
