@@ -38,19 +38,19 @@
            
             <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
 
-                <h2 class="text-lg font-bold" id="description">                           New York Flight                 </h2>
-                <p class="text-sm  font-bold" id="expense_time">                          11 Sep 2001                     </p>
+                <h2 class = "text-lg  " id="description">                                 New York Flight                 </h2>
+                <p  class = "text-sm  " id="expense_time">                                11 Sep 2001                     </p>
 
             </div>
       
             <div class="flex justify-between items-start px-4 py-3 bg-[#03352c] ">
           
-                <div>
-                    <p class="text-sm font-bold  text-gray-300" id="category"     >     Category: Transportation         </p>
-                    <p class="text-sm font-bold  text-gray-300"  id="expense_type" >     Type: Basic                      </p>
-                </div>    
+                <div>                                                                     <!--Concatenate nalang dito ung Title saka yung value -->
+                    <p class="text-sm text-gray-300"  id="category"      >              Category: Transportation         </p>
+                    <p class="text-sm text-gray-300"  id="expense_type"  >              Type: Basic                      </p>
+                </div>                                                                    <!--Concatenate nalang dito ung Title saka yung value -->
 
-                <p class="text-lg font-bold"  id="amount">                                ₱ 35                             </p>
+                <p class="text-lg font-bold"  id="amount">                                 ₱ 35                             </p> 
 
             </div>
 
@@ -80,7 +80,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Description:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="ako langto" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="New York Flight" />
             </div>
 
 
@@ -92,7 +92,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Expense Time:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="expense_time" value="2022/05/04 : 8:45 PM" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="expense_time" value="11 Sep 2001" />
             </div>
 
 
@@ -131,7 +131,7 @@
             // eto ung default design class nila. - dineclare ko since - naka- 
 
             mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " max-w-4xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer";
+            largeView.className  = " max-w-5xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
@@ -139,7 +139,7 @@
             let fullView_class = {              
 
                 mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer',
-                NotMobile:      '  sm:hidden md:block max-w-4xl mx-auto bg-[#03352c]  lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
+                NotMobile:      '  sm:hidden md:block max-w-5xl mx-auto bg-[#03352c]  lg:block max-w-5xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
 
             };
 
