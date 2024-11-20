@@ -13,12 +13,12 @@
           
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
-            <h2 class = "text-xl font-bold px-4 py-2 bg-green-700 rounded-t-lg" id = "amount"  >             ₱ 35                      </h2>
+            <h2 class = "text-xl font-bold  bg-green-700 rounded-t-lg" id = "amount"  >             ₱ 35                      </h2>
             
-            <div class="flex justify-between items-center  rounded-t-lg px-4 py-2">
+            <div class="flex justify-between items-center  rounded-t-lg ">
                                                             <!--Concatenate nalang dito ung Title saka yung value -->
-                <p  class = "text-sm  " id = "category"       >    Category: food               </p>
-                <p  class = "text-sm  " id = "expense_time"   >    11 Sep 2001                  </p> 
+                <p  class = "text-sm text-gray-300 " id = "category"       >    Category: food               </p>
+                <p  class = "text-sm text-gray-300 " id = "expense_time"   >    11 Sep 2001                  </p> 
     
             </div>
 
