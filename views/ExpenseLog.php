@@ -17,14 +17,13 @@
 
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
-            <div class="flex justify-between border-b pb-3">
-                <span class="font-semibold text-gray-300">Expense Time:</span>
-                <span id="label_expense_time" class="font-semibold text-gray-300"></span>
-            </div>
-
-            <div class="flex justify-between pt-3">
-                <span class="font-semibold text-gray-300">Expense Type:</span>
-                <span id="label_expense_type" class="font-semibold text-gray-300">Subscription</span>
+            <h2 class = "text-xl font-bold px-4 py-2 bg-green-700 rounded-t-lg" id = "amount"  >             ₱ 35                      </h2>
+            
+            <div class="flex justify-between items-center  rounded-t-lg px-4 py-2">
+                                                              <!--Concatenate nalang dito ung Title saka yung value -->
+                <p  class = "text-sm  " id = "category"       >    Category: food               </p>
+                <p  class = "text-sm  " id = "expense_time"   >    11 Sep 2001                  </p> 
+    
             </div>
 
         </div>
@@ -38,8 +37,8 @@
            
             <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
 
-                <h2 class = "text-lg  " id="description">                                 New York Flight                 </h2>
-                <p  class = "text-sm  " id="expense_time">                                11 Sep 2001                     </p>
+                <h2 class = "text-lg  " id = "description"  >                                 New York Flight                 </h2>
+                <p  class = "text-sm  " id = "expense_time" >                                 11 Sep 2001                     </p>
 
             </div>
       
@@ -104,6 +103,15 @@
 
             
         </form>
+
+
+        
+
+
+
+
+
+
 
 
 
@@ -213,6 +221,23 @@
         
 </div>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 <?php  require('partials/footer.php') ?>

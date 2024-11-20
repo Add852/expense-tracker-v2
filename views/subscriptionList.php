@@ -13,17 +13,17 @@
           
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
-            <div class="flex justify-between border-b pb-3">
-                <span class="font-semibold text-gray-300">Time of payment:</span>
-                <span id="label_paymentDateTime" class="font-semibold text-gray-300"> 2022/05/04 : 8:45pm</span>
-            </div>
-
-            <div class="flex justify-between pt-3">
-                <span class="font-semibold text-gray-300">Amount:</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
+            <h2 class = "text-xl font-bold px-4 py-2 bg-green-700 rounded-t-lg" id = "amount"  >             ₱ 35                      </h2>
+            
+            <div class="flex justify-between items-center  rounded-t-lg px-4 py-2">
+                                                            <!--Concatenate nalang dito ung Title saka yung value -->
+                <p  class = "text-sm  " id = "category"       >    Category: food               </p>
+                <p  class = "text-sm  " id = "expense_time"   >    11 Sep 2001                  </p> 
+    
             </div>
 
         </div>
+        
 
         <!-- desktop/tablet/laptop View -->
 
@@ -59,7 +59,7 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Time of Payment:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="2022/05/04 : 8:45pm" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="11 Sep 2001" />
             </div>
 
 
@@ -71,12 +71,12 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Amount:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="$20.00" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="$35" />
             </div>
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Description:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="Lorem ipsum" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="New york" />
             </div>
 
 
