@@ -13,45 +13,38 @@
           
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
-            <div class="flex justify-between border-b pb-3">
-                <span class="font-semibold text-gray-300">Time of payment:</span>
-                <span id="label_paymentDateTime" class="font-semibold text-gray-300"> 2022/05/04 : 8:45pm</span>
-            </div>
-
-            <div class="flex justify-between pt-3">
-                <span class="font-semibold text-gray-300">Amount:</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
+            <h2 class = "text-xl font-bold text-white bg-green-700 p-2  rounded-t-lg" id = "amount "  >             ₱ 35                      </h2>
+            
+            <div class="flex justify-between items-center  rounded-t-lg p-2 ">
+                                                            <!--Concatenate nalang dito ung Title saka yung value -->
+                <p  class = "text-sm text-gray-300 " id = "category"       >    Category: food               </p>
+                <p  class = "text-sm text-gray-300 " id = "expense_time"   >    11 Sep 2001                  </p> 
+    
             </div>
 
         </div>
+        
 
         <!-- desktop/tablet/laptop View -->
 
         <div id="large_view" class="hidden" onclick="toggleView()">
-           
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Subscription ID</span>
-                <span id="label_subscriptionID" class="font-semibold text-gray-300">1</span>
+
+            <div class="flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2">
+
+                <h2 class="text-lg font-bold" id="description">                    New York Flight                </h2>
+                <p class="text-sm" id="expense_time">                              11 Sep 2001                    </p>
+
             </div>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">User ID</span>
-                <span id="label_userID" class="font-semibold text-gray-300">1</span>
-            </div>
+            <div class="flex justify-between items-start px-4 py-3 bg-[#03352c] ">
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Time of Payment</span>
-                <span id="label_paymentDateTime" class="font-semibold text-gray-300">2022/05/04 : 8:45pm</span>
-            </div>
+               <div>                                                               <!--Concatenate nalang dito ung Title saka yung value -->
+                   <p class="text-sm text-gray-300 pb-2" id="category">               Category: Transportation         </p>
+                   <p class="text-sm text-gray-300" id="expense_type">           Type: Basic                      </p>
+               </div>                                                              <!--Concatenate nalang dito ung Title saka yung value -->
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Amount</span>
-                <span id="label_Amount" class="font-semibold text-gray-300">$20.00</span>
-            </div>
+               <p class="text-lg font-bold"       id="amount">                      ₱ 35                             </p>
 
-            <div class="flex flex-col items-center">
-                <span class="font-semibold text-gray-300">Category</span>
-                <span id="label_category" class="font-semibold text-gray-300">Food</span>
             </div>
 
         </div>
@@ -63,21 +56,10 @@
 
         <form id="fullView" method="POST"  action=""  class="hidden">
 
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">Subscription ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="subscriptionID" value="1" />
-            </div>
-
-
-            <div class="flex justify-between border-b pb-3 pt-3">
-                <span class="font-semibold text-gray-300">User ID:</span>
-                <input type="text" class="text-gray-300 bg-[#03352c]"  id="userID" value="1" />
-            </div>
-
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Time of Payment:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="2022/05/04 : 8:45pm" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="paymentDateTime" value="11 Sep 2001" />
             </div>
 
 
@@ -89,12 +71,12 @@
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Amount:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="$20.00" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="$35" />
             </div>
 
             <div class="flex justify-between border-b pb-3 pt-3">
                 <span class="font-semibold text-gray-300">Description:</span>
-                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="Lorem ipsum" />
+                <input  type="text" class="text-gray-300 bg-[#03352c]" id="description" value="New york" />
             </div>
 
 
@@ -132,16 +114,16 @@
 
             // eto ung default design class nila. - dineclare ko since - naka-
 
-            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
-            largeView.className  = " flex lg:flex lg:justify-between lg:max-w-4xl   md:flex md:justify-between md:max-w-4xl   mx-auto bg-[#03352c]  shadow-lg rounded-lg p-5 mt-5 cursor-pointer";
+            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-2 mt-2  cursor-pointer xl:hidden ";
+            largeView.className  = " max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
 
             let fullView_class = {              
 
-                mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer',
-                NotMobile:      '  sm:hidden md:block max-w-4xl mx-auto bg-[#03352c]   lg:block max-w-4xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
+                mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c]   shadow-lg rounded-lg p-5 mt-2 cursor-pointer',
+                NotMobile:      '  sm:hidden md:block max-w-7xl mx-auto bg-[#03352c]   lg:block max-w-7xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
 
             };
 
