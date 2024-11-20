@@ -23,39 +23,36 @@ $_SESSION['balance'] = $balance;
 </div>
 
 <!-- ADD BALANCE FORM -->
-<div id="addBalanceForm" class="fixed w-96 rounded-lg tlGreen text-sm hidden gap-5 px-5 py-2 shadow-lg">
-    <!-- Header and X -->
-    <div class="flex flex-row justify-between">
-        <h2 class="text-3xl">Add Balance</h2>
-        <button id="addBalanceFormXButton">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-        </button>
-    </div>
-    <hr class="my-5">
-    <form method="POST" action="" class="flex flex-col gap-5">
-        <div class="flex flex-row gap-4 items-center">
-            <label for="amount" class="text-2xl font-semibold">Amount: </label>
-            <input
-                type="number"
-                name="amountToAdd"
-                placeholder="0"
-                class="w-full p-3 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                required />
+<main id="balancePanel" class="hidden">
+    <div id="balanceOverlay" class="z-50 flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
+        <div class="flex justify-center text-base sm:text-lg text-gray-300 tlGreen p-8 rounded-3xl">
+            <div>
+                <h2 class="text-4xl font-semibold text-center textGray">Add Balance</h2>
+                <hr class="my-4 border-gray-300" />
+                <form method="POST" action="" class="flex flex-col text-base gap-5">
+                    <div class="flex flex-row my-4 gap-4 items-center">
+                        <label for="amount" class="text-2xl font-semibold">Amount: </label>
+                        <input
+                            type="number"
+                            name="amountToAdd"
+                            placeholder="0"
+                            class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none"
+                            required />
+                    </div>
+                    <button type="submit" class="py-1 text-lg sm:text-xl font-semibold btGreen2 rounded-3xl">Add Balance</button>
+                </form>
+            </div>
         </div>
-        <button type="submit" class="btGreen rounded-lg w-full p-2">Add</button>
-    </form>
-</div>
-
+    </div>
+</main>
 <script>
-    const addBalanceButton = document.getElementById('addBalanceButton');
-    const addBalanceFormXButton = document.getElementById('addBalanceFormXButton');
-    const addBalanceForm = document.getElementById('addBalanceForm');
-    addBalanceButton.addEventListener('click', () => {
-        addBalanceForm.classList.toggle('hidden');
+    document.getElementById('addBalanceButton').addEventListener('click', () => {
+        document.getElementById('balancePanel').classList.remove('hidden');
     });
-    addBalanceFormXButton.addEventListener('click', () => {
-        addBalanceForm.classList.toggle('hidden');
+
+    document.getElementById('balanceOverlay').addEventListener('click', (event) => {
+        if (event.target === document.getElementById('balanceOverlay')) {
+            document.getElementById('balancePanel').classList.add('hidden');
+        }
     });
 </script>
