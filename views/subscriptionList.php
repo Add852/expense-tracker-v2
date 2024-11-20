@@ -13,9 +13,9 @@
           
         <div id="mobile_view" class="hidden" onclick="toggleView()">
 
-            <h2 class = "text-xl font-bold text-white bg-green-700 p-5  rounded-t-lg" id = "amount "  >             ₱ 35                      </h2>
+            <h2 class = "text-xl font-bold text-white bg-green-700 p-2  rounded-t-lg" id = "amount "  >             ₱ 35                      </h2>
             
-            <div class="flex justify-between items-center  rounded-t-lg p-5  ">
+            <div class="flex justify-between items-center  rounded-t-lg p-2 ">
                                                             <!--Concatenate nalang dito ung Title saka yung value -->
                 <p  class = "text-sm text-gray-300 " id = "category"       >    Category: food               </p>
                 <p  class = "text-sm text-gray-300 " id = "expense_time"   >    11 Sep 2001                  </p> 
@@ -114,7 +114,7 @@
 
             // eto ung default design class nila. - dineclare ko since - naka-
 
-            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer xl:hidden ";
+            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-2 mt-2  cursor-pointer xl:hidden ";
             largeView.className  = " max-w-5xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ";
            
 
