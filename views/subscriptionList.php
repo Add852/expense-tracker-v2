@@ -115,7 +115,7 @@
             // eto ung default design class nila. - dineclare ko since - naka-
 
             mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-2 mt-2  cursor-pointer xl:hidden ";
-            largeView.className  = " max-w-5xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ";
+            largeView.className  = " max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ";
            
 
             // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
@@ -123,7 +123,7 @@
             let fullView_class = {              
 
                 mobile:         '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c]   shadow-lg rounded-lg p-5 mt-2 cursor-pointer',
-                NotMobile:      '  sm:hidden md:block max-w-5xl mx-auto bg-[#03352c]   lg:block max-w-5xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
+                NotMobile:      '  sm:hidden md:block max-w-7xl mx-auto bg-[#03352c]   lg:block max-w-7xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
 
             };
 
