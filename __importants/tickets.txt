@@ -1,9 +1,6 @@
-
 insert all tailwind classess in tailwind.css
 
 recent transactions displays the oldest to newest transaction. must change?
-
-subscription.php for adding subscription expense
 
 pwede na lagyan ng list of subscriptions ung dashboard view
 
@@ -11,13 +8,13 @@ login, forgot, home(kapag di naka login), signup pages - need to fix dropdown be
 
 headNoSide becomes headNoSideNoNavbar
 
-what if kulang balance, pwede paba mag add expense -lagyan ng backend
-
 icons need to be uploaded by user  (goal, profile, group)
 
-lagyan ng contach support page, parang chat.
+lagyan ng contact support page, parang chat.
 
-===
+what if kulang ung balance pag nag auto add ung subscription? is it okay negative ung balance
+
+=============================================================================================================
 
 convert amount/balance to float instead of int para pwede decimal
 
@@ -86,3 +83,4 @@ pwa manifest file??
 - Multiple Wallet
 - Messaging (for sharing)
 - Timezones
+- Panel for adding back Balance if Expense is deleted

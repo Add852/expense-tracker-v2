@@ -1,10 +1,12 @@
 <?php
 
-//for testing purposes
-function dd($value)
+//for testing purposes. iniba para pwede dd($value1, $value2)
+function dd(...$values)
 {
     echo "<pre>";
-    var_dump($value);
+    foreach ($values as $value) {
+        var_dump($value);
+    }
     echo "</pre>";
     die();
 }

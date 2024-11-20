@@ -23,15 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['addExpense'])) {
 
         $db->query($sql, $params);
 
-        $updateSql = "UPDATE users SET amount = amount - :deductAmount WHERE userID = :userID";
-
-        $updateParams = [
-            ':deductAmount' => $amount,
-            ':userID' => $userID
-        ];
-
-        $db->query($updateSql, $updateParams);
-
         header("Location: {$_SERVER['REQUEST_URI']}");
         exit;
     }
