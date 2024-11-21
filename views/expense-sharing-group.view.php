@@ -1,7 +1,7 @@
-<?php require('partials/head.php') ?>
+<?php require('partials/headNoSide.php') ?>
 
 <!-- Sidebar -->
-<div class="bg-gray-900 w-16 h-screen fixed shadow-lg">
+<div class="tlGreen w-16 h-screen fixed shadow-lg z-10"> <!-- added z-10 -->
       <!-- Sidebar Content -->
       <!-- Icon 1 -->
       <div class="group relative">
@@ -76,7 +76,7 @@
       <!-- Icon 5 -->
       <div class="group relative">
         <img
-          src="https://randomuser.me/api/portraits/men/2.jpg"
+          src="https://cdn-icons-png.flaticon.com/512/117/117885.png"
           alt="Icon 5"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
@@ -85,16 +85,16 @@
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Matt Ricohermoso
+          Add a Group
         </div>
       </div>
     </div>
 
     <!-- Main Content Container -->
-    <div class="flex ml-16 h-screen">
+    <div class="flex ml-16 h-screen absolute top-0 left-0 right-0 bottom-0"> <!-- absolute top-0 left-0 right-0 bottom-0 -->
 
       <!-- Group/Channel Bar -->
-      <div class="bg-gray-800 w-80 p-4">
+      <div class="bgGreen w-80 p-4">
 
         <!-- Group Title -->
         <div class="flex items-center mb-4">
@@ -104,7 +104,7 @@
         </div>
 
         <!-- Group Form Container -->
-        <div class="bg-gray-700 p-4 rounded-lg">
+        <div class="tlGreen p-4 rounded-lg">
           <form class="space-y-4">
             <!-- Amount Field -->
             <div>
@@ -125,6 +125,10 @@
                 <option value="food">Food</option>
                 <option value="transportation">Transportation</option>
                 <option value="entertainment">Entertainment</option>
+                <option value="personal care">Personal Care</option>
+                <option value="health & wellness">Health & Wellness</option>
+                <option value="shopping">Shopping</option>
+                <option value="utilities">Utilities</option>
                 <option value="miscellaneous">Miscellaneous</option>
               </select>
             </div>
@@ -145,8 +149,8 @@
               <select
                 class="w-full mt-1 p-2 rounded-md bg-gray-600 text-white border-none"
               >
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
+                <option value="income">Basic</option>
+                <option value="expense">Subscription</option>
               </select>
             </div>
 
@@ -171,7 +175,7 @@
             <!-- Add Button -->
             <button
               type="submit"
-              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md"
+              class="w-full btGreen  text-white font-semibold py-2 rounded-md"
             >
               Add
             </button>
@@ -184,7 +188,7 @@
       <div class="flex-grow flex flex-col">
         
         <!-- Navigation Bar -->
-        <div class="bg-gray-700 p-4 h-16 drop-shadow-lg ">
+        <div class="bgGreen p-4 h-16 drop-shadow-lg">
           <h5 class="text-white text-lg font-semibold flex items-center">
             <span class="text-gray-400 mr-2 text-3xl tracking-wider">#</span>
             Group Expense Record
@@ -195,15 +199,14 @@
         <div class="flex flex-grow">
           
           <!-- Content Area -->
-          <div class="flex-grow bg-gray-600 p-4">
+          <div class="flex-grow bgGreen p-4">
             <p class="text-white">
-              Main content goes here. This section can be used for chat messages
-              or any primary content.
+              Main content skibidi
             </p>
           </div>
 
           <!-- Members List -->
-          <div class="bg-gray-800 w-60 p-4">
+          <div class="tlGreen w-60 p-4">
             <h5 class="text-gray-400 text-lg font-bold tracking-wider">
               Members - 5
             </h5>
