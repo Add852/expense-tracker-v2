@@ -1,7 +1,7 @@
 <?php require('partials/headNoSide.php') ?>
 
 <div class="flex flex-col gap-5 items-center justify-center">
-    <div class="w-full max-w-md p-8 tlGreen rounded-3xl shadow-lg ">
+    <div class="w-full max-w-md p-8 tlBgGreen rounded-3xl shadow-none sm:shadow-lg ">
         <h2 class="text-4xl font-semibold text-center textGray">Create an account</h2>
         <br />
         <hr class="my-4 border-gray-300" />

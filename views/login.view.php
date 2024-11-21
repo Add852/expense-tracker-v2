@@ -1,5 +1,5 @@
 <?php require('partials/headNoSide.php') ?>
-<div class="grid sm:grid-cols-2 text-center items-center">
+<div class="grid grid-cols-1 sm:grid-cols-2 text-center items-center">
 
     <div class="hidden sm:inline">
         <h1 class="text-7xl text-gray-300 font-semibold">XPENSE</h1>
@@ -7,7 +7,7 @@
 
     <!-- Ayaw opacity kapag ginamit yung tlGreen -->
 
-    <div class="tlBgGreen rounded-3xl mt-8 p-8 sm:mx-4">
+    <div class="tlBgGreen rounded-3xl mt-8 p-8 mx-20 sm:mx-12">
 
         <!-- <div class="tlGreen rounded-3xl md:mx-16 p-8 bg-opacity-0 sm:mx-4 md:bg-opacity-100"> -->
 
