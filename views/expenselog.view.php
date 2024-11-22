@@ -7,7 +7,14 @@
 
         <?php
 
-        if(empty($expenses ))
+
+        $showData = new showExpenses;  // trial: created class from Controllers/ExpenseLog.php
+        
+
+        
+        $expenses = $showData->expenses;
+
+        if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
             echo "no expense found";
             return;
