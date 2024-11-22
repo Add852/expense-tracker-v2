@@ -1,7 +1,7 @@
 <?php require('partials/headNoSide.php') ?>
 
 <!-- Sidebar -->
-<div class="tlGreen w-16 h-screen fixed shadow-lg z-10"> <!-- added z-10 -->
+<div class="bg-gray-900 w-16 h-screen fixed shadow-lg">
       <!-- Sidebar Content -->
       <!-- Icon 1 -->
       <div class="group relative">
@@ -10,12 +10,11 @@
           alt="Icon 1"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 1's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Anthony Dayrit
+          Anthony's Group
         </div>
       </div>
 
@@ -29,12 +28,11 @@
           alt="Icon 2"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 2's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Brishia Beltran
+          Group X
         </div>
       </div>
 
@@ -45,12 +43,11 @@
           alt="Icon 3"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 3's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Keith Yamzon
+          Group Y
         </div>
       </div>
 
@@ -61,12 +58,11 @@
           alt="Icon 4"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 4's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Aeingel Pecson
+          Group Z
         </div>
       </div>
 
@@ -76,11 +72,10 @@
       <!-- Icon 5 -->
       <div class="group relative">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/117/117885.png"
+          src="https://randomuser.me/api/portraits/men/2.jpg"
           alt="Icon 5"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 5's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
@@ -91,10 +86,10 @@
     </div>
 
     <!-- Main Content Container -->
-    <div class="flex ml-16 h-screen absolute top-0 left-0 right-0 bottom-0"> <!-- absolute top-0 left-0 right-0 bottom-0 -->
+    <div class="flex ml-16 h-screen">
 
-      <!-- Group/Channel Bar -->
-      <div class="tlGreen w-80 p-4">
+      <!-- Group Bar -->
+      <div class="bg-gray-800 w-80 p-4">
 
         <!-- Group Title -->
         <div class="flex items-center mb-4">
@@ -104,8 +99,9 @@
         </div>
 
         <!-- Group Form Container -->
-        <div class="tlGreen p-4 rounded-lg">
+        <div class="bg-gray-700 p-4 rounded-lg">
           <form class="space-y-4">
+
             <!-- Amount Field -->
             <div>
               <label class="block text-gray-300 font-semibold">Amount</label>
@@ -143,17 +139,6 @@
               />
             </div>
 
-            <!-- Type Field -->
-            <div>
-              <label class="block text-gray-300 font-semibold">Type</label>
-              <select
-                class="w-full mt-1 p-2 rounded-md bg-gray-600 text-white border-none"
-              >
-                <option value="basic">Basic</option>
-                <option value="subscription">Subscription</option>
-              </select>
-            </div>
-
             <!-- Date Field -->
             <div>
               <label class="block text-gray-300 font-semibold">Date</label>
@@ -175,7 +160,7 @@
             <!-- Add Button -->
             <button
               type="submit"
-              class="w-full btGreen  text-white font-semibold py-2 rounded-md"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md"
             >
               Add
             </button>
@@ -183,12 +168,11 @@
         </div>
       </div>
 
-
       <!-- Content and Member List Section -->
       <div class="flex-grow flex flex-col">
-        
+
         <!-- Navigation Bar -->
-        <div class="bgGreen p-4 h-16 drop-shadow-lg">
+        <div class="bg-gray-600 p-4 h-16 drop-shadow-lg">
           <h5 class="text-white text-lg font-semibold flex items-center">
             <span class="text-gray-400 mr-2 text-3xl tracking-wider">#</span>
             Group Expense Record
@@ -197,25 +181,38 @@
 
         <!-- Main Content and Members List -->
         <div class="flex flex-grow">
-          
+
           <!-- Content Area -->
-          <div class="flex-grow bgGreen p-4">
-            <p class="text-white">
-              Main content skibidi
-            </p>
+          <div class="flex-grow bg-gray-600 p-4">
+            <p class="text-white">Main content skibidi</p>
           </div>
 
           <!-- Members List -->
-          <div class="tlGreen w-60 p-4">
+          <div class="bg-gray-800 w-60 p-4">
             <h5 class="text-gray-400 text-lg font-bold tracking-wider">
               Members - 5
             </h5>
             <ul class="mt-4">
-              <li class="text-white mb-2">Anthony Dayrit</li>
-              <li class="text-white mb-2">Brishia Beltran</li>
-              <li class="text-white mb-2">Keith Yamzon</li>
-              <li class="text-white mb-2">Aeingel Pecson</li>
-              <li class="text-white mb-2">Matt Ricohermoso</li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Anthony Dayrit</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Brishia Beltran</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Keith Yamzon</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Aeingel Pecson</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Matt Ricohermoso</span>
+              </li>
             </ul>
           </div>
         </div>
