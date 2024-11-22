@@ -12,12 +12,10 @@ $userID = $_SESSION['userid'];
 
     class showExpenses
     {
-
         public function getExpense()
         {
-            $this->expenses = $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
+             $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
         }
-
     }
 
 
