@@ -94,7 +94,7 @@
     <div class="flex ml-16 h-screen absolute top-0 left-0 right-0 bottom-0"> <!-- absolute top-0 left-0 right-0 bottom-0 -->
 
       <!-- Group/Channel Bar -->
-      <div class="bgGreen w-80 p-4">
+      <div class="tlGreen w-80 p-4">
 
         <!-- Group Title -->
         <div class="flex items-center mb-4">
@@ -149,8 +149,8 @@
               <select
                 class="w-full mt-1 p-2 rounded-md bg-gray-600 text-white border-none"
               >
-                <option value="income">Basic</option>
-                <option value="expense">Subscription</option>
+                <option value="basic">Basic</option>
+                <option value="subscription">Subscription</option>
               </select>
             </div>
 
