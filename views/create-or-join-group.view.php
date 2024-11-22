@@ -1,4 +1,4 @@
-<!-- pang create or join group panel to!!!! -->
+<!-- pang create or join group panel toooo!!! -->
 
 <main id="addPanel" class="hidden">
     <div id="addOverlay" class="z-50 flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
