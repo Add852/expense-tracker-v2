@@ -6,6 +6,4 @@ protectPage();
 
 $title = 'Subscription List';
 
-require('views/subscriptionList.php');
-
-?>
+require('views/subscriptionlist.view.php');

@@ -36,6 +36,7 @@
                         name="amount"
                         placeholder="Amount"
                         min="0"
+                        step="0.01"
                         required
                         class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none">
                     <select
@@ -112,20 +113,23 @@
     </div>
 </main>
 <script>
-    document.getElementById('submitBtn').addEventListener('click', () => {
-        let balance = <?php echo json_encode($_SESSION['balance']); ?>;
+    let balance = <?php echo json_encode($_SESSION['balance']); ?>;
+
+    document.getElementById('amount').addEventListener('input', function() {
         let amount = document.getElementById('amount').value;
 
-        document.getElementById('allow').setAttribute('required', 'true');
-
         if (amount !== "") {
-            if (balance < amount) {
+            if (parseFloat(amount) > parseFloat(balance)) {
                 document.getElementById('message').classList.remove('hidden');
+                document.getElementById('allow').setAttribute('required', 'true');
             } else {
+                document.getElementById('message').classList.add('hidden');
                 document.getElementById('allow').removeAttribute('required');
             }
+        } else {
+            document.getElementById('message').classList.add('hidden');
+            document.getElementById('allow').removeAttribute('required');
         }
-
     });
 
     function showPanelAdd() {

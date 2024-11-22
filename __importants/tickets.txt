@@ -9,12 +9,14 @@ icons need to be uploaded by user  (goal, profile, group)
 lagyan ng contact support page, parang chat.
 
 what if kulang ung balance pag nag auto add ung subscription? is it okay negative ung balance
+  oo nga no tangina
 
 =============================================================================================================
 
 expense log???
 - itsura
 - deleting of records
+- reusability?? Sa Dashboard and sa Group Expense
 
 mga icons:
 - profile icons

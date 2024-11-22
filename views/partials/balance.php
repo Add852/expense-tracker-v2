@@ -1,14 +1,4 @@
-<?php
-$userID = $_SESSION['userid'];
-if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['amountToAdd'])) {
-    $amountToAdd = $_POST['amountToAdd'];
-    $db->query("UPDATE users SET amount = amount + ? WHERE userid = ?;", [$amountToAdd, $userID]);
-}
-$balance = $db->query('select amount from users where userid = ?;', [$userID])->fetchColumn();
-$_SESSION['balance'] = $balance;
-?>
-
-<!-- BALANCE ICON -->
+<!-- ADD BALANCE FORM -->
 <main id="balancePanel" class="hidden">
     <div id="balanceOverlay" class="z-50 flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
         <div class="flex justify-center text-base sm:text-lg text-gray-300 tlGreen p-8 rounded-3xl">
@@ -32,6 +22,7 @@ $_SESSION['balance'] = $balance;
     </div>
 </main>
 
+<!-- BALANCE ICON -->
 <div class="bg-emerald-900 text-base sm:text-xl rounded-xl h-8 flex justify-end items-center pl-1 pr-2">
     <button id="addBalanceButton" class="h-6 w-6 mr-3">
         <svg class="text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -40,8 +31,6 @@ $_SESSION['balance'] = $balance;
     </button>
     <?= isset($balance) ? "₱ $balance " : '₱ 0' ?>
 </div>
-
-<!-- ADD BALANCE FORM -->
 
 <script>
     document.getElementById('addBalanceButton').addEventListener('click', () => {
