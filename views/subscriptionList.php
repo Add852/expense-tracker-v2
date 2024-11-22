@@ -112,7 +112,7 @@
 
             function deleteExpense() 
             {
-                fullView.className = 'hidden'; // hahide neto fullview after iclick save changes
+                fullView.className = 'hidden';
             }
         </script>
 

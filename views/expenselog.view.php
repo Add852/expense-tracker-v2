@@ -2,7 +2,7 @@
 
 <div class="container mx-auto p-4">
     <div>
-
+        
 
         <?php
         foreach ($expenses as $expense) {

@@ -7,7 +7,10 @@ protectPage();
 //current user
 $userID = $_SESSION['userid'];
 //fetch all the current user's expenses
-$expenses = $db->query('select expenses.* from users join expenses on users.userID=expenses.userID where users.userID=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
+$expenses = $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
+
+<script> alert("naread?") </script>
+
 
 $title = 'Expenses Log';
 
