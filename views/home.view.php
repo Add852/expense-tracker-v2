@@ -8,10 +8,11 @@
     <section>
       <h1 class="text-4xl font-bold p-5">It is time to track your Xpense!</h1>
       <h2 class="text-xl p-5">Simplify Spending, Master Your Money</h2>
-      <button class="cursor-pointer p-5 transition-transform rounded-full text-gray-300 uppercase text-xl font-semibold hover:scale-110 bg-[#1a664d] hover:bg-[#165440]"><a href="/login">
+      <a href="/login">
+      <button class="cursor-pointer p-5 transition-transform rounded-full text-gray-300 uppercase text-xl font-semibold hover:scale-110 bg-[#1a664d] hover:bg-[#278a6a]">
         Get Started
-        </a>
       </button>
+      </a>
     </section>
     <br><br><br><br><br><br><br><br>
     <!-- SVG Separator -->
