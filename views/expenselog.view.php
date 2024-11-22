@@ -16,7 +16,6 @@
         <!-- desktop/tablet/laptop View -->
         <!-- yung magiging default css netong mga to nasa javascrtipt. sundan nalng per ID -->
         <?php
-
         foreach ($expenses as $expense) {
             $description = $expense['description'];
             $expenseTime = formatDateTime($expense['expenseTime']);
