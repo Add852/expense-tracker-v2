@@ -16,7 +16,7 @@
             $expenseType = $expense['expenseType'];
             $amount = $expense['amount'];
 
-
+       
             echo "
 
             <div id='simplified' class=' max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ' onclick='toggleView()'>
