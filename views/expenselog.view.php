@@ -2,32 +2,16 @@
 
 <div class="container mx-auto p-4">
     <div>
-        
-
 
         <?php
 
-        $userID = $_SESSION['userid'];
-
-        //fetch all the current user's expenses
-
-        $expenses = $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
-
-
-
-        // Problem found kaya pala walang record
-        // kase yung mga id sa database walang match ni isa.
-
-        if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
+        if (empty($expenses))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
             echo "no expense found";
             return;
         }
 
-
-
-        foreach ($expenses as $expense) 
-        {
+        foreach ($expenses as $expense) {
             $description = $expense['description'];
             $expenseTime = formatDateTime($expense['expenseTime']);
             $category = $expense['category'];
@@ -51,7 +35,6 @@
                 </div>
             </div>";
         }
-
         ?>
 
         <!-- Full View -->
@@ -90,33 +73,28 @@
         </form>
 
         <script>
-
             //global declaration para kunin yung id's nung simplified and fullview
 
-   
+
             const simplifiedView = document.getElementById("simplified");
             let fullView = document.getElementById("fullView");
-      
+
 
             fullview_classname = "m:max-w-md   sm:p-5 sm:mt-2     md:block lg:block  max-w-7xl    mx-auto     bg-[#03352c]    shadow-lg rounded-lg  p-5 mt-5     cursor-pointer";
 
 
-            function toggleView() 
-            {
+            function toggleView() {
                 fullView.className = fullview_classname;
             }
 
-            function saveChanges() 
-            {
+            function saveChanges() {
                 fullView.className = 'hidden';
             }
 
-            function deleteExpense() 
-            {
+            function deleteExpense() {
                 fullView.className = 'hidden'; // hahide neto fullview after iclick save changes
             }
-
-     </script>
+        </script>
 
 
     </div>
