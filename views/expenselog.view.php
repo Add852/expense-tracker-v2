@@ -7,26 +7,6 @@
 
         <?php
 
-        $userID = $_SESSION['userid'];
-
-        //fetch all the current user's expenses
-
-        $expenses = $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
-
-
-
-        // Problem found kaya pala walang record
-        // paki check nalang yung sa table ng expenses at users
-        // yung joint attribute nila yung usersID walang match na record,
-        // kaya walang mailabas na record loop.
-
-        if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
-        {
-            echo "no expense found";
-            return;
-        }
-
-
 
         foreach ($expenses as $expense) 
         {
@@ -110,12 +90,12 @@
 
             function saveChanges() 
             {
-                fullView.className = 'hidden';
+                fullView.className = 'hidden';  // hahide neto fullview after iclick delete
             }
 
             function deleteExpense() 
             {
-                fullView.className = 'hidden'; // hahide neto fullview after iclick save changes
+                fullView.className = 'hidden'; // hahide neto fullview after iclick delete
             }
 
      </script>
