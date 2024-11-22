@@ -1,10 +1,11 @@
 <!-- pang create or join group panel toooo!!! -->
+<!--what happened ahasjkdshadjashd-->
 
 <main id="addPanel" class="hidden">
     <div id="addOverlay" class="z-50 flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
         <div class="flex justify-center text-base sm:text-lg text-gray-300 tlGreen p-8 rounded-3xl">
             <div>
-                <h2 class="text-4xl font-semibold text-center textGray">Add Expense</h2>
+                <h2 class="text-4xl font-semibold text-center textGray">Create a Group</h2>
                 <hr class="my-4 border-gray-300" />
                 <div class="form-buttons space-x-1 text-lg sm:text-xl font-semibold my-8">
                     <button
