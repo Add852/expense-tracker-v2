@@ -2,19 +2,8 @@
 
 <div class="container mx-auto p-4">
     <div>
-        <!-- mobile View -->
-        <!-- yung magiging default css netong mga to nasa javascrtipt. sundan nalng per ID -->
-        <div id="mobile_view" class="hidden" onclick="toggleView()">
-            <h2 class="text-xl font-bold text-white bg-green-700 p-2  rounded-t-lg" id="amount "> ₱ 35 </h2>
-            <div class="flex justify-between items-center  rounded-t-lg p-2  ">
-                <!--Concatenate nalang dito ung Title saka yung value -->
-                <p class="text-sm text-gray-300 " id="category"> Category: food </p>
-                <p class="text-sm text-gray-300 " id="expense_time"> 11 Sep 2001 </p>
-            </div>
-        </div>
 
-        <!-- desktop/tablet/laptop View -->
-        <!-- yung magiging default css netong mga to nasa javascrtipt. sundan nalng per ID -->
+
         <?php
         foreach ($expenses as $expense) {
             $description = $expense['description'];
@@ -23,7 +12,7 @@
             $expenseType = $expense['expenseType'];
             $amount = $expense['amount'];
             echo "
-            <div id='large_view' onclick='toggleView()'>
+            <div id='simplified' class=' max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ' onclick='toggleView()'>
                 <div class='flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2'>
                     <h2 class='text-lg  ' id='description'> $description </h2>
                     <p class='text-sm  ' id='expense_time'> $expenseTime </p>
@@ -69,77 +58,33 @@
         </form>
 
         <script>
+
             //global declaration para kunin yung id's nung simplified and fullview
-            const mobileView = document.getElementById("mobile_view");
-            const largeView = document.getElementById("large_view");
+
+   
+            const simplifiedView = document.getElementById("simplified");
             let fullView = document.getElementById("fullView");
-            let Resolution;
+      
 
-            // eto ung default design class nila. - dineclare ko since - naka- 
-            mobileView.className = " block max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-2 mt-2 cursor-pointer xl:hidden ";
-            largeView.className = " max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer";
+            fullview_classname = "m:max-w-md   sm:p-5 sm:mt-2     md:block lg:block  max-w-7xl    mx-auto     bg-[#03352c]    shadow-lg rounded-lg  p-5 mt-5     cursor-pointer";
 
 
-            // eto naman object sababa - eto yung fullview na pagpipilian if mobile size yung resolution or hindi.
-            let fullView_class = {
-
-                mobile: '  lg:hidden xl:hidden max-w-md mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-2 cursor-pointer',
-                NotMobile: '  sm:hidden md:block max-w-7xl mx-auto bg-[#03352c]  lg:block max-w-7xl mx-auto bg-[#03352c] shadow-lg rounded-lg p-5 mt-5 cursor-pointer'
-
-            };
-
-            function checkResolution() {
-
-                Resolution = window.innerWidth; // kukunin neto yung current resolution
-
-                if (Resolution < 768) // if mobile yung resolution
-                {
-                    mobileView.classList.remove("hidden");
-                    largeView.classList.add("hidden");
-                } else {
-                    largeView.classList.remove("hidden");
-                    mobileView.classList.add("hidden");
-                }
-
-                // yung classList.add(""); bali eto yung nagda-dagdag ng value 
-                // sa loob ng isang className
-                fullView.className = 'hidden'; // hahide neto yung fullview by default
+            function toggleView() 
+            {
+                fullView.className = fullview_classname;
             }
 
-            function toggleView() {
-                Resolution = window.innerWidth; // kukunin neto yung current resolution    
-
-                if (Resolution < 768) {
-                    fullView.className = fullView_class.mobile; // if yung reso pang mobile - then mobile pang mobile yung design                                                         
-                }
-
-                if (Resolution > 767) {
-                    fullView.className = fullView_class.NotMobile; // desktop/tablet/laptop view
-                }
+            function saveChanges() 
+            {
+                fullView.className = 'hidden';
             }
 
-            function saveChanges() {
-                // pwede na iabang dito yung back-end.
-                // update and retrieved dito.
-
+            function deleteExpense() 
+            {
                 fullView.className = 'hidden'; // hahide neto fullview after iclick save changes
             }
 
-            function deleteExpense() {
-
-                // if unique yung expenseID yun ung gagawin kong reference - geget ko value nya lage
-
-                // after madelete base sa id then loop record ulit
-
-
-                // pero pansamantala - ha-hide mona yung fullview satwing nagde-delete
-                fullView.className = 'hidden'; // hahide neto fullview after iclick save changes
-
-            }
-
-            document.addEventListener('DOMContentLoaded', checkResolution); // eto yung initial load state ng checking ng reso
-            window.addEventListener('resize', checkResolution); // eto naman yung continous checking satwing may changes sa size ng window or webpage
-        </script>
+     </script>
 
 
     </div>
