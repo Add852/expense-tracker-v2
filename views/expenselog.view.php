@@ -5,22 +5,19 @@
 
         <?php
 
-        if (empty($expenses))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
-        {
+        if (empty($expenses)) {
             echo "no expense found";
             return;
         }
 
         foreach ($expenses as $expense) {
-            $description = $expense['description'];
+            $description = stringShortener($expense['description'], 15);
             $expenseTime = formatDateTime($expense['expenseTime']);
             $category = $expense['category'];
             $expenseType = $expense['expenseType'];
             $amount = $expense['amount'];
 
-
             echo "
-
             <div id='simplified' class=' max-w-7xl mx-auto bg-green-900 text-white rounded-lg shadow-lg cursor-pointer ' onclick='toggleView()'>
                 <div class='flex justify-between items-center bg-green-800 rounded-t-lg px-4 py-2'>
                     <h2 class='text-lg  ' id='description'> $description </h2>
@@ -74,14 +71,9 @@
 
         <script>
             //global declaration para kunin yung id's nung simplified and fullview
-
-
             const simplifiedView = document.getElementById("simplified");
             let fullView = document.getElementById("fullView");
-
-
             fullview_classname = "m:max-w-md   sm:p-5 sm:mt-2     md:block lg:block  max-w-7xl    mx-auto     bg-[#03352c]    shadow-lg rounded-lg  p-5 mt-5     cursor-pointer";
-
 
             function toggleView() {
                 fullView.className = fullview_classname;

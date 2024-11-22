@@ -115,7 +115,7 @@
     document.getElementById('submitBtn').addEventListener('click', () => {
         let balance = <?php echo json_encode($_SESSION['balance']); ?>;
         let amount = document.getElementById('amount').value;
-        
+
         document.getElementById('allow').setAttribute('required', 'true');
 
         if (amount !== "") {

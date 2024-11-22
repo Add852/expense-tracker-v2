@@ -30,7 +30,7 @@ $_SESSION['balance'] = $balance;
                     <div class="flex flex-row my-4 gap-4 items-center">
                         <label for="amount" class="text-2xl font-semibold">Amount: </label>
                         <input
-                            type="number"
+                            type="decimal"
                             name="amountToAdd"
                             placeholder="0"
                             class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none"
