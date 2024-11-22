@@ -11,8 +11,8 @@
         $showData = new showExpenses;  // trial: created class from Controllers/ExpenseLog.php
         
 
-        
-        $expenses = $showData->expenses;
+
+        $expenses = $showData->getExpense();
 
         if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
