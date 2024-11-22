@@ -16,7 +16,9 @@
 
 
         // Problem found kaya pala walang record
-        // kase yung mga id sa database walang match ni isa.
+        // paki check nalang yung sa table ng expenses at users
+        // yung joint attribute nila yung usersID walang match na record,
+        // kaya walang mailabas na record loop.
 
         if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
