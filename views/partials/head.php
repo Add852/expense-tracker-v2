@@ -7,6 +7,7 @@
     <title>Expense Tracker</title>
     <script src="styles/scripts.js"></script>
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body class="bgGreen flex flex-col h-full">
