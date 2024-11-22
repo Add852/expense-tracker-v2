@@ -7,12 +7,13 @@
 
         <?php
 
+        $userID = $_SESSION['userid'];
 
-        $showData = new showExpenses;  // trial: created class from Controllers/ExpenseLog.php
-        
+        //fetch all the current user's expenses
+
+        $expenses = $db->query('select expenses.* from users join expenses on users.userid=expenses.userID where users.userid=?;', [$userID])->fetchAll(PDO::FETCH_ASSOC);
 
 
-        $expenses = $showData->getExpense();
 
         if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
