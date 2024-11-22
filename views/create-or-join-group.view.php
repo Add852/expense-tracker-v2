@@ -1,4 +1,5 @@
-<main id="addPanel" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+<!--di ko alam paano ayusin tong hidden and flex cssConflict problem pero tapos na-->
+<main id="addPanel" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50"> 
     <div class="bg-gray-800 text-gray-300 p-8 rounded-3xl shadow-lg w-11/12 max-w-md">
         
         <h2 id="panelHeading" class="text-4xl font-semibold text-center mb-4">Create a Group</h2>
