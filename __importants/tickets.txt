@@ -4,8 +4,6 @@ pwede na lagyan ng list of subscriptions ung dashboard view
 
 login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior
 
-headNoSide becomes headNoSideNoNavbar
-
 icons need to be uploaded by user  (goal, profile, group)
 
 lagyan ng contact support page, parang chat.
