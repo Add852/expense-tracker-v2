@@ -15,6 +15,9 @@
 
 
 
+        // Problem found kaya pala walang record
+        // kase yung mga id sa database walang match ni isa.
+
         if(empty($expenses ))  // yung $expenses from Controllers/ExpenseLog.php hindi accessible
         {
             echo "no expense found";
