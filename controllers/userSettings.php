@@ -48,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_FILES['icon']) && isset($_P
 
             try {
                 $db->query($sql, $params);
+                $_SESSION['userIcon'] = $targetFilePath;
                 $message = "Your profile is successfuly updated";
             } catch (PDOException $e) {
                 $message = "An error occurred while processing your request. Please try again later.";

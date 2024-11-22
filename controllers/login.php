@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     } else {
         session_start();
         $_SESSION['userid'] = $user['userid'];
+        $_SESSION['userIcon'] = $user['userIcon'];
         redirect('/dashboard');
     }
 }
