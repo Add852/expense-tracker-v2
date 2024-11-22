@@ -44,3 +44,11 @@ ALTER TABLE expenses ADD CONSTRAINT fk_subscriptionID FOREIGN KEY (subscriptionI
 ALTER TABLE expenses ADD CONSTRAINT fk_groupID FOREIGN KEY (groupID) REFERENCES clan(groupID);
 
 ======================================================================================================
+// kinonvert to decimal yung mga integer
+
+ALTER TABLE `defaultdb`.`users` CHANGE `amount` `amount` decimal(10,2) NULL DEFAULT '0' COMMENT '';
+ALTER TABLE `defaultdb`.`subscriptions` CHANGE `amount` `amount` decimal(10,2) NOT NULL COMMENT '';
+ALTER TABLE `defaultdb`.`goals` CHANGE `amount` `amount` decimal(10,2) NOT NULL COMMENT '';
+ALTER TABLE `defaultdb`.`expenses` CHANGE `amount` `amount` decimal(10,2) NOT NULL COMMENT '';
+
+========
