@@ -1,6 +1,6 @@
 <!--di ko alam paano ayusin tong hidden and flex cssConflict problem pero tapos na-->
 <main id="addPanel" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50"> 
-    <div class="bg-gray-800 text-gray-300 p-8 rounded-3xl shadow-lg w-11/12 max-w-md">
+    <div class="tlGreen text-gray-300 p-8 rounded-3xl shadow-lg w-11/12 max-w-md">
         
         <h2 id="panelHeading" class="text-4xl font-semibold text-center mb-4">Create a Group</h2>
         <hr class="my-4 border-gray-500">
@@ -36,7 +36,7 @@
             <!-- Buttons -->
             <button
                 id="submitBtn"
-                class="w-full py-2 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600"
+                class="w-full py-2 bg-green-800 text-white font-bold rounded-lg hover:bg-green-700"
                 type="submit">
                 Create Group
             </button>
