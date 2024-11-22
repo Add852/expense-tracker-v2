@@ -1,4 +1,4 @@
-<?php require('partials/head.php') ?>
+<?php require('partials/headNoSide.php') ?>
 
 <!-- Sidebar -->
 <div class="bg-gray-900 w-16 h-screen fixed shadow-lg">
@@ -10,12 +10,11 @@
           alt="Icon 1"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 1's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Anthony Dayrit
+          Anthony's Group
         </div>
       </div>
 
@@ -29,12 +28,11 @@
           alt="Icon 2"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 2's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Brishia Beltran
+          Group X
         </div>
       </div>
 
@@ -45,12 +43,11 @@
           alt="Icon 3"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 3's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Keith Yamzon
+          Group Y
         </div>
       </div>
 
@@ -61,12 +58,11 @@
           alt="Icon 4"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 4's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Aeingel Pecson
+          Group Z
         </div>
       </div>
 
@@ -80,12 +76,11 @@
           alt="Icon 5"
           class="h-12 w-12 rounded-3xl mt-2 mb-2 mx-auto hover:rounded-xl transition-all ease-linear cursor-pointer shadow-lg"
         />
-
         <!-- Icon 5's Tooltip-->
         <div
           class="bg-gray-900 text-white absolute left-20 rounded-md top-2 shadow-md p-2 text-xs font-bold min-w-max group-hover:scale-100 transition-all duration-100 scale-0 origin-left"
         >
-          Matt Ricohermoso
+          Add a Group
         </div>
       </div>
     </div>
@@ -93,7 +88,7 @@
     <!-- Main Content Container -->
     <div class="flex ml-16 h-screen">
 
-      <!-- Group/Channel Bar -->
+      <!-- Group Bar -->
       <div class="bg-gray-800 w-80 p-4">
 
         <!-- Group Title -->
@@ -106,6 +101,7 @@
         <!-- Group Form Container -->
         <div class="bg-gray-700 p-4 rounded-lg">
           <form class="space-y-4">
+
             <!-- Amount Field -->
             <div>
               <label class="block text-gray-300 font-semibold">Amount</label>
@@ -125,6 +121,10 @@
                 <option value="food">Food</option>
                 <option value="transportation">Transportation</option>
                 <option value="entertainment">Entertainment</option>
+                <option value="personal care">Personal Care</option>
+                <option value="health & wellness">Health & Wellness</option>
+                <option value="shopping">Shopping</option>
+                <option value="utilities">Utilities</option>
                 <option value="miscellaneous">Miscellaneous</option>
               </select>
             </div>
@@ -137,17 +137,6 @@
                 class="w-full mt-1 p-2 rounded-md bg-gray-600 text-white border-none"
                 placeholder="Enter description"
               />
-            </div>
-
-            <!-- Type Field -->
-            <div>
-              <label class="block text-gray-300 font-semibold">Type</label>
-              <select
-                class="w-full mt-1 p-2 rounded-md bg-gray-600 text-white border-none"
-              >
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
-              </select>
             </div>
 
             <!-- Date Field -->
@@ -179,12 +168,11 @@
         </div>
       </div>
 
-
       <!-- Content and Member List Section -->
       <div class="flex-grow flex flex-col">
-        
+
         <!-- Navigation Bar -->
-        <div class="bg-gray-700 p-4 h-16 drop-shadow-lg ">
+        <div class="bg-gray-600 p-4 h-16 drop-shadow-lg">
           <h5 class="text-white text-lg font-semibold flex items-center">
             <span class="text-gray-400 mr-2 text-3xl tracking-wider">#</span>
             Group Expense Record
@@ -193,13 +181,10 @@
 
         <!-- Main Content and Members List -->
         <div class="flex flex-grow">
-          
+
           <!-- Content Area -->
           <div class="flex-grow bg-gray-600 p-4">
-            <p class="text-white">
-              Main content goes here. This section can be used for chat messages
-              or any primary content.
-            </p>
+            <p class="text-white">Main content skibidi</p>
           </div>
 
           <!-- Members List -->
@@ -208,11 +193,26 @@
               Members - 5
             </h5>
             <ul class="mt-4">
-              <li class="text-white mb-2">Anthony Dayrit</li>
-              <li class="text-white mb-2">Brishia Beltran</li>
-              <li class="text-white mb-2">Keith Yamzon</li>
-              <li class="text-white mb-2">Aeingel Pecson</li>
-              <li class="text-white mb-2">Matt Ricohermoso</li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Anthony Dayrit</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Brishia Beltran</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Keith Yamzon</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Aeingel Pecson</span>
+              </li>
+              <li class="flex items-center p-2 hover:bg-gray-700 cursor-pointer rounded mb-2">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="icon" class="w-6 h-6 mr-2 rounded-3xl" />
+                <span class="text-white">Matt Ricohermoso</span>
+              </li>
             </ul>
           </div>
         </div>

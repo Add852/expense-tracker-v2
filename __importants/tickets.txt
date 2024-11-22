@@ -12,11 +12,9 @@ what if kulang ung balance pag nag auto add ung subscription? is it okay negativ
 
 =============================================================================================================
 
-convert amount/balance to float instead of int para pwede decimal
-
 expense log???
-- db connection
-- updating shiz
+- itsura
+- deleting of records
 
 mga icons:
 - profile icons
@@ -71,6 +69,7 @@ finalize mysql
 pwa manifest file??
 
 === MGA IF MAY TIME PA ===
+- Refund balance dialogue when expense is deleted
 - Custom sharing expense (individually set for each)
   + subscription on groups
 - Not pre-defined user icon

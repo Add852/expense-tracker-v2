@@ -47,3 +47,12 @@ function protectPage()
         alertRedirect("You must be logged in first!", '/login');
     }
 }
+
+function formatDateTime($datetime)
+{
+    // Convert the string to a DateTime object
+    $date = new DateTime($datetime);
+
+    // Format the date
+    return $date->format('M j, Y - g:i A');
+}

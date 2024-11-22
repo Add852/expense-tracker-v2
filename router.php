@@ -11,13 +11,13 @@ $routes = [
     //mga page na accessible lang kapag may nakalog-in
     "/dashboard" => __DIR__ . "/controllers/dashboard.php",
     "/usersettings" => __DIR__ . "/controllers/userSettings.php",
-    "/shared" => __DIR__ ."/controllers/expense-sharing-group.php",
-    "/goal" => __DIR__ ."/controllers/goal.php",
-    "/expenselog" => __DIR__ ."/controllers/ExpenseLog.php",
-    "/subscriptionList" => __DIR__ ."/controllers/subscriptionList.php",
-    "/audit" => __DIR__ ."/controllers/audit.php",
-    "/settings" => __DIR__ ."/controllers/settings.php",
-    "/reset" => __DIR__ ."/controllers/reset.php",
+    "/shared" => __DIR__ . "/controllers/expense-sharing-group.php",
+    "/goal" => __DIR__ . "/controllers/goal.php",
+    "/expenselog" => __DIR__ . "/controllers/expenselog.php",
+    "/subscriptionList" => __DIR__ . "/controllers/subscriptionList.php",
+    "/audit" => __DIR__ . "/controllers/audit.php",
+    "/settings" => __DIR__ . "/controllers/settings.php",
+    "/reset" => __DIR__ . "/controllers/reset.php",
 ];
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
