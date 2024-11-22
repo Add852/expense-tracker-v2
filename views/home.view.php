@@ -6,8 +6,8 @@
 <div class="bg-[#03352c] text-gray-300">
   <div class="xl:container mx-auto text-center relative ">
     <section>
-      <h1 class="text-4xl font-bold p-5">Lorem ipsum dolor sit amet</h1>
-      <h2 class="text-xl p-5">Lorem ipsum dolor sit amet</h2>
+      <h1 class="text-4xl font-bold p-5">It is time to track your Xpense!</h1>
+      <h2 class="text-xl p-5">Simplify Spending, Master Your Money</h2>
       <button class="cursor-pointer p-5 transition-transform rounded-full text-gray-300 uppercase text-xl font-semibold hover:scale-110 bg-[#1a664d] hover:bg-[#165440]"><a href="/login">
         Get Started
         </a>
@@ -31,12 +31,12 @@
       </div>
 
       <div class="bg-[#1a664d] py-20 flex justify-center">
-        <div class="py-10">
+        <div class="pr-10">
         <h1 class="text-4xl font-bold mb-5 ">How it works</h1>
         </div>
-        <div class="py-20">
+        <div class="pl-10">
         <p class="text-xl max-w-2xl mx-auto">
-          Goodbudget is a budget tracker for the modern age. Say no more to carrying paper envelopes. This virtual budget program keeps you on track with family and friends using the time-tested envelope budgeting method.
+        Xpense Tracker is a powerful yet easy-to-use web application designed to help you track, manage, and optimize your finances. With intuitive tools for budgeting, expense categorization, and real-time insights, Xpense Tracker empowers you to take control of your money and achieve your financial goals effortlessly.
         </p>
         </div>
       </div>
