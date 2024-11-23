@@ -10,6 +10,7 @@
 </head>
 
 <body class="bgGreen flex flex-col h-full">
+    <?php require('balanceController.php') ?>
     <!-- NAV BAR IS HERE -->
     <?php require('navbar.php') ?>
     <!-- FLOATING ADD EXPENSE BUTTON HERE -->
