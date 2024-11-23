@@ -2,7 +2,7 @@
 
 <div class="mt-10 flex flex-col gap-5 items-center justify-center">
     <div class="tlBgGreen w-full max-w-md p-8 rounded-3xl">
-        <a href="javascript:history.back()" class="justify-start textTeal hover:underline">Go Back</a>
+        <a href="/login" class="justify-start textTeal hover:underline">Go Back</a>
         <br />
         <br />
         <h2 class="text-4xl font-semibold text-center textGray">Forgot Password</h2>

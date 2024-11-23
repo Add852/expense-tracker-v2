@@ -1,108 +1,100 @@
 <?php require('partials/head.php') ?>
-<div class="flex flex-col gap-5 items-center justify-center">
-    <div class="w-full max-w-3xl p-8 pt-0 sm:pt-8 tlBgGreen rounded-3xl shadow-none sm:shadow-lg ">
-        <form method="POST" class="flex flex-col" enctype="multipart/form-data">
-            <div class="text-gray-300 text-base sm:text-lg grid grid-cols-1 sm:grid-cols-2">
-                <div class="flex flex-row sm:flex-col items-center justify-center h-full gap-5 mb-16 sm:mb-0">
-                    <img
-                        id="profileImage"
-                        src="<?= $userInfo['userIcon'] ?>"
-                        alt="Profile"
-                        class="w-28 h-28 md:w-36 md:h-36 rounded-full border-4 border-gray-400 object-cover" />
-                    <input
-                        id="icon"
-                        name="icon"
-                        type="file"
-                        accept="image/png, image/jpeg, image/jpg"
-                        hidden
-                        onchange="previewFile()">
-                    <button
-                        type="button"
-                        class="btGreen text-xs sm:text-base font-semibold py-2 px-5 rounded-3xl focus:outline-none"
-                        onclick="document.getElementById('icon').click()">
-                        Change Profile
+
+<div class="min-h-screen bg-[#03352c] flex flex-col items-center justify-start mt-12">
+    <!-- Main Content -->
+    <main class="w-full max-w-4xl flex flex-col sm:flex-row sm:space-x-6 items-center justify-start">
+
+        <!-- Profile Picture & Description Section -->
+        <div class="p-6 min-h-[310px] w-full max-w-md flex flex-col items-center justify-center text-gray-300 bg-transparent sm:bg-[#072822] rounded-3xl mb-15 mt-15">
+            <!-- Grouping Image and Button -->
+            <div class="flex flex-col items-center space-y-3">
+                <!-- Profile Image -->
+                <img
+                    id="profileImage"
+                    src="https://img.icons8.com/ios-glyphs/90/ffffff/user--v1.png"
+                    alt="Profile"
+                    class="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 rounded-full border-4 border-gray-400 object-cover" />
+                
+                <!-- Button -->
+                <button class="bg-[#1a664d] hover:bg-[#1a664d] text-gray-300 font-semibold py-2 px-5 rounded-3xl focus:outline-none" onclick="document.getElementById('fileInput').click()">
+                    Select a Profile Icon
+                </button>
+            </div>
+            <input type="file" id="fileInput" class="hidden" accept="image/*" onchange="previewImage(event)">
+
+            <!-- Mobile Input Fields -->
+            <div class="flex flex-col sm:hidden space-y-4 mt-6 w-full">
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">First Name</label>
+                    <input type="text" name="firstName" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">Last Name</label>
+                    <input type="text" name="lastName" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">Email</label>
+                    <input type="email" name="email" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+
+                <!-- Change Password Button -->
+                <div class="flex flex-col mt-4">
+                    <button type="button" class="bg-[#1a664d] hover:bg-[#1a664d] text-gray-300 font-semibold py-2 px-5 rounded-3xl focus:outline-none">
+                        Change Password
                     </button>
                 </div>
-                <div class="space-y-4">
-                    <div class="flex space-x-5">
-                        <div>
-                            <label for="firstname" class="text-lg">First Name</label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                class="w-full p-1 sm:p-2 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                                value="<?= $userInfo['firstname'] ?>"
-                                required />
-                        </div>
-                        <div>
-                            <label for="lastname" class="text-lg">Last Name</label>
-                            <input
-                                type="text"
-                                name="lastName"
-                                class="w-full p-1 sm:p-2 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                                value="<?= $userInfo['lastname'] ?>"
-                                required />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="username" class="text-lg">Username</label>
-                        <input
-                            type="text"
-                            name="username"
-                            class="w-full p-1 sm:p-2 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                            value="<?= $userInfo['username'] ?>"
-                            required />
-                    </div>
 
-                    <div>
-                        <label for="email" class="text-lg">Email Address</label>
-                        <input
-                            id="email"
-                            type="email"
-                            name="email"
-                            class="w-full p-1 sm:p-2 border border-gray-400 textGray bg-transparent rounded-lg focus:outline-none"
-                            value="<?= $userInfo['email'] ?>"
-                            required />
-                    </div>
+                <!-- Save Button -->
+                <div class="flex justify-center w-full mt-4">
+                    <button type="submit" class="bg-[#1a664d] hover:bg-[#1a664d] text-gray-300 font-semibold py-3 px-9 rounded-3xl focus:outline-none">
+                        Save
+                    </button>
                 </div>
             </div>
-            <div class="flex justify-center space-x-5">
-                <button
-                    type="button"
-                    onclick="window.location.reload()"
-                    class="py-2 mt-8 w-full sm:w-1/3 text-base sm:text-xl self-center font-semibold textGray btGreen rounded-3xl">
-                    Revert Changes
-                </button>
-                <button
-                    type="submit"
-                    name="changeProfile"
-                    class="py-2 mt-8 w-full sm:w-1/3 text-base sm:text-xl self-center font-semibold textGray btGreen rounded-3xl">
-                    Save Changes
-                </button>
+        </div>
+
+        <!-- Account Settings Form -->
+        <div class="p-6 w-full max-w-lg flex flex-col justify-center text-gray-300 space-y-6 mt-6 sm:mt-0 sm:ml-6">
+            <div class="hidden sm:flex flex-col space-y-4">
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">First Name</label>
+                    <input type="text" name="firstName" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">Last Name</label>
+                    <input type="text" name="lastName" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-lg font-semibold">Email</label>
+                    <input type="email" name="email" class="px-4 py-2 border border-gray-400 rounded-lg bg-[#072822] text-gray-300 text-lg" />
+                </div>
+
+                <!-- Change Password Button -->
+                <div class="flex flex-col mt-4">
+                    <button type="button" class="bg-[#1a664d] hover:bg-[#1a664d] text-gray-300 font-semibold py-2 px-5 rounded-3xl focus:outline-none">
+                        Change Password
+                    </button>
+                </div>
             </div>
-            <p class="mt-2 text-base sm:text-lg text-center textGray">
-                Change your Password?
-                <a href="/changepassword" class="textTeal hover:underline">Reset here</a>
-            </p>
-            <?php if (isset($message)) : ?>
-                <p class="text-gray-300 mt-4 text-center"><?= $message ?></p>
-            <?php endif; ?>
-        </form>
+        </div>
+    </main>
+
+    <!-- Save Button -->
+    <div class="flex justify-center w-full mt-6 sm:mt-2">
+        <button type="submit" class="bg-[#1a664d] hover:bg-[#1a664d] text-gray-300 font-semibold py-3 px-9 rounded-3xl focus:outline-none sm:block hidden">
+            Save
+        </button>
     </div>
 </div>
-<script>
-    function previewFile() {
-        const fileInput = document.getElementById('icon');
-        const file = fileInput.files[0];
 
+<script>
+    function previewImage(event) {
+        const file = event.target.files[0];
         if (file) {
             const reader = new FileReader();
-
-            reader.onload = function(e) {
-                const imagePreview = document.getElementById('profileImage');
-                imagePreview.src = e.target.result;
+            reader.onload = function (e) {
+                document.getElementById('profileImage').src = e.target.result;
             };
-
             reader.readAsDataURL(file);
         }
     }

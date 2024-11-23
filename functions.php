@@ -48,17 +48,11 @@ function protectPage()
     }
 }
 
-//converts dateTime (2024-11-20 23:14:46) to user friendly format (Nov 20, 2024 - 11:14 PM)
 function formatDateTime($datetime)
 {
     // Convert the string to a DateTime object
     $date = new DateTime($datetime);
+
     // Format the date
     return $date->format('M j, Y - g:i A');
-}
-
-//pampaikli ng mahabang string e.g., kapag masyado mahaba yung description
-function stringShortener($string, $length)
-{
-    return (strlen($string) > $length) ? substr($string, 0, $length) . "..." : $string;
 }
