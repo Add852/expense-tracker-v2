@@ -1,3 +1,27 @@
+<?php
+
+$userID = $_SESSION['userid'];
+if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['amountToAdd'])) {
+    $amountToAdd = $_POST['amountToAdd'];
+    $db->query("UPDATE users SET amount = amount + ? WHERE userid = ?;", [$amountToAdd, $userID]);
+
+    header("Location: {$_SERVER['REQUEST_URI']}");
+    exit;
+}
+$balance = $db->query('select amount from users where userid = ?;', [$userID])->fetchColumn();
+$_SESSION['balance'] = $balance;
+?>
+
+<!-- BALANCE ICON -->
+<div class="bg-emerald-900 text-base sm:text-xl rounded-xl h-8 flex justify-between items-center pl-1 pr-2">
+    <button id="addBalanceButton" class="h-6 w-6 mr-3">
+        <svg class="text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+    <?= isset($balance) ? "₱ $balance " : '₱ 0' ?>
+</div>
+
 <!-- ADD BALANCE FORM -->
 <main id="balancePanel" class="hidden">
     <div id="balanceOverlay" class="z-50 flex justify-center items-center fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
@@ -9,7 +33,7 @@
                     <div class="flex flex-row my-4 gap-4 items-center">
                         <label for="amount" class="text-2xl font-semibold">Amount: </label>
                         <input
-                            type="decimal"
+                            type="number"
                             name="amountToAdd"
                             placeholder="0"
                             class="p-3 rounded-lg border border-gray-400 tlGreen focus:outline-none"
@@ -21,17 +45,6 @@
         </div>
     </div>
 </main>
-
-<!-- BALANCE ICON -->
-<div class="bg-emerald-900 text-base sm:text-xl rounded-xl h-8 flex justify-end items-center pl-1 pr-2">
-    <button id="addBalanceButton" class="h-6 w-6 mr-3">
-        <svg class="text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
-        </svg>
-    </button>
-    <?= isset($balance) ? "₱ $balance " : '₱ 0' ?>
-</div>
-
 <script>
     document.getElementById('addBalanceButton').addEventListener('click', () => {
         document.getElementById('balancePanel').classList.remove('hidden');

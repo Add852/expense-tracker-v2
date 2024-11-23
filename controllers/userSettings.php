@@ -1,5 +1,9 @@
 <?php
+
+//protects the page from being accessed when no user is logged in. 
 protectPage();
+// Use $_SESSION['userid']; to get logged in user's userid
+
 $title = 'User Settings';
 $userID = $_SESSION['userid'];
 
@@ -20,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_FILES['icon']) && isset($_P
         $currentIconPath = $userInfo['userIcon'];
 
         if (!empty($currentIconPath) && file_exists($currentIconPath)) {
-            unlink($currentIconPath);  
+            unlink($currentIconPath);
         }
 
         $targetDir = "assets/icons/user/";
@@ -48,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_FILES['icon']) && isset($_P
 
             try {
                 $db->query($sql, $params);
-                $_SESSION['userIcon'] = $targetFilePath;
                 $message = "Your profile is successfuly updated";
             } catch (PDOException $e) {
                 $message = "An error occurred while processing your request. Please try again later.";
@@ -59,9 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_FILES['icon']) && isset($_P
     } else {
         $message = "Invalid file type. Only PNG, JPEG, and JPG are allowed.";
     }
-}
-
-else if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['changeProfile'])) {
+} else if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['changeProfile'])) {
     $firstname = $_POST['firstName'];
     $lastname = $_POST['lastName'];
     $username = $_POST['username'];
@@ -88,10 +89,8 @@ else if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['changeProfile'])
     } catch (PDOException $e) {
         $message = "An error occurred while processing your request. Please try again later.";
     }
-        
 }
 
 $userInfo = $db->query("SELECT firstname, lastname, email, username, userIcon FROM users WHERE userid = :userid", [':userid' => $userID])->fetch(PDO::FETCH_ASSOC);
 
 require('views/userSettings.view.php');
-?>

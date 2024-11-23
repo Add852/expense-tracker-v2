@@ -54,7 +54,7 @@
 
         <br>
 
-        <a href="/changepassword" class="textTeal hover:underline">Forgot password?</a>
+        <a href="/forgot" class="textTeal hover:underline">Forgot password</a>
 
         <br>
         <hr class="border-gray-300 my-4">
