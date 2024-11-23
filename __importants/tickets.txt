@@ -4,21 +4,25 @@ pwede na lagyan ng list of subscriptions ung dashboard view
 
 login, forgot, home(kapag di naka login), signup pages - need to fix dropdown behavior
 
+headNoSide becomes headNoSideNoNavbar
+
 icons need to be uploaded by user  (goal, profile, group)
 
 lagyan ng contact support page, parang chat.
 
 what if kulang ung balance pag nag auto add ung subscription? is it okay negative ung balance
-  oo nga no tangina
 
 =============================================================================================================
 
 expense log???
 - itsura
 - deleting of records
-- reusability?? Sa Dashboard and sa Group Expense
+- reusability?? Para sa group Expense
+copy expense log mechanism to subscription once finalized
 
-mga icons:
+what if tabs na lang din for expense log, subscriptions list, and group expenses??
+
+mga icons (KENN)
 - profile icons
 - goal icons
 
@@ -61,12 +65,12 @@ Statistics page
 
 === Other concerns ===
 
-url hosting: meron na ata to
-
 finalize mysql
 - finalize columns to put
 - need ng group_token_hash column para makagawa ng link sa groups
 - clean triggers for audit log
+- truncate all tables
+- setup admin users
 
 pwa manifest file??
 
@@ -80,4 +84,3 @@ pwa manifest file??
 - Multiple Wallet
 - Messaging (for sharing)
 - Timezones
-- Panel for adding back Balance if Expense is deleted

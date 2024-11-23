@@ -4,7 +4,7 @@ $routes = [
     //mga page na di required ng user login
     "/" => __DIR__ . "/controllers/home.php",
     "/signup" => __DIR__ . "/controllers/SignUp.php",
-    "/changepassword" => __DIR__ . "/controllers/forgot.php",
+    "/forgot" => __DIR__ . "/controllers/forgot.php",
     "/login" => __DIR__ . "/controllers/login.php",
     "/logout" => __DIR__ . "/controllers/logout.php",
 
